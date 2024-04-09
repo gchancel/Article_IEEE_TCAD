@@ -1,0 +1,64 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": false,
+        "File": ""
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "4_thirdSection.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 18,
+                "EditorGroup": 0,
+                "FileName": "0_article.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 30
+            },
+            {
+                "Col": 21,
+                "EditorGroup": 0,
+                "FileName": "0_abstract.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 3
+            },
+            {
+                "Col": 42,
+                "EditorGroup": 0,
+                "FileName": "1_intro.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 3
+            },
+            {
+                "Col": 144,
+                "EditorGroup": 0,
+                "FileName": "2_firstSection.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 4
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "3_secondSection.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "4_thirdSection.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 3
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": false
+    }
+}
