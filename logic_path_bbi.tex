@@ -2,8 +2,19 @@
 % !TeX root = ./0_article.tex
 
 \section{Logic path under BBI}
-For the purpose of analyzing the effects og BBI on actual logic, this section is dedicated in modeling and simulating a more complex logic path, integrating sequential elements.
+For the purpose of analyzing the effects og BBI on actual logic, this section is dedicated in modeling and simulating a more complex logic path, integrating one or more sequential elements.
+This implies the use of a clock, governing these elements.
+The considered logic path is constituted of inverters, a buffer, and a D Flip-Flop (DFF).
+The detailed electrical schematics of each component are described in Fig. \ref{ivxbufmos}, and \ref{dffmos}.
 
+\input{./figures/fig_ivxmos}
+\input{./figures/fig_dffmos}
+
+The study is conducted in two scenarios:
+\begin{itemize}
+	\item When the logic path is static;
+	\item When the logic path is dynamic.
+\end{itemize}
 
 In this section, we are lingering on analyzing the effects of BBI on more complex logic paths.
 The study is conducted for both a static logic path and a dynamic logic path.
@@ -13,8 +24,4 @@ The DFF clock is buffered to achieve an isolation from the ideal voltage source.
 Then, the DFF output is injected into a final 4-IVX chain, loaded with a 5 pF capacitor.
 The resulting schematic is described in Fig. \ref{dffChain}.
 
-\begin{figure}[h]
-	\label{dffChain}
-	\includegraphics[width=0.5\textwidth]{./figures/dff_ivx_chain_2.pdf}
-	\caption{DFFCHAIN}
-\end{figure}
+\input{./figures/fig_dffchain}
