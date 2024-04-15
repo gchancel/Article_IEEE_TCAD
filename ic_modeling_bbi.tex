@@ -2,7 +2,34 @@
 % !TeX root = ./0_article.tex
 
 \section{Body biasing injection platforms modeling}
-\IEEEPARstart{T}{his} section approaches the electrical modeling of BBI platforms and integrated circuits.
-As it has been proposed in \textcolor{cyan}{Cosade2022Chancel, FDTC2022\&2023Chancel}, it is possible to model BBI ICs using transistor-less models.
-It has the advantage of providing a somewhat precise evaluation of the mechanisms at work, while allowing for large simulations in reasonable times.
-Within this context, we decided
+\IEEEPARstart{T}{he} objective of this first section is to present the work done concerning electrical modeling of integrated circuits in a BBI context.
+Developing IC models in that specific case is not an easy task.
+Indeed, modern digital ICs contains billions of transistors, and even considering microcontrollers where the transistor count is less important, with current technologies, it is impossible to evaluate circuits at a transistor level.
+
+Therefore, and as it has been proposed in \textcolor{cyan}{FDTC2022 and FDTC2023}, we approach the problem using transistor-less models.
+These are developed thanks to the internal structure of integrated circuits, including:
+\begin{itemize}
+	\item The power supply network;
+	\item The standard-cells;
+	\item The silicon substrate.
+\end{itemize}
+These three elements, and their internal structure, allow to elaborate average models able to represent their macro behavior.
+Fig. \ref{fig_alim_std} illustrates the base symbolic diagram used for our design.
+It represents a standard-cell segment, composed of logic gates and decoupling elements, with a fixed height of 5 µm and a variable width.
+
+%\IEEEPARstart{W}{hen} studying integrated circuits in a fault injection context, it is often required to elaborate electrical models.
+%They allow simulating parts or entire circuits subjected to BBI, therefore acquiring insights on the mechanisms at work.
+%The acquired knowledge allows to set up more reliable experiments as well as countermeasures.
+%
+%In this context, we developed, thanks to previous works on the subject \textcolor{cyan}{Citations ICI}, electrical models
+
+\input{./figures/fig_alimnetwork}
+
+\input{./figures/fig_substrate}
+
+\input{./figures/fig_stdcellmodel}
+
+%\IEEEPARstart{T}{his} section approaches the electrical modeling of BBI platforms and integrated circuits.
+%As it has been proposed in \textcolor{cyan}{Cosade2022Chancel, FDTC2022\&2023Chancel}, it is possible to model BBI ICs using transistor-less models.
+%It has the advantage of providing a somewhat precise evaluation of the mechanisms at work, while allowing for large simulations in reasonable times.
+%Within this context, we decided
