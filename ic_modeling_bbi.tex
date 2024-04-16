@@ -6,16 +6,32 @@
 Developing IC models in that specific case is not an easy task.
 Indeed, modern digital ICs contains billions of transistors, and even considering microcontrollers where the transistor count is less important, with current technologies, it is impossible to evaluate circuits at a transistor level.
 
-Therefore, and as it has been proposed in \textcolor{cyan}{FDTC2022 and FDTC2023}, we approach the problem using transistor-less models.
-These are developed thanks to the internal structure of integrated circuits, including:
+\subsection{The hybrid simulation flow}
+To tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and local logic gates simulations.
+This approach allows simulating relatively big circuits under BBI disturbances.
+To that end, the whole simulation flow was divided in three consecutive steps:
 \begin{itemize}
-	\item The power supply network;
-	\item The standard-cells;
-	\item The silicon substrate.
+	\item The simulation of an IC under BBI using a transistor-less model, allowing for a purely electrical analysis;
+	\item The extraction of significant disturbed signals from the previous simulation;
+	\item The simulation of functional logic gates under BBI thanks to the previously extracted signals.
 \end{itemize}
-These three elements, and their internal structure, allow to elaborate average models able to represent their macro behavior.
+The first step allows analyzing IC macro-electrical behavior when subject to BBI, and at a lower computational cost compared to a functional model including transistors and internal transmission lines, even if it could be done in a reasonable time constraint for millions of transistors.
+Then, by extracting useful signals such as the power delivery and the transistor substrate voltages, we can evaluate what would be the behavior of actual logic gates subject to BBI.
+
+%Therefore, and as it has been proposed in \textcolor{cyan}{FDTC2022 and FDTC2023}, we approach the problem using transistor-less models.
+\subsection{The standard-cell model}
+The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
+\begin{itemize}
+	\item Their power supply network;
+	\item Their standard-cells properties;
+	\item Their silicon substrate.
+\end{itemize}
+These three elements and their internal structure allow elaborating average models, able to represent their macro behavior.
 Fig. \ref{fig_alim_std} illustrates the base symbolic diagram used for our design.
 It represents a standard-cell segment, composed of logic gates and decoupling elements, with a fixed height of 5 µm and a variable width.
+Two levels of metals for the power distribution are represented, the highest level MTOP in green and the first level M1 in blue.
+
+Then, 
 
 %\IEEEPARstart{W}{hen} studying integrated circuits in a fault injection context, it is often required to elaborate electrical models.
 %They allow simulating parts or entire circuits subjected to BBI, therefore acquiring insights on the mechanisms at work.
