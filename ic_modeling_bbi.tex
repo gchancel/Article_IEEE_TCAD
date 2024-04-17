@@ -6,10 +6,11 @@
 Developing IC models in that specific case is not an easy task.
 Indeed, modern digital ICs contains billions of transistors, and even considering microcontrollers where the transistor count is less important, with current technologies, it is impossible to evaluate circuits at a transistor level.
 
-\subsection{The hybrid simulation flow}
+\subsection{The hybrid simulation flow: introduction}
 To tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and local logic gates simulations.
-This approach allows simulating relatively big circuits under BBI disturbances.
-To that end, the whole simulation flow was divided in three consecutive steps:
+This approach is a compromise between accuracy and computational cost/time, and allows simulating relatively big circuits under BBI disturbances.
+
+The resulting simulation flow is divided in three consecutive steps:
 \begin{itemize}
 	\item The simulation of an IC under BBI using a transistor-less model, allowing for a purely electrical analysis;
 	\item The extraction of significant disturbed signals from the previous simulation;
@@ -18,8 +19,7 @@ To that end, the whole simulation flow was divided in three consecutive steps:
 The first step allows analyzing IC macro-electrical behavior when subject to BBI, and at a lower computational cost compared to a functional model including transistors and internal transmission lines, even if it could be done in a reasonable time constraint for millions of transistors.
 Then, by extracting useful signals such as the power delivery and the transistor substrate voltages, we can evaluate what would be the behavior of actual logic gates subject to BBI.
 
-%Therefore, and as it has been proposed in \textcolor{cyan}{FDTC2022 and FDTC2023}, we approach the problem using transistor-less models.
-\subsection{The standard-cell model}
+\subsection{The hybrid simulation flow : building the models}
 The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
 \begin{itemize}
 	\item Their power supply network;
@@ -29,23 +29,26 @@ The transistor-less model, also called standard-cell model, is developed thanks 
 These three elements and their internal structure allow elaborating average models, able to represent their macro behavior.
 Fig. \ref{fig_alim_std} illustrates the base symbolic diagram used for our design.
 It represents a standard-cell segment, composed of logic gates and decoupling elements, with a fixed height of 5 µm and a variable width.
-Two levels of metals for the power distribution are represented, the highest level MTOP in green and the first level M1 in blue.
+For simplicity, two levels of metals for the power distribution are represented, the highest level MTOP in green and the first level M1 in blue.
 
-Then, 
+Then, because the previous analysis does not consider the substrate on which the transistors lie, it is required to extend the model.
+To that end, we represent in Fig. \ref{fig_sub} the cross-sectional view of a CMOS inverter in a triple-well and dual-well substrate.
+The parasitic silicon diodes formed between the substrate and the N-well, and between the N-well and the P-well are shown, in addition to the wells access electrical resistances $R_C$.
 
-%\IEEEPARstart{W}{hen} studying integrated circuits in a fault injection context, it is often required to elaborate electrical models.
-%They allow simulating parts or entire circuits subjected to BBI, therefore acquiring insights on the mechanisms at work.
-%The acquired knowledge allows to set up more reliable experiments as well as countermeasures.
-%
-%In this context, we developed, thanks to previous works on the subject \textcolor{cyan}{Citations ICI}, electrical models
+Thanks to these preliminary analysis and former work on the subject \textcolor{cyan}{mathieuEMFI, fdtc20222023}, we set up an elementary transistor-less model, considering every presented aspect.
+This model, shown in Fig. \ref{fig_triplewellstdcell} for a triple-well substrate, represents a column portion of an IC, being 30 µm wide, 5 µm deep, and tSub µm thick.
+The schematic is divided into 6 sections:
+\begin{itemize}
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+	\item \fbox{1}: The substrate model, an array of equally distributed resistors;
+\end{itemize}
 
 \input{./figures/fig_alimnetwork}
 
 \input{./figures/fig_substrate}
 
-\input{./figures/fig_stdcellmodel}
-
-%\IEEEPARstart{T}{his} section approaches the electrical modeling of BBI platforms and integrated circuits.
-%As it has been proposed in \textcolor{cyan}{Cosade2022Chancel, FDTC2022\&2023Chancel}, it is possible to model BBI ICs using transistor-less models.
-%It has the advantage of providing a somewhat precise evaluation of the mechanisms at work, while allowing for large simulations in reasonable times.
-%Within this context, we decided
+%\input{./figures/fig_stdcellmodel}
