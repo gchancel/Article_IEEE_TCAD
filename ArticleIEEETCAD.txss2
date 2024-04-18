@@ -1,16 +1,16 @@
 {
     "InternalPDFViewer": {
-        "Embedded": false,
-        "File": ""
+        "Embedded": true,
+        "File": "0_article.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "4_thirdSection.tex",
+        "CurrentFile": "ic_modeling_bbi.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 18,
+                "Col": 17,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
                 "FirstLine": 0,
@@ -18,44 +18,100 @@
                 "Line": 30
             },
             {
-                "Col": 21,
+                "Col": 24,
                 "EditorGroup": 0,
                 "FileName": "0_abstract.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 3
-            },
-            {
-                "Col": 42,
-                "EditorGroup": 0,
-                "FileName": "1_intro.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 3
-            },
-            {
-                "Col": 144,
-                "EditorGroup": 0,
-                "FileName": "2_firstSection.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 4
             },
             {
-                "Col": 0,
+                "Col": 88,
                 "EditorGroup": 0,
-                "FileName": "3_secondSection.tex",
+                "FileName": "1_intro.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 4
+            },
+            {
+                "Col": 28,
+                "EditorGroup": 0,
+                "FileName": "ic_modeling_bbi.tex",
+                "FirstLine": 20,
+                "FoldedLines": "",
+                "Line": 41
             },
             {
                 "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "4_thirdSection.tex",
+                "FileName": "ic_Hybrid_simu_bbi.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 3
+                "Line": 4
+            },
+            {
+                "Col": 25,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_alimnetwork.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_substrate.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 29,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_stdcellmodel.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 4
+            },
+            {
+                "Col": 15,
+                "EditorGroup": 0,
+                "FileName": "logic_path_bbi.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "bbi_overhaul.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 11,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_ivxmos.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            },
+            {
+                "Col": 28,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_dffmos.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 13
+            },
+            {
+                "Col": 11,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_dffchain.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
             }
         ],
         "MasterFile": "",

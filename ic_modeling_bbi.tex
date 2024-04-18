@@ -20,35 +20,76 @@ The first step allows analyzing IC macro-electrical behavior when subject to BBI
 Then, by extracting useful signals such as the power delivery and the transistor substrate voltages, we can evaluate what would be the behavior of actual logic gates subject to BBI.
 
 \subsection{The hybrid simulation flow : building the models}
-The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
+Building these models requires a correct understanding on integrated circuits internal structures, such as:
 \begin{itemize}
-	\item Their power supply network;
-	\item Their standard-cells properties;
-	\item Their silicon substrate.
-\end{itemize}
-These three elements and their internal structure allow elaborating average models, able to represent their macro behavior.
-Fig. \ref{fig_alim_std} illustrates the base symbolic diagram used for our design.
-It represents a standard-cell segment, composed of logic gates and decoupling elements, with a fixed height of 5 µm and a variable width.
-For simplicity, two levels of metals for the power distribution are represented, the highest level MTOP in green and the first level M1 in blue.
-
-Then, because the previous analysis does not consider the substrate on which the transistors lie, it is required to extend the model.
-To that end, we represent in Fig. \ref{fig_sub} the cross-sectional view of a CMOS inverter in a triple-well and dual-well substrate.
-The parasitic silicon diodes formed between the substrate and the N-well, and between the N-well and the P-well are shown, in addition to the wells access electrical resistances $R_C$.
-
-Thanks to these preliminary analysis and former work on the subject \textcolor{cyan}{mathieuEMFI, fdtc20222023}, we set up an elementary transistor-less model, considering every presented aspect.
-This model, shown in Fig. \ref{fig_triplewellstdcell} for a triple-well substrate, represents a column portion of an IC, being 30 µm wide, 5 µm deep, and tSub µm thick.
-The schematic is divided into 6 sections:
-\begin{itemize}
-	\item \shadowbox{1} The substrate model, an array of equally distributed resistors;
-	\item \shadowbox{2} The P-N substrate-well silicon junction;
-	\item \shadowbox{3} The N-P well-well silicon junction;
-	\item \shadowbox{4N} \shadowbox{4P} The MOS average electrical model;
-	\item \shadowbox{5} \shadowbox{5'} The substrate model, an array of equally distributed resistors;
-	\item \shadowbox{6} The substrate model, an array of equally distributed resistors;
+	\item The power supply network, composed of various stacked metal wires;
+	\item The standard-cells, made of logic gates, and thus transistors, being pre-characterized cells used as building blocks;
+	\item The silicon substrate, which can be of various type depending on the technology.
 \end{itemize}
 
+\subsubsection{Power supply rails and standard-cell segments}
 \input{./figures/fig_alimnetwork}
+The power distribution inside an IC is typically made with a grid-like structure, composed of metal wires stacked on top of each other on planes.
+The uppermost layer forms a ring surrounding the core.
+In each layer, the metal wires are equally spaced and have a dedicated width, which becomes thinner the deeper they are.
+The lowest layer brings the power directly to the transistors.
 
+Within these metal lines are located standard-cell segments (SCS), created by the power planning, as illustrated in Fig. \ref{fig_alim_std}.
+SCS are pre-characterized by foundries and classified according to their performance in timing and power consumption.
+Their height is fixed, while their width vary depending on their complexity, and are commonly made of logic gates, sequential, and decoupling elements.
+
+\subsubsection{Silicon substrate structure}
+Another important element of an IC is its substrate, and most importantly its type.
+We can mainly distinguish bulk and FD-SOI substrates.
+
+On the one hand, in bulk substrates, the transistor channel forms directly inside the P-substrate, and the depletion layer thickness is difficult to control.
+On the other hand, in FD-SOI substrates, a silicon oxide layer is created between the channel and the P-substrate, thus constraining the channel thickness.
+
+In this paper, we are focusing only on bulk substrates, and in this family, we can distinguish two substrate types: dual-well (DW) and triple-well (TW).
+The main difference between DW and TW substrates lies in how are made NMOS transistors.
+In DW substrates, NMOS are located directly inside the P-substrate, and PMOS inside a N-doped well, called the N-well.
+However, in the case of a TW substrate, the PMOS are still inside the N-well, but the NMOS are located inside an additional P-doped well, made inside the N-well.
+
+These manufacturing differences are illustrated in Fig. \ref{fig_sub}, representing the cross-sectional view of an inverter made with a bulk technology.
+The PN and NP diodes formed between the substrate and the wells are represented, and the electrical resistances $R_C$ represent the access resistance of the substrate and the wells.
 \input{./figures/fig_substrate}
+Dual-well substrates are found in moderately old ICs, while triple-well ones are common in more recent ICs, often coupled with dual-well substrate on the same die.
+The combination of both allows for \textcolor{orange}{cross-coupling noise reduction}, in addition to electrical insulation between transistors located on different domains (DW and TW).
 
-\input{./figures/fig_stdcellmodel}
+
+
+%\subsection{The hybrid simulation flow : building the models}
+%The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
+%\begin{itemize}
+%	\item Their power supply network;
+%	\item Their standard-cells properties;
+%	\item Their silicon substrate.
+%\end{itemize}
+%These three elements and their internal structure allow elaborating average models, able to represent their macro behavior.
+%Fig. \ref{fig_alim_std} illustrates the base symbolic diagram used for our design.
+%It represents a standard-cell segment, composed of logic gates and decoupling elements, with a fixed height of 5 µm and a variable width.
+%For simplicity, two levels of metals for the power distribution are represented, the highest level MTOP in green and the first level M1 in blue.
+%
+%Then, because the previous analysis does not consider the substrate on which the transistors lie, it is required to extend the model.
+%To that end, we represent in Fig. \ref{fig_sub} the cross-sectional view of a CMOS inverter in a triple-well and dual-well substrate.
+%The parasitic silicon diodes formed between the substrate and the N-well, and between the N-well and the P-well are represented, in addition to the wells access electrical resistances $R_C$.
+%
+%Thanks to these preliminary analysis and former work on the subject \textcolor{cyan}{mathieuEMFI, fdtc20222023}, we set up an elementary transistor-less model, considering every presented aspect.
+%This model, shown in Fig. \ref{fig_triplewellstdcell} for a triple-well substrate, represents a column portion of an IC, being 30 µm wide, 5 µm deep, and tSub µm thick.
+%The schematic is divided into 6 sections:
+%\begin{itemize}
+%	\item \shadowbox{1} The substrate model, an array of distributed resistors;
+%	\item \shadowbox{2} The P-N substrate-well silicon junction;
+%	\item \shadowbox{3} The N-P well-well silicon junction;
+%	\item \shadowbox{4N} \shadowbox{4P} The MOS average electrical model;
+%	\item \shadowbox{5} \shadowbox{5'} The power distribution metals;
+%	\item \shadowbox{6} The power supply decoupling.
+%\end{itemize}
+%The passive components modeling the transistors represent about 100 hundreds logic gates in the target technology.
+%Therefore, the model allows evaluating simultaneously the average electrical behavior of 100 hundreds logic gates at a very low cost.
+%
+%\input{./figures/fig_alimnetwork}
+%
+%\input{./figures/fig_substrate}
+%
+%\input{./figures/fig_stdcellmodel}
