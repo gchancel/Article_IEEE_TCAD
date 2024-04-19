@@ -63,17 +63,19 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 		
 		\input{./figures/fig_stdcellmodel}
 		
-		The model we propose is shown in Fig. \ref{fig_triplewellstdcell}.
-		It represents an entire standard-cell segment, including a two levels power delivery network, average models of a hundred of logic gates, and the silicon substrate.
+		The model we propose is shown in Fig. \ref{fig_triplewellstdcell} both for a triple-well and a dual-well substrate.
+		The models are extremely similar, but their difference is what is important.
+		It represents an entire standard-cell segment, including a two levels power delivery network, average models of a hundred of logic gates, silicon junctions, and the silicon substrate.
 		For better clarity, we divided the model into 6 sections, each representing a specific building block:
 		\begin{itemize}
 			\item \shadowbox{1} The substrate: modeled with 6 blocks of 6 resistors;
 			\item \shadowbox{2} The P-N substrate-well silicon junction;
-			\item \shadowbox{3} The N-P well-well silicon junction;
+			\item \shadowbox{3} The N-P well-well silicon junction (TW), or the substrate access resistance (DW);
 			\item \shadowbox{4N} \shadowbox{4P} The MOS average electrical model;
 			\item \shadowbox{5} \shadowbox{5'} The power distribution metals;
 			\item \shadowbox{6} The power supply decoupling.
 		\end{itemize}
+		The component values are calculated according to the target technology, in our case 90 nm, and are shown in Table \ref{tab_scs_numeric}
 
 %\subsection{The hybrid simulation flow : building the models}
 %The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
