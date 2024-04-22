@@ -34,84 +34,28 @@
                 "Line": 4
             },
             {
-                "Col": 28,
+                "Col": 2,
                 "EditorGroup": 0,
                 "FileName": "ic_modeling_bbi.tex",
-                "FirstLine": 20,
+                "FirstLine": 87,
                 "FoldedLines": "",
-                "Line": 41
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "ic_Hybrid_simu_bbi.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 4
-            },
-            {
-                "Col": 25,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_alimnetwork.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 6
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_substrate.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 6
-            },
-            {
-                "Col": 29,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_stdcellmodel.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 4
+                "Line": 96
             },
             {
                 "Col": 15,
                 "EditorGroup": 0,
-                "FileName": "logic_path_bbi.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 5
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "bbi_overhaul.tex",
+                "FileName": "figures/table_scs_values.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 6
             },
             {
-                "Col": 11,
+                "Col": 50,
                 "EditorGroup": 0,
-                "FileName": "figures/fig_ivxmos.tex",
+                "FileName": "figures/fig_stdcellmodel.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 5
-            },
-            {
-                "Col": 28,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_dffmos.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 13
-            },
-            {
-                "Col": 11,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_dffchain.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 5
+                "Line": 7
             }
         ],
         "MasterFile": "",

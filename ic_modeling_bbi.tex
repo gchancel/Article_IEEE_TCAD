@@ -59,7 +59,7 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 		\subsubsection{Designing an elementary building-block for mass simulation}
 		Thanks to the previously analyzed elements and models, we can now design elementary standard-cell blocks composed of the power delivery, the logic gates and the substrate, for each substrate type.
 		As it has been said before, we are developing an hybrid simulation flow, therefore the designed elementary block is transistor-less.
-		Eventually, our work is based on previous works on the subject \textcolor{cyan}{mathieuEMFI, FDTC2022, FDTC2023}.
+		Eventually, our work is based on previous works on the subject []\textcolor{cyan}{mathieuEMFI, FDTC2022, FDTC2023}].
 		
 		\input{./figures/fig_stdcellmodel}
 		
@@ -75,7 +75,26 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 			\item \shadowbox{5} \shadowbox{5'} The power distribution metals;
 			\item \shadowbox{6} The power supply decoupling.
 		\end{itemize}
-		The component values are calculated according to the target technology, in our case 90 nm, and are shown in Table \ref{tab_scs_numeric}
+		\input{./figures/table_scs_values}
+		The component values are calculated according to the target technology, in our case 90 nm, and are shown in Table \ref{tab_scs_numeric}.
+		
+		\subsubsection{Effectively using these building-blocks}
+		Because the SCS models we previously presented do not represent an entire IC, rather a column portion of one, it is needed, to use them, to replicate and interconnect them as much as needed to model an entire IC.
+		All the models were written in the SPICE language, and simulated using HSPICE.
+		Interconnecting each model instance was done using an automated script.
+		It allowed us to reduce human errors by validating the generation process rather than the netlists themselves.
+		Our generation script allows us to set the following parameters:
+		\begin{itemize}
+			\item The final IC size;
+			\item The BBI probe size and location;
+			\item The substrate thickness;
+			\item The substrate type (TW or DW);
+			\item The backside voltage pulse characteristics.
+		\end{itemize}
+		aaa
+		
+		\subsubsection{Validating the generated circuits}
+		
 
 %\subsection{The hybrid simulation flow : building the models}
 %The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
