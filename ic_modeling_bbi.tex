@@ -91,10 +91,16 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 			\item The substrate type (TW or DW);
 			\item The backside voltage pulse characteristics.
 		\end{itemize}
-		aaa
+		This flexibility allows us to quickly create various circuits for our simulation needs.
 		
 		\subsubsection{Validating the generated circuits}
-		
+		Validating the models requires at least two steps: a DC operating points verification and a transient analysis.
+		We created a 550 µm wide, 450 µm deep and 150 µm thick IC.
+		As the elementary building blocks measure 30 × 5 × 150 µm³, the resulting IC consists of 1620 SCS blocks.
+		The effective power supply $V_{DD} - GND$ measures 1.2 V.
+		\input{table_op_point}
+		Concerning the operating point, we should expect an ideal current consumption of 0 A, and power supply voltage drops of 0 V on both power rails.
+		If it is not the case, we should reconsider the model and check for any errors or bad interconnections.
 
 %\subsection{The hybrid simulation flow : building the models}
 %The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
