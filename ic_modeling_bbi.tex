@@ -100,8 +100,11 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 		The effective power supply $V_{DD} - GND$ measures 1.2 V.
 		\input{table_op_point}
 		Concerning the operating point, we should expect an ideal current consumption of 0 A, and power supply voltage drops of 0 V on both power rails.
-		If it is not the case, we should reconsider the model and check for any errors or bad interconnections.
-
+		Otherwise, we should /textcolor{orange}{reconsider} the model and check for any errors or bad interconnections.
+		Table \ref{tab_op}, showing operating points for both triple-well and dual-well ICs, allows us to see that, as it was expected, the model do not consume static energy nor causes voltage drop on the power delivery network.
+		
+		Now that we have verified the bias point, let us analyze a first transient simulation.
+		
 %\subsection{The hybrid simulation flow : building the models}
 %The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
 %\begin{itemize}
