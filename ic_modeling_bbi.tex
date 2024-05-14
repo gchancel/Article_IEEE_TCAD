@@ -104,7 +104,21 @@ Indeed, modern digital ICs contains billions of transistors, and even considerin
 		Table \ref{tab_op}, showing operating points for both triple-well and dual-well ICs, allows us to see that, as it was expected, the model do not consume static energy nor causes voltage drop on the power delivery network.
 		
 		Now that we have verified the bias point, let us analyze a first transient simulation.
-		The initial conditions are those of the previous operating point, the difference being the presence of a probe connected to the IC backside.
+		The initial conditions are those of the previous operating point, the difference being the presence of a probe connected to the IC backside, and therefore a voltage pulse generator.
+		To that end, the generator is configured as follows:
+		\begin{itemize}
+			\item Vpulse = -300 V;
+			\item Vpw = 20 ns;
+			\item Rise and fall times of 8 ns.
+		\end{itemize}
+		Then, we will observe various signals in the IC volume from a 2D perspective, for simplicity:
+		\begin{itemize}
+			\item The power supply voltage distribution (2D-view);
+			\item The epitaxy current distribution (2D-view);
+			\item The substrate voltage distribution centered around the probe (X-view and Y-view);
+			\item The substrate current distribution centered around the probe (X-view and Y-view);
+			\item The per-layer normalized substrate current density, centered around the probe (X-view and Y-view).
+		\end{itemize}
 		
 %\subsection{The hybrid simulation flow : building the models}
 %The transistor-less model, also called standard-cell model, is developed thanks to the internal structure of integrated circuits, including:
