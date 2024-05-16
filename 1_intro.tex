@@ -7,9 +7,9 @@
 %Among the latest studies, a modeling and simulation flow has been proposed, alongside better platforms allowing to achieve greater reproducibility and a deeper analysis of the mechanisms at works in digital integrated circuits subjected to BBI.
 %In addition to that
 
-\subsection{State-of-the-art}
+\subsection{Context}
 	When working with cybersecurity, specifically with hardware security, various fault injection methods are often considered.
-	One can point out Electromagnetic Fault Injection (EMFI) \cite{bibid}, Laser Fault Injection (LFI) \cite{bibid}, or Body Biasing Injection (BBI) \cite{bibid}, not to cite them all.
+	One can point out Electromagnetic Fault Injection (EMFI) \cite{mathieuEMFI}, Laser Fault Injection (LFI) \cite{lfiFaultModel}, or Body Biasing Injection (BBI) \cite{bbiOrigin}, not to cite them all.
 	The current work is dedicated in studying Body Biasing Injection.
 
 	Nowadays, electronic devices are found in every economic sector, and very often they manipulate sensitive data, such as in bank transactions, Internet of Things (IoT) devices, or smartphones.
@@ -23,3 +23,9 @@
 		\item Verification bypass \textrightarrow\ Modify data on the fly to fake authenticity (e.g. to bypass bootloader security);
 		\item Confidential data extraction \textrightarrow\ Modify data to perform differential fault analysis.
 	\end{itemize}
+
+\subsection{BBI in the state-of-the-art}
+	When compared to EMFI, BBI has a smaller state-of-the-art, whether in the amount of scientific papers published or in the amount of industrial platforms proposed.
+	Currently, there are ten main works lingering on BBI \cite{bbiOrigin, bbiSecond, bbiThird, bbiColin,japbbi, japbbi2, mybbiCosade, mybbiFdtc2022, mybbifdtc2023, colinFdtc2023}.
+	Each one of them made a unique contribution for a better understanding of BBI.
+	However, there are still unanswered questions, and the current works aims at bringing more answers thanks to previous and new data.

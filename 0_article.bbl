@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{mathieuEMFI}
+M.~Lisart M.~Dumont and P.~Maurine.
+\newblock Modeling and simulating electromagnetic fault injection.
+\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 40(4):680--693, 2021.
+
+\bibitem{lfiFaultModel}
+Jean-Max Dutertre, Vincent Beroulle, Philippe Candelier, Stephan De~Castro,
+  Louis-Barthelemy Faber, Marie-Lise Flottes, Philippe Gendrier, David Hély,
+  Regis Leveugle, Paolo Maistri, Giorgio Di~Natale, Athanasios Papadimitriou,
+  and Bruno Rouzeyre.
+\newblock Laser fault injection at the cmos 28 nm technology node: an analysis
+  of the fault model.
+\newblock In {\em 2018 Workshop on Fault Diagnosis and Tolerance in
+  Cryptography (FDTC)}, pages 1--6, 2018.
+
+\bibitem{bbiOrigin}
+Philippe Maurine, Karim Tobich, Thomas Ordas, and Pierre-Yvan Liardet.
+\newblock Yet another fault injection technique : by forward body biasing
+  injection.
+\newblock {\em "Yet Another Conference on Cryptography France (2012)"}, 09
+  2012.
+
+\bibitem{bbiSecond}
+K.~Tobich, P.~Maurine, P.-Y. Liardet, M.~Lisart, and T.~Ordas.
+\newblock Voltage spikes on the substrate to obtain timing faults.
+\newblock In {\em 2013 Euromicro Conference on Digital System Design}, pages
+  483--486, 2013.
+
+\bibitem{bbiThird}
+Noemie Beringuier-Boher, Marc Lacruche, David El-Baze, Jean-Max Dutertre,
+  Jean-Baptiste Rigaud, and Philippe Maurine.
+\newblock Body biasing injection attacks in practice.
+\newblock In {\em Proceedings of the Third Workshop on Cryptography and
+  Security in Computing Systems}, CS2 '16, page 49–54, New York, NY, USA,
+  2016. Association for Computing Machinery.
+
+\bibitem{bbiColin}
+Colin O'Flynn.
+\newblock Low-cost body biasing injection ({BBI}) attacks on {WLCSP} devices.
+\newblock In Pierre-Yvan Liardet and Nele Mentens, editors, {\em Smart Card
+  Research and Advanced Applications}, pages 166--180, Cham, 2021. Springer
+  International Publishing.
+
+\bibitem{japbbi}
+Takuya Wadatsumi, Kohei Kawai, Rikuu Hasegawa, Takuji Miki, Makoto Nagata,
+  Kikuo Muramatsu, Hiromu Hasegawa, Takuya Sawada, Takahito Fukushima, and
+  Hisashi Kondo.
+\newblock Voltage surges by backside esd impacts on ic chip in flip chip
+  packaging.
+\newblock In {\em 2022 IEEE International Reliability Physics Symposium
+  (IRPS)}, pages P14--1--P14--6, 2022.
+
+\bibitem{japbbi2}
+Takuya Wadatsumi, Kohei Kawai, Rikuu Hasegawa, Kazuki Monta, Takuji Miki, and
+  Makoto Nagata.
+\newblock Characterization of backside esd impacts on integrated circuits.
+\newblock In {\em 2023 IEEE International Reliability Physics Symposium
+  2IRPS)}, pages 1--6, 2023.
+
+\bibitem{mybbiCosade}
+G.~Chancel, J.-M. Galliere, and P.~Maurine.
+\newblock Body biasing injection: To thin or not to thin the substrate?
+\newblock In Josep Balasch and Colin O'Flynn, editors, {\em Constructive
+  Side-Channel Analysis and Secure Design}, pages 125--139, Cham, 2022.
+  Springer International Publishing.
+
+\bibitem{mybbiFdtc2022}
+G.~Chancel, Jean-Marc Gallière, and P.~Maurine.
+\newblock Body biasing injection: Impact of substrate types on the induced
+  disturbancesƒ.
+\newblock In {\em 2022 Workshop on Fault Detection and Tolerance in
+  Cryptography (FDTC)}, pages 50--60, 2022.
+
+\bibitem{mybbifdtc2023}
+G.~Chancel, J.-M. Galliere, and P.~Maurine.
+\newblock A better practice for body biasing injection.
+\newblock In {\em 2023 Workshop on Fault Detection and Tolerance in
+  Cryptography (FDTC)}, pages 48--59, 2023.
+
+\bibitem{colinFdtc2023}
+Colin O'Flynn.
+\newblock Picoemp: A low-cost emfi platform compared to bbi and voltage fault
+  injection using tdc and external vcc measurements.
+\newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
+\newblock \url{https://eprint.iacr.org/2023/1195}.
+
+\end{thebibliography}
