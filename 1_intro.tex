@@ -7,4 +7,20 @@
 %Among the latest studies, a modeling and simulation flow has been proposed, alongside better platforms allowing to achieve greater reproducibility and a deeper analysis of the mechanisms at works in digital integrated circuits subjected to BBI.
 %In addition to that
 
+\subsection{State-of-the-art}
+	When working with cybersecurity, specifically with hardware security, various fault injection methods are often considered.
+	One can cite Electromagnetic Fault Injection (EMFI) \cite{bibid}, Laser Fault Injection (LFI) \cite{bibid}, or Body Biasing Injection (BBI) \cite{bibid}, not to cite them all.
+	The current work is dedicated in studying Body Biasing Injection.
+
+	Nowadays, electronic devices are found in every economic sector, and very often they manipulate sensitive data, such as in bank transactions, Internet of Things (IoT) devices, or smartphones.
+	To ensure data authenticity, these devices embed cryptographic algorithms.
+	While theoretically secure, once implemented on actual devices, these algorithms become fallible, leaking manipulated data, in addition to being sensitive to external disturbances.
+
+\subsection{Fault injection objectives}
+	Fault injection methods are set up to perform various malicious manipulation on integrated circuits, such as:
+	\begin{itemize}
+		\item Denial of service (DoS) \textrightarrow\ Stop circuit operation and the related services;
+		\item Verification bypass \textrightarrow\ Modify data on the fly to fake authenticity (e.g. to bypass bootloader security);
+		\item Confidential data extraction \textrightarrow\ Modify data to perform differential fault analysis.
+	\end{itemize}
 
