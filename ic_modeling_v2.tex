@@ -34,6 +34,20 @@ The resulting simulation flow is divided in three consecutive steps:
 	The main building blocks of the models are the power supply network, the standard-cells, and the substrate structure.
 	In this work, we are only focusing on bulk substrates: specifically dual-well and triple-well substrates.
 
-	\subsubsection{Power supply rails}
+	\subsubsection{Power supply rails and standard-cell segments}
 	\input{./figures/fig_alimnetwork}
-	Fig. \ref{fig_alim_std}
+	The power distribution inside an IC is typically made with a grid-like structure, composed of metal wires stacked on top of each other on planes.
+	In each layer, the metal wires are equally spaced and have a dedicated width, which becomes thinner the deeper they are.
+	The lowest layer brings the power directly to the transistors.
+	Fig. \ref{fig_alim_std} presents a common power delivery network, designed with two metal levels for simplicity.
+
+	Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements, and are pre-characterized by foundries and categorized depending on their performance (mainly but not exclusively power consumption and speed).
+	As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a variable width depending on how much logic gates each one of them embed.
+
+	\subsubsection{The substrate}
+	\input{./figures/fig_substrate}
+	Because BBI can be performed thanks to the silicon substrate as the main physical environment transferring energy from a generator to an IC, it is fundamental to elaborate a proper substrate model to precisely represent the various involved phenomena.
+	As stated previously, our work focuses on bulk substrates, and in most cases, the substrate silicon is P-doped.
+	There are two typical ways of lithographing the transistors in a bulk substrate, using dual-well or triple-well structures.
+
+	To properly understand how the differences between dual-well and triple-well substrates change the resulting model, let us analyze the cross-sectional schematics of an inverter created in a dual-well and a triple-well substrate, as shown in Fig. \ref{fig_sub}.
