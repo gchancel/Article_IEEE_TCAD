@@ -89,6 +89,8 @@ The resulting simulation flow is divided in three consecutive steps:
 		\item \ovalbox{5, 5'} are the power supply metal layers (upper metal in green, first level in blue);
 		\item \ovalbox{6} is the power supply decoupling.
 	\end{itemize}
-	As we have stated before, these models only represent a small portion of a simulable IC.
-	To create an entire IC of a defined size, it is required to instantiate and multiply as much as needed the elementary models.
+	As we have stated before, these models only represent a small portion of the modeled IC.
+	To create an entire IC of a defined size, it is required to instantiate and interconnect as much as needed the elementary models.
 	By doing so, we can create a bigger model of virtually any size.
+	The language we have chosen to work with the simulation is the SPICE language.
+	However, we created a custom Python script to interconnect the SCS together and generate a generic SPICE file.
