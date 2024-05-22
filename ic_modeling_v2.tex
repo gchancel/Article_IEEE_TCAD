@@ -43,16 +43,23 @@ The resulting simulation flow is divided in three consecutive steps:
 
 	Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements, and are pre-characterized by foundries and categorized depending on their performance (mainly but not exclusively power consumption and speed).
 	As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a variable width depending on how much logic gates each one of them embed.
+	As we have stated previously, the hybrid simulation flow use transistor-less models as basic IC building blocks.
+	Therefore, the transistors, hence the standard-cell segments, are modeled with passive elements such as resistors and capacitors.
+
+	\input{mos_passive}
+	To that end, the elementary SCS chosen measures 30 \textmu m by 5 \textmu m, representing two rows of logic cells.
+	This represents about a hundred of logic gates, represented with four resistors and two capacitors, as shown in Fig. \ref{mos_passive}, with half of the transistors conducting, half not conducting.
+	The resistors $R_P$ and $R_N$ values depends on the considered technology, as well as the capacitors values.
 
 	\subsubsection{The substrate}
 	\input{./figures/fig_substrate}
 	Because BBI can be performed thanks to the silicon substrate as the main physical environment transferring energy from a generator to an IC, it is fundamental to elaborate a proper substrate model to precisely represent the various involved phenomena.
 	As stated previously, our work focuses on bulk substrates, and in most cases, the substrate silicon is P-doped.
 	There are two typical ways of lithographing the transistors in a bulk substrate, using dual-well or triple-well structures.
+	Dual-well substrates are commonly found in moderately old circuits, while triple-well substrates are found in more recent circuits, while not bleeding-edge.
 
 	To properly understand how the differences between dual-well and triple-well substrates change the resulting model, let us analyze the cross-sectional schematics of an inverter created respectively in a triple-well and a dual-well substrate, as shown respectively in Fig. \ref{fig_sub}.a and Fig. \ref{fig_sub}.b:
 	\begin{itemize}
 		\item In the triple-well substrate, the NMOS transistors are lithographed into a P-doped silicon well, itself lithographed inside a N-doped well, buried inside the P-doped substrate. The PMOS transistors are located inside the N-doped well;
 		\item In the dual-well substrate, the PMOS transistors are still located inside the N-doped well, however, the NMOS are lithographed directly inside the P-doped substrate.
 	\end{itemize}
-	Dual-well substrates are found in moderately old circuits, while triple-well substrates are found in more recent circuits, while not bleeding-edge.
