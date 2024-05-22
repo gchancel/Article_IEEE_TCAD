@@ -6,59 +6,51 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "ic_modeling_bbi.tex",
+        "CurrentFile": "ic_modeling_v2.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 17,
+                "Col": 27,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
-                "FirstLine": 0,
+                "FirstLine": 7,
                 "FoldedLines": "",
-                "Line": 30
+                "Line": 40
             },
             {
-                "Col": 24,
-                "EditorGroup": 0,
-                "FileName": "0_abstract.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 4
-            },
-            {
-                "Col": 88,
+                "Col": 93,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 4
+                "Line": 11
             },
             {
-                "Col": 2,
+                "Col": 145,
                 "EditorGroup": 0,
-                "FileName": "ic_modeling_bbi.tex",
-                "FirstLine": 87,
+                "FileName": "ic_modeling_v2.tex",
+                "FirstLine": 40,
                 "FoldedLines": "",
-                "Line": 96
+                "Line": 54
             },
             {
-                "Col": 15,
+                "Col": 19,
                 "EditorGroup": 0,
-                "FileName": "figures/table_scs_values.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 6
-            },
-            {
-                "Col": 50,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_stdcellmodel.tex",
+                "FileName": "mos_passive.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 7
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_substrate.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 9
             }
         ],
         "MasterFile": "",
-        "VerticalSplit": false
+        "VerticalSplit": true
     }
 }

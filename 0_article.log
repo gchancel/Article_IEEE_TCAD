@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  22 MAY 2024 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  22 MAY 2024 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,7 +513,7 @@ Package pdftex.def Info: ./figures/substrate_2.pdf  used on input line 6.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
-Underfull \hbox (badness 3148) in paragraph at lines 64--65
+Underfull \hbox (badness 3148) in paragraph at lines 66--67
 []\OT1/ptm/m/n/10 In the triple-well sub-strate, the NMOS tran-sis-tors
  []
 
@@ -539,7 +539,7 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (3 pages, 2041585 bytes).
+Output written on 0_article.pdf (3 pages, 2041627 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
