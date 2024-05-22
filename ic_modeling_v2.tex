@@ -66,3 +66,29 @@ The resulting simulation flow is divided in three consecutive steps:
 		\item In the triple-well substrate, the NMOS transistors are lithographed into a P-doped silicon well, itself lithographed inside a N-doped well, buried inside the P-doped substrate. The PMOS transistors are located inside the N-doped well;
 		\item In the dual-well substrate, the PMOS transistors are still located inside the N-doped well, however, the NMOS are lithographed directly inside the P-doped substrate.
 	\end{itemize}
+	On the one hand, the triple-well substrate reveals two diodes:
+	\begin{itemize}
+		\item One formed between the P-well and the N-well;
+		\item Another formed between the N-well and the P-substrate.
+	\end{itemize}
+	On the other hand, the dual-well substrate only reveals one diode between the N-well and the P-substrate.
+
+	\subsubsection{The resulting model}
+	Thanks to what we have introduced previously, we can now build the elementary building blocks for our hybrid simulation flow.
+	It combines the power delivery network architecture, the equivalent logic gates models, and the substrate structure, all in an embedded model.
+	This model represents an elementary section of the simulated IC, measuring 30 \textmu m by 5 \textmu m by $t_{Sub}$ \textmu m, the latter being the substrate thickness, a parameter which will vary depending on each considered IC.
+	\input{./figures/fig_stdcellmodel}
+	As we consider both triple-well and dual-well substrate, there are two resulting elementary models, shown in Fig. \ref{fig_triplewellstdcell}.
+	Each model is composed of various sub-regions, whose descriptions follow:
+	\begin{itemize}
+		\item \ovalbox{1} is the substrate network, divided into six sub-networks of six resistors for finer details;
+		\item \ovalbox{2} is the first P-N silicon junction, common to both models;
+		\item \ovalbox{3} is the access resistor (DW) or the second junction (TW);
+		\item \ovalbox{4P} is the PMOS equivalent section;
+		\item \ovalbox{4N} is the NMOS equivalent section;
+		\item \ovalbox{5, 5'} are the power supply metal layers (upper metal in green, first level in blue);
+		\item \ovalbox{6} is the power supply decoupling.
+	\end{itemize}
+	As we have stated before, these models only represent a small portion of a simulable IC.
+	To create an entire IC of a defined size, it is required to instantiate and multiply as much as needed the elementary models.
+	By doing so, we can create a bigger model of virtually any size.
