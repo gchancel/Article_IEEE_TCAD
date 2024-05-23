@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  23 MAY 2024 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  23 MAY 2024 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,33 +353,43 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen186
+\TX@old@table=\dimen187
+\TX@old@col=\dimen188
+\TX@target=\dimen189
+\TX@delta=\dimen190
+\TX@cols=\count297
+\TX@ftn=\toks29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box60
-\shadowsize=\dimen186
+\shadowsize=\dimen191
 \@Sbox=\box61
-\do@VerbBox=\toks29
-\the@fancyput=\toks30
-\this@fancyput=\toks31
-\EndVerbatimTokens=\toks32
+\do@VerbBox=\toks30
+\the@fancyput=\toks31
+\this@fancyput=\toks32
+\EndVerbatimTokens=\toks33
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks33
-\inpenc@posthook=\toks34
+\inpenc@prehook=\toks34
+\inpenc@posthook=\toks35
 )
 (/usr/share/texlive/texmf-dist/tex/latex/showlabels/showlabels.sty
 Package: showlabels 2022/07/18 v1.9.2
 
 Package: `showlabels' v1.9.2 <2022/07/18>
 with amsmath equation tags
-\SL@labelposition=\count297
+\SL@labelposition=\count298
 ) (/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
-\oldvsize=\dimen187
+\oldvsize=\dimen192
 )
 
 LaTeX Warning: Unused global option(s):
@@ -388,20 +398,20 @@ LaTeX Warning: Unused global option(s):
 (./0_article.aux)
 \openout1 = `0_article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 -- Lines per column: 58 (exact).
 Package caption Info: Begin \AtBeginDocument code.
@@ -409,17 +419,17 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen188
+\scratchcounter=\count299
+\scratchdimen=\dimen193
 \scratchbox=\box62
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen189
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks36
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen194
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -533,13 +543,13 @@ Package pdftex.def Info: ./figures/dual+triple.png  used on input line 6.
  <./figures/dual+triple.png>]
 (./0_article.aux) ) 
 Here is how much of TeX's memory you used:
- 6150 strings out of 476034
- 108487 string characters out of 5792854
- 1874388 words of memory out of 6000000
- 26455 multiletter control sequences out of 15000+600000
+ 6213 strings out of 476034
+ 109553 string characters out of 5792854
+ 1876388 words of memory out of 6000000
+ 26515 multiletter control sequences out of 15000+600000
  559889 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,77p,378b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,14n,77p,378b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
 5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
@@ -552,7 +562,7 @@ ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (4 pages, 5566460 bytes).
+Output written on 0_article.pdf (4 pages, 5566489 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
