@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{mathieuEMFIFirst}
+Mathieu Dumont, Philippe Maurine, and Mathieu Lisart.
+\newblock Modeling of electromagnetic fault injection.
+\newblock In {\em 2019 12th International Workshop on the Electromagnetic
+  Compatibility of Integrated Circuits (EMC Compo)}, pages 246--248, 2019.
+
 \bibitem{mathieuEMFI}
 M.~Lisart M.~Dumont and P.~Maurine.
 \newblock Modeling and simulating electromagnetic fault injection.
@@ -86,19 +92,5 @@ Colin O'Flynn.
   injection using tdc and external vcc measurements.
 \newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
 \newblock \url{https://eprint.iacr.org/2023/1195}.
-
-\bibitem{mathieuEMFIFirst}
-Mathieu Dumont, Philippe Maurine, and Mathieu Lisart.
-\newblock Modeling of electromagnetic fault injection.
-\newblock In {\em 2019 12th International Workshop on the Electromagnetic
-  Compatibility of Integrated Circuits (EMC Compo)}, pages 246--248, 2019.
-
-\bibitem{lfiSimu}
-Raphael A.~Camponogara Viera, Philippe Maurine, Jean-Max Dutertre, and Rodrigo
-  Possamai~Bastos.
-\newblock Simulation and experimental demonstration of the importance of
-  ir-drops during laser fault injection.
-\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
-  Circuits and Systems}, 39(6):1231--1244, 2020.
 
 \end{thebibliography}
