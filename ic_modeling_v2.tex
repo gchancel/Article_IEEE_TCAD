@@ -103,6 +103,15 @@ The resulting simulation flow is divided in three consecutive steps:
 	We should expect almost no voltage drop and zero current consumption from such a model.
 	Otherwise, it indicates an underlying issue with the model.
 	
-	Table \ref{tab_op} shows the operating point results for both a triple-well and a dual-well circuit, and indicates a correct operating point.
+	Table \ref{tab_op} shows the operating point results for both a triple-well and a dual-well circuit, and indicates a correct operating point, with idle currents and voltage drops close to zero.
 	However, verifying the bias point alone is not sufficient to consider the model validated.
 	As these models are dedicated to be mainly used in transient simulations, it is required to perform one and evaluate the soundness of its results.
+	
+	Therefore, we performed transient simulations with a triple-well and dual-well IC, with the following parameters:
+	\begin{itemize}
+		\item Voltage pulse amplitude: -300 V;
+		\item Voltage pulse width: 15 ns;
+		\item Rise and fall times: 8 ns;
+		\item Simulation duration: 80 ns;
+		\item Simulation time step: 50 ps.
+	\end{itemize}
