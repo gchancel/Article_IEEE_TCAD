@@ -1,15 +1,19 @@
 % !TeX spellcheck = en_US
 % !TeX root = ./0_article.tex
+% trim={left lower right upper}
 
 \begin{figure*}[ht]
-	\centering
-	\subfloat[][a]{\includegraphics[width=0.5\textwidth]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
-	\subfloat[][a]{\includegraphics[width=0.5\textwidth]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
-	\subfloat[a][]{\includegraphics[width=0.5\textwidth]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
-	\subfloat[a][]{\includegraphics[width=0.5\textwidth]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
-%	\begin{subfigure}{}
-%		\includegraphics[width=\textwidth]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}
-%		\caption{text}
-%		\label{key}
-%	\end{subfigure}
+%	\centering
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14.5mm 18mm}, clip]{./figures/valim.pdf}}
+		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14,5mm 18mm}, clip]{./figures/iepi.pdf}}
+	\end{minipage}
+
+	\begin{minipage}{0.5\textwidth}
+		\centering
+		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 6.1mm 4mm 12.5mm}, clip]{./figures/vsubc.pdf}}
+		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 2mm 5mm 15mm}, clip]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
+	\end{minipage}
+	\label{sim_res}
 \end{figure*}
