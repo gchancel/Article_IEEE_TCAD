@@ -133,7 +133,7 @@ The resulting simulation flow is divided in three consecutive steps:
 	\subsubsection{Negative dual-well simulation results}
 		Fig. \ref{sim_res_dw_neg} shows the dual-well positive pulse results.
 
-		Sub-fig. \ref{sim_res_dw_neg}(a) represents the power delivery network voltage across the entire IC as seen from above.
+		Sub-fig. \ref{sim_res_dw_neg}(a) represents the power delivery network (PDN) voltage across the entire IC as seen from above.
 		In other words, it is the supply voltage of the transistors.
 		Expectedly, far from the external power connections, we observe some deviation from the nominal 1.2 V power supply voltage.
 		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 33 \% increase from the nominal value.
@@ -152,3 +152,18 @@ The resulting simulation flow is divided in three consecutive steps:
 		Thus, it allows us to compare the current density between layers.
 		It is important to note that the normalized values are calculated in a way that the closer they are to zero, the denser the current is, and vice-versa.
 		The layer 0 is the closest to the logic gates, while the layer 13 is the closest to the backside (the probe).
+		What is interesting to note here is that for each substrate layer, the current is focused where the probe is located.
+		It is to be expected, as the substrate is isotropic.
+		However, the deeper we are into the substrate, the less focused the current is.
+		Once again, it is quite logical as the charges diffuse homogeneously inside the substrate.
+
+	\subsubsection{Positive dual-well simulation results}
+	Concerning the positive pulse dual-well results, let us look at Fig. \ref{sim_res_dw_pos}.
+	Compared to the previous results, sub-fig. \ref{sim_res_dw_pos}(a) shows that the PDN voltage exhibits not a voltage increase, but rather a voltage drop.
+	Indeed, under the probe, the PDN voltage drops to 500 mV from 1.2 V.
+	This is a substantial difference, which could lead, if applied to actual transistors, a significant change in behavior such as an incorrect biasing.
+
+	Concerning the epitaxial current, shown in sub-fig. \ref{sim_res_dw_pos}(b), we can notice two key changes.
+	First, the current polarity has changed, from a negative to a positive one.
+	Once again, it was to be expected, as the voltage pulse polarity has changed.
+	Then, in absolute value, the maximal current is 500 mV higher than previously, which indicates that more energy has been injected into the circuit.
