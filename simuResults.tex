@@ -2,19 +2,33 @@
 % !TeX root = ./0_article.tex
 % trim={left lower right upper}
 
-\begin{figure*}[ht]
+\begin{figure*}[hbtp]
 %	\centering
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14.5mm 18mm}, clip]{./figures/valim.pdf}}
-		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14,5mm 18mm}, clip]{./figures/iepi.pdf}}
-	\end{minipage}
+%	\begin{minipage}{0.5\textwidth}
+%		\centering
+%		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14.5mm 18mm}, clip]{./figures/valim.pdf}}
+%		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14,5mm 18mm}, clip]{./figures/iepi.pdf}}
+%	\end{minipage}
+%
+%	\begin{minipage}{0.5\textwidth}
+%		\centering
+%		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 6.1mm 4mm 12.5mm}, clip]{./figures/vsubc.pdf}}
+%		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 2mm 5mm 15mm}, clip]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
+%	\end{minipage}
 
 	\begin{minipage}{0.5\textwidth}
-		\centering
-		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 6.1mm 4mm 12.5mm}, clip]{./figures/vsubc.pdf}}
-		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 2mm 5mm 15mm}, clip]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/vddMgndManuscrit-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/iEpiDualWellManuscrit-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/vSubcManuscrit-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf}
 	\end{minipage}
-	\caption{Dual-well simulation results.}
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/vddMgndManuscritTw-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/iEpiTripleWellManuscrit-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/vSubcManuscritTw-cropped.pdf}
+		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/CurrentDistributionNormT140eT10_ExcTw-cropped.pdf}
+	\end{minipage}
+
+	\caption{Simulation results.}
 	\label{sim_res}
 \end{figure*}
