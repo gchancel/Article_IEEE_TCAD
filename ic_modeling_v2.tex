@@ -93,7 +93,8 @@ The resulting simulation flow is divided in three consecutive steps:
 		To create an entire IC of a defined size, it is required to instantiate and interconnect as much as needed the elementary models.
 		By doing so, we can create a bigger model of virtually any size.
 		The language we have chosen to work with the simulation is the SPICE language.
-		However, we created a custom Python script to interconnect the SCS together and generate a generic SPICE file.
+		However, we created a custom Python script to interconnect the SCS together, place external power connections, and generate a SPICE file.
+		For the current work, we decided to put the external power connections at the top and bottom of the IC (seen from above), and the BBI probe at the center of the IC (on the backside).
 
 \subsection{An hybrid simulation flow: performing simulations}
 	Now that we set up the base models and their duplication, we can perform simulations with those models.
@@ -109,11 +110,12 @@ The resulting simulation flow is divided in three consecutive steps:
 
 	Therefore, we performed transient simulations with a triple-well and dual-well IC, with the following parameters:
 	\begin{itemize}
-		\item Voltage pulse amplitude: \textpm\ 300 V;
-		\item Voltage pulse width: 15 ns;
-		\item Rise and fall times: 8 ns;
-		\item Simulation duration: 80 ns;
-		\item Simulation time step: 50 ps.
+		\item A nominal power supply voltage of 1.2 V;
+		\item A voltage pulse amplitude of \textpm\ 300 V;
+		\item A voltage pulse width of 15 ns;
+		\item Rise and fall times of 8 ns;
+		\item A simulation duration of 80 ns;
+		\item A simulation time step: of 50 ps.
 	\end{itemize}
 
 \subsection{An hybrid simulation flow: analyzing the results}
@@ -124,11 +126,18 @@ The resulting simulation flow is divided in three consecutive steps:
 		\item The substrate current distribution;
 		\item The substrate pre-layer current density.
 	\end{itemize}
+	The observed signals are displayed in two dimensions and at the apex of the BBI disturbance.
 	Each signal brings some insights on what happens inside the circuits during a BBI pulse.
 	We will first analyze the dual-well results, then the triple-well ones, to finally conclude with a comparison of both.
 	\input{simuResults.tex}
 	\subsubsection{Negative dual-well simulation results}
 		Fig. \ref{sim_res_dw_neg} shows the dual-well positive pulse results.
-		Sub-fig. \ref{sim_res_dw_neg}(a) represents the power delivery network across the entire IC as seen from above.
-		The external power connections are made at the top and bottom of the IC, and
 
+		Sub-fig. \ref{sim_res_dw_neg}(a) represents the power delivery network voltage across the entire IC as seen from above.
+		In other words, it is the supply voltage of the transistors.
+		Expectedly, far from the external power connections, we observe some deviation from the nominal 1.2 V power supply voltage.
+		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 33 \% increase from the nominal value.
+
+		To put these values into perspective, let us look at sub-fig. \ref{sim_res_dw_neg}(b), showing the epitaxial current distribution, representing the charges going from the substrate to the top of the SCS.
+		According to the sub-figure, most of the charges are flowing at the center of the IC, under the BBI probe, as the current is the highest in that location.
+		It is sound when comparing sub-fig. \ref{sim_res_dw_neg}(a) and sub-fig. \ref{sim_res_dw_neg}(b), as the voltage difference from the nominal value is higher where the epitaxial current is higher.
