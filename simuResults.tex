@@ -2,43 +2,80 @@
 % !TeX root = ./0_article.tex
 % trim={left lower right upper}
 
-\begin{figure*}[hbtp]
-%	\centering
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14.5mm 18mm}, clip]{./figures/valim.pdf}}
-%		\subfloat[]{\includegraphics[width=\textwidth, trim={20mm 12mm 14,5mm 18mm}, clip]{./figures/iepi.pdf}}
-%	\end{minipage}
-%
-%	\begin{minipage}{0.5\textwidth}
-%		\centering
-%		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 6.1mm 4mm 12.5mm}, clip]{./figures/vsubc.pdf}}
-%		\subfloat[]{\includegraphics[width=\textwidth, trim={15mm 2mm 5mm 15mm}, clip]{./figures/CurrentDistributionNormT200eT20_ExcDw.pdf}}
-%	\end{minipage}
+\newcommand\vsp{0}
 
-	\begin{minipage}{0.3\textwidth}
-		\centering
-		\includegraphics[width=0.96\textwidth]{./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropped.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf}
-	\end{minipage}
+% Dual Well Negative
+\begin{figure}[hbtp]
+	\centering
+	\vspace{\vsp mm}
+	\subfloat[][Power delivery network]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf}}
 
-	\begin{minipage}{0.3\textwidth}
-		\centering
-		\includegraphics[width=0.96\textwidth]{./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf}
-		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf}
-	\end{minipage}
+	\vspace{\vsp mm}
+	\subfloat[][Epitaxial current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropped.pdf}}
 
-%	\begin{minipage}{0.5\textwidth}
-%		\includegraphics[width=0.987\textwidth]{./figures/modelesSimusResul/tripleWell/vddMgndManuscritTw-cropped.pdf}
-%		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/iEpiTripleWellManuscrit-cropped.pdf}
-%		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/vSubcManuscritTw-cropped.pdf}
-%		\includegraphics[width=\textwidth]{./figures/modelesSimusResul/tripleWell/CurrentDistributionNormT140eT10_ExcTw-cropped.pdf}
-%	\end{minipage}
+	\vspace{\vsp mm}
+	\subfloat[][Substrate cross-sectional view current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf}}
 
-	\caption{Simulation results for a negative pulse. \textcolor{red}{(Refaire mise en page figures pour papier final)}}
-	\label{sim_res}
-\end{figure*}
+	\vspace{\vsp mm}
+	\subfloat[][Substrate per-layer normalized current density]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf}}
+
+	\caption{Dual-well IC negative pulse simulation results.}
+	\label{sim_res_dw_neg}
+\end{figure}
+
+% Dual Well Positive
+\begin{figure}[hbtp]
+	\centering
+	\vspace{\vsp mm}
+	\subfloat[][Power delivery network]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Epitaxial current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate cross-sectional view current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate per-layer normalized current density]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-cropped.pdf}}
+
+	\caption{Dual-well IC positive pulse simulation results.}
+	\label{sim_res_dw_pos}
+\end{figure}
+
+% Triple Well Negative
+\begin{figure}[hbtp]
+	\centering
+	\vspace{\vsp mm}
+	\subfloat[][Power delivery network]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Epitaxial current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-cropped.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate cross-sectional view current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate per-layer normalized current density]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT140eT10_ExcTw-cropped.pdf}}
+
+	\caption{Triple-well IC negative pulse simulation results.}
+	\label{sim_res_tw_neg}
+\end{figure}
+
+% Triple Well Positive
+\begin{figure}[hbtp]
+	\centering
+	\vspace{\vsp mm}
+	\subfloat[][Power delivery network]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Epitaxial current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate cross-sectional view current]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf}}
+
+	\vspace{\vsp mm}
+	\subfloat[][Substrate per-layer normalized current density]{\includegraphics[width=\columnwidth]{./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-cropped.pdf}}
+
+	\caption{Triple-well IC positive pulse simulation results.}
+	\label{sim_res_tw_pos}
+\end{figure}

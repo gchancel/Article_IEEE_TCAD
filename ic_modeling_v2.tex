@@ -98,7 +98,7 @@ The resulting simulation flow is divided in three consecutive steps:
 \subsection{An hybrid simulation flow: performing simulations}
 	Now that we set up the base models and their duplication, we can perform simulations with those models.
 	To properly use these models, it is required, in the first place, to validate them through various steps to ensure their reliability.
-	To that end, we generated an IC measuring 600 \textmu m by 600 \textmu m with a 200 \textmu m substrate thickness, and performed an operating point to verify the correctness of the models for each substrate type.
+	To that end, we generated an IC measuring 550 \textmu m by 450 \textmu m with a 140 \textmu m substrate thickness, and performed an operating point to verify the correctness of the models for each substrate type.
 	\input{table_op_point.tex}
 	We should expect almost no voltage drop and zero current consumption from such a model.
 	Otherwise, it indicates an underlying issue with the model.
@@ -117,12 +117,18 @@ The resulting simulation flow is divided in three consecutive steps:
 	\end{itemize}
 
 \subsection{An hybrid simulation flow: analyzing the results}
-	Analyzing the simulation results involves observing various internal IC signals, with the main ones being:
+	Analyzing the simulation results involves observing various internal IC signals, for each substrate type, the ones presented in this section being:
 	\begin{itemize}
 		\item The power supply voltage distribution;
 		\item The epitaxial current;
-		\item The substrate voltage distribution;
-		\item The substrate electrical charges distribution.
+		\item The substrate current distribution;
+		\item The substrate pre-layer current density.
 	\end{itemize}
+	Each signal brings some insights on what happens inside the circuits during a BBI pulse.
+	We will first analyze the dual-well results, then the triple-well ones, to finally conclude with a comparison of both.
 	\input{simuResults.tex}
-	Fig. \ref{sim_res} shows the simulation results for both IC using a negative voltage pulse.
+	\subsubsection{Negative dual-well simulation results}
+		Fig. \ref{sim_res_dw_neg} shows the dual-well positive pulse results.
+		Sub-fig. \ref{sim_res_dw_neg}(a) represents the power delivery network across the entire IC as seen from above.
+		The external power connections are made at the top and bottom of the IC, and
+
