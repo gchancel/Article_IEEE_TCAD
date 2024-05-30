@@ -1,0 +1,21 @@
+% !TeX spellcheck = en_US
+% !TeX root = ./0_article.tex
+
+\begin{table}[]
+	\centering
+%	\resizebox{\columnwidth}{!}{
+		\begin{tabular}{
+				>{\columncolor[HTML]{EFEFEF}}c
+				>{\columncolor[HTML]{EFEFEF}}c cc
+				>{\columncolor[HTML]{FFFC9E}}c c}
+			\cellcolor[HTML]{DAE8FC}                            & \cellcolor[HTML]{DAE8FC}                           & \multicolumn{3}{c}{\cellcolor[HTML]{DAE8FC}Coupling}                                                                                    & \cellcolor[HTML]{DAE8FC}                           \\
+			\multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Substrate} & \multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Polarity} & \cellcolor[HTML]{DAE8FC}NMOS                      & \cellcolor[HTML]{DAE8FC}PMOS                      & \cellcolor[HTML]{DAE8FC}Circuit & \multirow{-2}{*}{\cellcolor[HTML]{DAE8FC}Danger}   \\
+			Dual-well                                           & Negative                                           & \cellcolor[HTML]{FFFC9E}{\color[HTML]{000000} DC} & \cellcolor[HTML]{9AFF99}AC                        & {\color[HTML]{000000} DC}       & \cellcolor[HTML]{FFCCC9}{\color[HTML]{000000} \skull\skull\skull} \\
+			Dual-well                                           & Positive                                           & \cellcolor[HTML]{FFFC9E}{\color[HTML]{000000} DC} & \cellcolor[HTML]{FFFC9E}{\color[HTML]{000000} DC} & {\color[HTML]{000000} DC}       & \cellcolor[HTML]{FD6864}\skull\skull\skull\skull        \\
+			Triple-well                                         & Negative                                           & \cellcolor[HTML]{9AFF99}AC                        & \cellcolor[HTML]{9AFF99}AC                        & \cellcolor[HTML]{9AFF99}AC      & \cellcolor[HTML]{96FFFB}\skull                          \\
+			Triple-well                                         & Positive                                           & \cellcolor[HTML]{9AFF99}AC                        & \cellcolor[HTML]{FFFC9E}{\color[HTML]{000000} DC} & {\color[HTML]{000000} DC}       & \cellcolor[HTML]{FFCCC9}{\color[HTML]{000000} \skull\skull\skull}
+%	\end{tabular}}
+	\end{tabular}
+	\caption{Caption}
+	\label{dw_tw_table}
+\end{table}
