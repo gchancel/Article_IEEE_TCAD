@@ -204,4 +204,8 @@ The resulting simulation flow is divided in three consecutive steps:
 		On the other hand, the NMOS are DC-coupled to the probe as they are connected through a resistive path.
 		Therefore, the circuit is globally DC-coupled to the probe, allowing the charges to flow all the time during the pulse.
 		Then, concerning the positive pulse scenario, the diode conducts, creating another DC path to the transistors, reducing the effective circuit impedance seen by the probe.
-		It explains the greater observed currents, as the charges can move more freely than before.
+		It explains the greater observed currents, as the charges have an additional DC path to follow.
+		
+		On the triple-well side, the top of the SCS is barred with a first P-N diode (P-substrate N-well), and the PMOS are behind another diode.
+		When using negative pulses, the first diode is blocking, therefore creating a pure AC-coupling between the probe and the circuit.
+		It means that the charges are able to flow in and out of the SCS only on the pulse edges.
