@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 - Flatpak) (preloaded format=pdflatex 2024.4.4)  31 MAY 2024 12:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 - Flatpak) (preloaded format=pdflatex 2024.4.4)  31 MAY 2024 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,19 +858,33 @@ Package pdftex.def Info: ./figures/stmPhotoImshow.pdf  used on input line 6.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (./0_article.bbl [7]) [8
+) (./figures/stmignd.tex
+<./figures/pos_neg_IGND.pdf, id=1020, 366.70473pt x 230.1104pt>
+File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
+<use ./figures/pos_neg_IGND.pdf>
+Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
+(pdftex.def)             Requested size: 252.0pt x 158.13026pt.
 
- <./figures/stmPhotoImshow.pdf>] (./0_article.aux)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [7]) (./0_article.bbl) [8 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_I
+GND.pdf
+
+pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/pos_neg_
+IGND.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>] (./0_article.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7343 strings out of 474116
- 136081 string characters out of 5745188
+ 7358 strings out of 474116
+ 136495 string characters out of 5745188
  1953187 words of memory out of 5000000
- 29510 multiletter control sequences out of 15000+600000
+ 29522 multiletter control sequences out of 15000+600000
  605722 words of font info for 128 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  94i,15n,107p,404b,520s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -887,10 +901,10 @@ pe1/urw/helvetic/uhvr8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></app/texlive
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (8 pages, 10291679 bytes).
+Output written on 0_article.pdf (8 pages, 10523745 bytes).
 PDF statistics:
- 1119 PDF objects out of 1200 (max. 8388607)
- 501 compressed objects within 6 object streams
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 509 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,14 +2,34 @@
 % !TeX root = ./0_article.tex
 
 \section{Validating and completing the models}
-With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
-These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not.
+\subsection{Validation the models}
+	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
+	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not.
+	
+	The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
+	The IC die measures approximately 5.5 mm \texttimes\ 4.5 mm.
+	We call these experiments "IC ground current mapping", and quite naturally, they consist in measuring in specific conditions the current at the target circuit external ground connection.
+	The entirety of the IC is mapped, and a voltage pulse is injected at each location.
+	Then, we measure the current at the circuit ground and calculate its RMS value to represent it into a two-dimensional cartography.
+	\input{./figures/stmphoto.tex}
+	Knowing the coarse structure of the considered IC, in addition to having insights on the substrate type, we could draw the coarse structure picture shown in Fig. \ref{stm_ir_photo}.
+	The "glue logic" regions are known to be made with triple-well substrates, while the "flash control" and "analog" regions are made with dual-well substrates.
+	\textcolor{orange}{The memories, however, are made of a mix of both.}
+	\input{./figures/stmignd.tex}
+	The experimental results are shown in Fig. \ref{stm_ignd}, and the experimental parameters are the following:
+	\begin{itemize}
+		\item Negative voltage pulse of 70 V amplitude;
+		\item Pulse width of 20 ns;
+		\item IC substrate thickness of 50 \textmu m.
+	\end{itemize}
+	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC subjected to positive voltage pulses, therefore we decided to avoid them at all cost.
+	When analyzing the results, we can notice significant differences in the measured current depending on various regions, and the IC floorplan seems to draw itself on the current map.
+	The measured RMS current ranges from 10 mArms to 140 mArms, and as predicted by the simulation results, in the regions where the substrate is of dual-well type, the current is higher than on regions where the substrate is of triple-well type, such as the analog block or the flash control region.
+	
+	These observations confirm the soundness of the proposed models.
+	However, as we have seen previously, these models do not consider the functional nature of the considered ICs: their logic behavior.
+	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, thus the name "hybrid simulation flow".
 
-The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
-We call these experiments "IC ground current mapping", and quite naturally, they consist in measuring in specific conditions the current at the target circuit external ground connection.
-The entirety of the IC is mapped, and a voltage pulse is injected at each location.
-Then, we measure the current at the circuit ground and calculate its RMS value to represent it into a two-dimensional cartography.
-\input{./figures/stmphoto.tex}
-Knowing the coarse structure of the considered IC, in addition to having insights on the substrate type, we could draw the coarse structure picture shown in Fig. \ref{stm_ir_photo}.
-The "glue logic" regions are known to be made with triple-well substrates, while the "flash control" and "analog" regions are made with dual-well substrates.
-\textcolor{orange}{The memories, however, are made of a mix of both.}
+\subsection{Completing the models}
+	To complete the models as they are, it is required to properly consider the logical behavior of the considered circuits, which allows for a better appreciation of BBI induced effects.
+	These additional steps consist in modeling actual logic and sequential elements  in the same technology as the considered IC, and extracting the significant disturbed signals from the SCS simulation and injecting them into these devices.
