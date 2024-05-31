@@ -1,7 +1,5 @@
 [Dolphin]
-Timestamp=2024,4,17,16,36,25.52
+Timestamp=2024,5,31,11,7,10.029
 Version=4
 ViewMode=1
-
-[Settings]
-HiddenFilesShown=true
+VisibleRoles=Details_text,Details_size,Details_modificationtime,Details_type,CustomizedDetails
