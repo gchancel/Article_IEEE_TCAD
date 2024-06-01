@@ -47,3 +47,10 @@
 		\item NSUB: the bulk voltage of the NMOS transistors.
 	\end{itemize}
 	The voltages PSUB and NSUB depend on the substrate type.
+	On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
+	On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
+	\input{./figures/fig_dffchain.tex}
+	The resulting simulated IC, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
+	The first ten inverters, the buffer and the DFF are disturbed thanks to the extracted signals.
+	The four last inverter are not disturbed and are placed here to mimic a distant logic gate receiving BBI disturbed logic signals.
+	The simulations are performed, as previously, for both a dual-well scenario and a triple-well scenario.
