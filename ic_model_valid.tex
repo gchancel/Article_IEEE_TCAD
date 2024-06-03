@@ -54,5 +54,7 @@
 	\input{./figures/fig_dffchain.tex}
 	The resulting simulated logic circuit, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
 	The first ten inverters, the buffer and the DFF are disturbed thanks to the extracted signals.
-	The four last inverter are not disturbed and are placed here to mimic a distant logic gate receiving BBI disturbed logic signals.
+	The four last inverter are not disturbed and are powered with ideal power signals.
+	Their role is to mimic a distant logic block receiving the DFF "BBI disturbed" logic signals.
 	The simulations are performed, as previously, for both a dual-well scenario and a triple-well scenario.
+	However, and for simplicity showing the results, we did not consider the positive pulse case, as we observed high level of destructiveness on actual ICs.
