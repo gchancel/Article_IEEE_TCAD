@@ -33,28 +33,52 @@
 \subsection{Completing the models}
 	As we have stated previously, it is required, to complete the models, to properly consider the logical behavior of the considered circuits, which allows for a better appreciation of BBI induced effects and their consequences.
 	These additional steps consist in modeling actual logic and sequential elements in the same or in a close technology as the considered IC, while extracting the significant disturbed signals from the SCS simulation and injecting them into these logic devices.
-	\input{./figures/fig_ivxmos}
-	For this purpose, we modeled an inverter, a buffer and a DFF.
-	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
-%	\input{./figures/fig_dffmos.tex}
-%	The complete DFF schematic is shown in Fig. \ref{dffmos}.
-
-	Each logic element is connected to four external signals:
-%	The significant extracted signals are the following:
+	For this purpose, split this section into two subsections:
 	\begin{itemize}
-		\item VDD: the power supply voltage;
-		\item VSS: the power supply reference voltage;
-		\item PSUB: the bulk voltage of the PMOS transistors;
-		\item NSUB: the bulk voltage of the NMOS transistors.
+		\item A first section dedicated to studying a static logic gate: the classical inverter;
+		\item A second section dedicated to studying a sequential element: the DFF.
 	\end{itemize}
-	These are the signals which are extracted from the SCS simulations.
-	The voltages PSUB and NSUB depend on the substrate type.
-	On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
-	On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
-	\input{./figures/fig_dffchain.tex}
-	The resulting simulated logic circuit, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
-	The first ten inverters, the buffer and the DFF are disturbed thanks to the extracted signals.
-	The four last inverter are not disturbed and are powered with ideal power signals.
-	Their role is to mimic a distant logic block receiving the DFF "BBI disturbed" logic signals.
-	The simulations are performed, as previously, for both a dual-well scenario and a triple-well scenario.
-	However, and for simplicity showing the results, we did not consider the positive pulse case, as we observed high level of destructiveness on actual ICs.
+
+	\subsubsection{Static inverters under BBI}
+	\input{./figures/fig_ivxmos}
+		Because inverters can have two stable output states, we will consider two cases for each substrate scenario, as it is illustrated on the model shown in Fig. \ref{ivxbufmos}.
+		The inverters are connected to four external signals which are extracted from the previous SCS simulation:
+		\begin{itemize}
+				\item VDD: the power supply voltage;
+				\item VSS: the power supply reference voltage;
+				\item PSUB: the bulk voltage of the PMOS transistors;
+				\item NSUB: the bulk voltage of the NMOS transistors.
+			\end{itemize}
+		The voltages PSUB and NSUB depend on the substrate type.
+		On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
+		On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
+
+%	For this purpose, we modeled an inverter, a buffer and a DFF.
+%	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
+%%	\input{./figures/fig_dffmos.tex}
+%%	The complete DFF schematic is shown in Fig. \ref{dffmos}.
+%
+%	Each logic element is connected to four external signals:
+%%	The significant extracted signals are the following:
+%	\begin{itemize}
+%		\item VDD: the power supply voltage;
+%		\item VSS: the power supply reference voltage;
+%		\item PSUB: the bulk voltage of the PMOS transistors;
+%		\item NSUB: the bulk voltage of the NMOS transistors.
+%	\end{itemize}
+%	These are the signals which are extracted from the SCS simulations.
+%	The voltages PSUB and NSUB depend on the substrate type.
+%	On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
+%	On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
+%	\input{./figures/fig_dffchain.tex}
+%	The resulting simulated logic circuit, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
+%	The first ten inverters, the buffer and the DFF are disturbed thanks to the extracted signals.
+%	The four last inverter are not disturbed and are powered with ideal power signals.
+%	Their role is to mimic a distant logic block receiving the DFF "BBI disturbed" logic signals.
+%	The simulations are performed, as previously, for both a dual-well scenario and a triple-well scenario.
+%	However, and for simplicity showing the results, we did not consider the positive pulse case, as we observed high level of destructiveness on actual ICs.
+%
+%	Presenting such results on a logic path embedding a DFF on a digital or physical static medium is not an easy task.
+%	Therefore, we have chosen some specific time during the simulation where we think the results are noteworthy.
+%	However, every simulation step is useful to some extent.
+%	Therefore, we provide additional simulation results in our GitHub repository dedicated to this paper (\textcolor{red}{mettre repo ?}).
