@@ -5,7 +5,7 @@
 \subsection{Validation the models}
 	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
 	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not.
-	
+
 	The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
 	The IC die measures approximately 5.5 mm \texttimes\ 4.5 mm.
 	We call these experiments "IC ground current mapping", and quite naturally, they consist in measuring in specific conditions the current at the target circuit external ground connection.
@@ -25,7 +25,7 @@
 	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC subjected to positive voltage pulses, therefore we decided to avoid them at all cost.
 	When analyzing the results, we can notice significant differences in the measured current depending on various regions, and the IC floorplan seems to draw itself on the current map.
 	The measured RMS current ranges from 10 mArms to 140 mArms, and as predicted by the simulation results, in the regions where the substrate is of dual-well type, the current is higher than on regions where the substrate is of triple-well type, such as the analog block or the flash control region.
-	
+
 	These observations confirm the soundness of the proposed models.
 	However, as we have seen previously, these models do not consider the functional nature of the considered ICs: their logic behavior.
 	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, thus the name "hybrid simulation flow".
@@ -36,9 +36,9 @@
 	\input{./figures/fig_ivxmos}
 	For this purpose, we modeled an inverter, a buffer and a DFF.
 	The inverter and buffer schematics, alongside the transistors sizes, are shown in Fig. \ref{ivxbufmos}.
-	\input{./figures/fig_dffmos.tex}
-	The complete DFF schematic is shown in Fig. \ref{dffmos}.
-	
+%	\input{./figures/fig_dffmos.tex}
+%	The complete DFF schematic is shown in Fig. \ref{dffmos}.
+
 	The significant extracted signals are the following:
 	\begin{itemize}
 		\item VDD: the power supply voltage;
@@ -50,7 +50,7 @@
 	On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
 	On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
 	\input{./figures/fig_dffchain.tex}
-	The resulting simulated IC, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
+	The resulting simulated logic circuit, combining several inverters, a buffer and a DFF, is shown in Fig. \ref{dffChain}.
 	The first ten inverters, the buffer and the DFF are disturbed thanks to the extracted signals.
 	The four last inverter are not disturbed and are placed here to mimic a distant logic gate receiving BBI disturbed logic signals.
 	The simulations are performed, as previously, for both a dual-well scenario and a triple-well scenario.
