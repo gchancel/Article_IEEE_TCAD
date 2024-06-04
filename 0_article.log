@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  3 JUN 2024 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.27)  4 JUN 2024 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,13 +865,12 @@ File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 158.13026pt.
 ) (./figures/fig_ivxmos.tex
-<./figures/IVX4.pdf, id=1026, 144.54pt x 84.315pt>
+<./figures/IVX4.pdf, id=1026, 144.54pt x 88.83188pt>
 File: ./figures/IVX4.pdf Graphic file (type pdf)
 <use ./figures/IVX4.pdf>
 Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
-(pdftex.def)             Requested size: 252.0pt x 147.00792pt.
-)) (./0_article.bbl
-[8 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
+(pdftex.def)             Requested size: 252.0pt x 154.88338pt.
+) [8 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/pos_neg_IGND.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -879,35 +878,51 @@ ion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/IVX4.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->]) [9
+>] (./figures/invertersimu.tex
+<./figures/logic_gates_solo_M0_DW.pdf, id=1074, 635.73172pt x 893.16866pt>
+File: ./figures/logic_gates_solo_M0_DW.pdf Graphic file (type pdf)
+<use ./figures/logic_gates_solo_M0_DW.pdf>
+Package pdftex.def Info: ./figures/logic_gates_solo_M0_DW.pdf  used on input li
+ne 7.
+(pdftex.def)             Requested size: 127.51117pt x 179.13483pt.
+<./figures/logic_gates_solo_M0_TW.pdf, id=1075, 622.0313pt x 897.9932pt>
+File: ./figures/logic_gates_solo_M0_TW.pdf Graphic file (type pdf)
+<use ./figures/logic_gates_solo_M0_TW.pdf>
+Package pdftex.def Info: ./figures/logic_gates_solo_M0_TW.pdf  used on input li
+ne 8.
+(pdftex.def)             Requested size: 124.48883pt x 179.71877pt.
+)) (./0_article.bbl) [9 <./figures/logic_gates_solo_M0_DW.pdf> <./figures/logic
+_gates_solo_M0_TW.pdf
 
-] (./0_article.aux) ) 
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/logic_gates_solo_M0_TW.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>] (./0_article.aux) ) 
 Here is how much of TeX's memory you used:
- 7418 strings out of 476034
- 139055 string characters out of 5792854
+ 7438 strings out of 476041
+ 139812 string characters out of 5793164
  1876388 words of memory out of 6000000
- 27645 multiletter control sequences out of 15000+600000
+ 27659 multiletter control sequences out of 15000+600000
  559940 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,15n,91p,404b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/geoffpro/.texlive2023/texmf-var/fonts/pk/ljfour/pu
-blic/skull/skull.400pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (9 pages, 10508938 bytes).
+ </home/geoff/.texlive2023/texmf-var/fonts/pk/ljfour/publ
+ic/skull/skull.400pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 0_article.pdf (9 pages, 10663174 bytes).
 PDF statistics:
- 1143 PDF objects out of 1200 (max. 8388607)
- 516 compressed objects within 6 object streams
+ 2433 PDF objects out of 2487 (max. 8388607)
+ 1371 compressed objects within 14 object streams
  0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

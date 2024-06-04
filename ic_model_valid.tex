@@ -40,8 +40,9 @@
 	\end{itemize}
 
 	\subsubsection{Static inverters under BBI}
-	\input{./figures/fig_ivxmos}
-		Because inverters can have two stable output states, we will consider two cases for each substrate scenario, as it is illustrated on the model shown in Fig. \ref{ivxbufmos}.
+		\input{./figures/fig_ivxmos}
+		Because inverters can have two stable output states, we will consider two cases for each substrate scenario: a normally high inverter (Fig. \ref{ivxbufmos}.a) and a normally low inverter (Fig. \ref{ivxbufmos}.b).
+%		 as it is illustrated on the model shown in Fig. \ref{ivxbufmos}: a normally high and a normally low inverter.
 		The inverters are connected to four external signals which are extracted from the previous SCS simulation:
 		\begin{itemize}
 				\item VDD: the power supply voltage;
@@ -52,6 +53,26 @@
 		The voltages PSUB and NSUB depend on the substrate type.
 		On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
 		On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
+		
+		All of this gives us four scenarios	 to study.
+		For clarity and because two of the four scenario are less noteworthy, we will only talk about two of them:
+		\begin{itemize}
+			\item The triple-well substrate and the normally high inverter;
+			\item The dual-well substrate and the normally low inverter.
+		\end{itemize}
+		Then, for each scenario, we will analyze seven signals of interest:
+		\begin{itemize}
+			\item The backside voltage pulse, for reference purposes;
+			\item The local differential power supply voltage;
+			\item The current sum of the inverter;
+			\item The inverter load current;
+			\item The inverter output;
+			\item The NSUB voltage;
+			\item the PSUB voltage.
+		\end{itemize}
+		The signals extracted from the SCS simulations come from the standard-cell located directly below the BBI probe, a.k.a the cell targeted by the injection.
+		\input{./figures/invertersimu}
+		Fig. \ref{ivxsimu} presents the inverter simulation results for both considered scenarios.
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
