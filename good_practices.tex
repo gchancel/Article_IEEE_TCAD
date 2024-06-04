@@ -13,8 +13,16 @@
 		\item The IC target.
 	\end{itemize}
 	In addition to this, the schematic shows some important flaws we are going to address.
-	While this is not always the case, pulse generator are typically specified to be loaded with a 50 \textomega load.
-	Three main flaws lie in the platform in its current state:
-	\begin{itemize}
-		\item The pulse generator
-	\end{itemize}
+	
+	While this is not always the case, voltage pulse generators are typically specified to be loaded with a 50 \textOmega\ load, or more generally with a fixed load.
+	When performing BBI, the backside of the IC is electrically connected to the generator output.
+	Therefore, outside of luck alone, it is very rare that the impedance presented by the IC to the generator perfectly matches the required one.
+	It implies that the generator will be, most of the time, out of specifications, and that the conditions will vary depending on the chosen IC and the location of the BBI probe.
+	This represents a first flaw to the typical approach.
+	
+	Then
+	
+%	Three main flaws lie in the platform in its current state:
+%	\begin{itemize}
+%		\item The pulse generator
+%	\end{itemize}
