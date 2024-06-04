@@ -18,9 +18,16 @@
 	When performing BBI, the backside of the IC is electrically connected to the generator output.
 	Therefore, outside of luck alone, it is very rare that the impedance presented by the IC to the generator perfectly matches the required one.
 	It implies that the generator will be, most of the time, out of specifications, and that the conditions will vary depending on the chosen IC and the location of the BBI probe.
-	This represents a first flaw to the typical approach.
+	This can cause issues such as errors in the set-point voltage and pulse width, and ringing in the transmission line.
+	It then represents a first flaw to the typical approach.
 	
-	Then
+	Then, there is the grounding installation.
+	The model presents a non-ideal but simple platform grounding.
+	The reference, used by the oscilloscope and the main computer, is represented in blue and called "equipment ground".
+	Ideally, every ground on the platform is connected to this reference with a very low impedance interconnection.
+	However, depending on the hardware used, it may greatly vary from one platform to another.
+	In the model, the secondaries generator and target grounds are connected to the reference thanks to vastly imperfect interconnections, whose impedance is significantly higher than zero.
+	This can lead to various issues such as set-point errors, 
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
