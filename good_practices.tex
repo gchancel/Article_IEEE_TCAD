@@ -51,6 +51,31 @@
 		To show the actual interests of these improvements, let us analyze signals from an actual platform.
 		
 		We will compare before and after results and analyze the differences made by these improvements.
+		To that end, we set up simple experiments consisting in injecting a voltage pulse into our IC target, measuring the voltage pulse at the probe and the current in the IC.
+		\input{./figures/actual_improvements.tex}
+		Fig. \ref{actual_imp} presents the waveform results of such experiments.
+		The figure is split in two main parts, the top row shows the results before the improvements, and the bottom row shows the results after the improvements.
+		The experimental conditions are the following:
+		\begin{itemize}
+			\item Voltage pulse amplitude = -140 V;
+			\item Voltage pulse width = 20 ns;
+			\item Rise and fall times = 4 ns.
+		\end{itemize}
+		
+		The waveform S1P shows in blue the ideal waveform according to the generator settings and in red the measured waveform.
+		In addition to this are annotated some noteworthy values.
+		The first thing to notice here is the obvious undershoot of about -110 \% under the set-point.
+		It is far from being desirable when performing fault injection as the voltage amplitude is of great importance when considering the method effects on the IC.
+		Furthermore, the pulse width is 275 \& higher than the set-point, measuring 75 ns instead of 20 ns.
+		It is an additional issue as it annihilates the accuracy needed in this context, and leads to longer pulses injected into the IC and potentially more energy than required.
+		Additionally, the rise and fall times are also 4 to 16 times higher than expected.
+		Eventually, we can notice damped oscillations, probably the proof of ringing in the transmission line.
+		
+		Then, the waveform S1G, associated with the previous one, shows the IC ground current.
+		Here, the damped oscillations are more clearly visible, in addition to the much longer than expected pulse duration.
+		The RMS value of the injected current measures around 25 mA.
+		
+		Afterwards, 
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
