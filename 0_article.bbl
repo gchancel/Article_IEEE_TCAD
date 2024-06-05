@@ -93,4 +93,11 @@ Colin O'Flynn.
 \newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
 \newblock \url{https://eprint.iacr.org/2023/1195}.
 
+\bibitem{giraudDfa}
+Christophe Giraud.
+\newblock Dfa on aes.
+\newblock In Hans Dobbertin, Vincent Rijmen, and Aleksandra Sowa, editors, {\em
+  Advanced Encryption Standard -- AES}, pages 27--41, Berlin, Heidelberg, 2005.
+  Springer Berlin Heidelberg.
+
 \end{thebibliography}

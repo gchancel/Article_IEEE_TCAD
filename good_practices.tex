@@ -75,7 +75,35 @@
 		Here, the damped oscillations are more clearly visible, in addition to the much longer than expected pulse duration.
 		The RMS value of the injected current measures around 25 mA.
 		
-		Afterwards, 
+		Afterwards, the waveform S2P shows the results with the proposed improvements
+		The voltage pulse amplitude is much closer to the set-point, with an undershoot of -31 \%.
+		It is not perfect, but considering the simple nature of the impedance matching we propose, it was to be expected.
+		On another note, the pulse width set-point is perfectly respected.
+		However, the rise and fall times are still 4 times higher.
+		Then, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
+		
+	\subsection{Further platform improvements comparison}
+		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
+		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
+		We chose to perform a single bit DFA ou our IC target.
+		The target embeds a dedicated cryptographic core, which we set up using a 128 bits AES.
+		We then decided to perform the Giraud's DFA \cite{giraudDfa}, originally described in 2002.
+		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and powered with 3.3 V for the experiment.
+		
+		\subsubsection{Preliminary experiments}
+			Before setting up the attack, we had to set up experiments allowing us to find the optimal locations in the AES sub-circuit where the attack could be performed.
+			To do so, we created what we call Fault Analysis Mappings (FAM).
+			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, while analyzing the IC behavior to BBI.
+			The behavior is split into seven cases:
+			\begin{itemize}
+				\item Correct: the AES responds normally;
+				\item Monobit Monobyte fault;
+				\item Multibit Monobyte faults;
+				\item Monobit Multibyte faults;
+				\item Multibit Multibyte faults;
+				\item Crash: the circuit did not respond correctly;
+				\item Timeout: the circuit did not respond.
+			\end{itemize}
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
