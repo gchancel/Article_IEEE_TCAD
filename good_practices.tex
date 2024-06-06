@@ -88,12 +88,13 @@
 		We chose to perform a single bit DFA ou our IC target.
 		The target embeds a dedicated cryptographic core, which we set up using a 128 bits AES.
 		We then decided to perform the Giraud's DFA \cite{giraudDfa}, originally described in 2002.
+		This attack requires creating single bit faults in one or more bytes on the targeted AES.
 		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and powered with 3.3 V for the experiment.
 		
 		\subsubsection{Preliminary experiments}
 			Before setting up the attack, we had to set up experiments allowing us to find the optimal locations in the AES sub-circuit where the attack could be performed.
 			To do so, we created what we call Fault Analysis Mappings (FAM).
-			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, while analyzing the IC behavior to BBI.
+			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, and analyzing the IC behavior while performing BBI.
 			The behavior is split into seven cases:
 			\begin{itemize}
 				\item Correct: the AES responds normally;
@@ -104,6 +105,17 @@
 				\item Crash: the circuit did not respond correctly;
 				\item Timeout: the circuit did not respond.
 			\end{itemize}
+			Therefore, as we need single bit faults, only two cases are valid for the Giraud's DFA.
+			To be able to compare the two platforms, we performed a FAM on each one of them, using the following parameters:
+			\begin{itemize}
+				\item Pulse amplitude: from -150 V to -400 V with -5 V steps;
+				\item Pulse width = 4.5 ns;
+				\item Pulse delay of 150 ns + 553 ns targeting the penultimate AES round;
+				\item A 40 mm displacement step.
+			\end{itemize}
+			Depending on the IC behavior, the experiments cant take up to 36 hours.
+			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
+			\input{./figures/aesGiraud.tex}
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
