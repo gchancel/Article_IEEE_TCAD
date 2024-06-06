@@ -150,8 +150,8 @@
 			Thanks to this, we retrieved, using the five locations, 14 out of 16 bytes of the AES secret key, as shown in Table \ref{table_giraud}.
 			The red cells indicate the two byes not retrieved thanks to the Giraud's DFA.
 			To retrieve these last two bytes, we used a brute force method.
-			Indeed, the 16 bits left are quite easy to retrieve using a common machine.
-			It took us around 10 seconds using a slow laptop.
+			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every possibility.
+			That represents around 6.5 seconds of total computation.
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}

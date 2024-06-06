@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.27)  6 JUN 2024 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.27)  6 JUN 2024 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,19 +1048,16 @@ Overfull \hbox (0.84283pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-) (./mos_passive.tex
-<./figures/std_cell_logic_passive.pdf, id=270, 341.43306pt x 170.71654pt>
+) [4 <./figures/psu_std_cell.pdf>] (./mos_passive.tex
+<./figures/std_cell_logic_passive.pdf, id=284, 341.43306pt x 170.71654pt>
 File: ./figures/std_cell_logic_passive.pdf Graphic file (type pdf)
 <use ./figures/std_cell_logic_passive.pdf>
 Package pdftex.def Info: ./figures/std_cell_logic_passive.pdf  used on input li
 ne 6.
 (pdftex.def)             Requested size: 252.0pt x 126.00262pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [4 <./figures/psu_std_cell.pdf>] (./figures/fig_substrate.tex
-<./figures/substrate_2.pdf, id=282, 295.61868pt x 303.73332pt>
+)
+(./figures/fig_substrate.tex
+<./figures/substrate_2.pdf, id=285, 295.61868pt x 303.73332pt>
 File: ./figures/substrate_2.pdf Graphic file (type pdf)
 <use ./figures/substrate_2.pdf>
 Package pdftex.def Info: ./figures/substrate_2.pdf  used on input line 6.
@@ -1071,15 +1068,13 @@ Underfull \hbox (badness 3148) in paragraph at lines 66--67
  []
 
 (./figures/fig_stdcellmodel.tex
-<./figures/dual+triple3.png, id=283, 3011.25pt x 1912.14375pt>
+<./figures/dual+triple3.png, id=286, 3011.25pt x 1912.14375pt>
 File: ./figures/dual+triple3.png Graphic file (type png)
 <use ./figures/dual+triple3.png>
 Package pdftex.def Info: ./figures/dual+triple3.png  used on input line 6.
 (pdftex.def)             Requested size: 490.19843pt x 311.25945pt.
-) (./table_op_point.tex
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [5 <./figures/std_cell_logic_passive.pdf> <./figures/substrate_2.pdf
+) (./table_op_point.tex [5 <./figures/std_cell_logic_passive.pdf> <./figures/su
+bstrate_2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/substrate_2.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
@@ -1089,7 +1084,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
 gative/vddMgndManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.7>, b
 ut at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf, id
-=306, 535.2497pt x 362.85562pt>
+=309, 535.2497pt x 362.85562pt>
 File: ./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pd
 f Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf
@@ -1103,7 +1098,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
 gative/iEpiDualWellManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.
 7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropped.pd
-f, id=307, 558.58687pt x 362.85562pt>
+f, id=310, 558.58687pt x 362.85562pt>
 File: ./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropp
 ed.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-croppe
@@ -1117,7 +1112,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
 gative/iSubcManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.7>, but
  at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf, id=3
-08, 798.73407pt x 224.33812pt>
+11, 798.73407pt x 224.33812pt>
 File: ./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf 
 Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf>
@@ -1130,7 +1125,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
 gative/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140eT10_
-ExcDw-cropped.pdf, id=309, 706.13812pt x 234.8775pt>
+ExcDw-cropped.pdf, id=312, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140
 eT10_ExcDw-cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140e
@@ -1138,7 +1133,7 @@ T10_ExcDw-cropped.pdf>
 Package pdftex.def Info: ./figures/modelesSimusResul/dualWell/negative/CurrentD
 istributionNormT140eT10_ExcDw-cropped.pdf  used on input line 20.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
-<./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf, id=310, 5
+<./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf, id=313, 5
 55.57562pt x 365.11406pt>
 File: ./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf Graph
 ic file (type pdf)
@@ -1146,7 +1141,7 @@ ic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/dualWell/positive/pdn_dw_p
 ositif300.pdf  used on input line 30.
 (pdftex.def)             Requested size: 252.0pt x 165.60902pt.
-<./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf, id=311, 
+<./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf, id=314, 
 550.47705pt x 365.62901pt>
 File: ./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf Grap
 hic file (type pdf)
@@ -1154,7 +1149,7 @@ hic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/dualWell/positive/iepi_dw_
 positif300.pdf  used on input line 33.
 (pdftex.def)             Requested size: 252.0pt x 167.37685pt.
-<./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf, id=312, 
+<./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf, id=315, 
 789.33653pt x 227.99149pt>
 File: ./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf Grap
 hic file (type pdf)
@@ -1168,7 +1163,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/po
 sitive/isubDensity_dw_positif300-cropped.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-croppe
-d.pdf, id=313, 706.13812pt x 234.8775pt>
+d.pdf, id=316, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-c
 ropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-cr
@@ -1182,7 +1177,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 negative/vddMgndManuscritTw-cropped.pdf): PDF inclusion: found PDF version <1.7
 >, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped.pdf
-, id=314, 544.28343pt x 362.85562pt>
+, id=317, 544.28343pt x 362.85562pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-croppe
 d.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped
@@ -1196,7 +1191,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 negative/iEpiTripleWellManuscrit-cropped.pdf): PDF inclusion: found PDF version
  <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-croppe
-d.pdf, id=315, 551.81157pt x 362.85562pt>
+d.pdf, id=318, 551.81157pt x 362.85562pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-c
 ropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-cr
@@ -1210,7 +1205,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 negative/iSubcManuscritTws-cropped.pdf): PDF inclusion: found PDF version <1.7>
 , but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped.pdf,
- id=316, 803.25093pt x 224.33812pt>
+ id=319, 803.25093pt x 224.33812pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped
 .pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped.
@@ -1224,7 +1219,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 negative/CurrentDistributionNormT140eT10_ExcTw-cropped.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT140eT1
-0_ExcTw-cropped.pdf, id=317, 706.13812pt x 234.8775pt>
+0_ExcTw-cropped.pdf, id=320, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT1
 40eT10_ExcTw-cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT14
@@ -1232,7 +1227,7 @@ File: ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT1
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/negative/Curren
 tDistributionNormT140eT10_ExcTw-cropped.pdf  used on input line 58.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
-<./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf, id=318,
+<./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf, id=321,
  536.78993pt x 364.1234pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf Gra
 phic file (type pdf)
@@ -1240,7 +1235,7 @@ phic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/positive/pdn_tw
 _positif300.pdf  used on input line 68.
 (pdftex.def)             Requested size: 252.0pt x 170.93799pt.
-<./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf, id=319
+<./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf, id=322
 , 549.72423pt x 364.8762pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf Gr
 aphic file (type pdf)
@@ -1248,7 +1243,7 @@ aphic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/positive/iepi_t
 w_positif300.pdf  used on input line 71.
 (pdftex.def)             Requested size: 252.0pt x 167.26048pt.
-<./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf, id=320
+<./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf, id=323
 , 788.58371pt x 227.99149pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf Gr
 aphic file (type pdf)
@@ -1262,7 +1257,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 positive/isubDensity_tw_positif300-cropped.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-crop
-ped.pdf, id=321, 706.13812pt x 234.8775pt>
+ped.pdf, id=324, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300
 -cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-
@@ -1310,13 +1305,13 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 4.
 
 )) (./ic_model_valid.tex [9] (./figures/stmphoto.tex
-<./figures/stmPhotoImshow.pdf, id=1276, 293.59688pt x 234.8775pt>
+<./figures/stmPhotoImshow.pdf, id=1279, 293.59688pt x 234.8775pt>
 File: ./figures/stmPhotoImshow.pdf Graphic file (type pdf)
 <use ./figures/stmPhotoImshow.pdf>
 Package pdftex.def Info: ./figures/stmPhotoImshow.pdf  used on input line 6.
 (pdftex.def)             Requested size: 209.16046pt x 167.32686pt.
 ) (./figures/stmignd.tex
-<./figures/pos_neg_IGND.pdf, id=1277, 366.70473pt x 230.1104pt>
+<./figures/pos_neg_IGND.pdf, id=1280, 366.70473pt x 230.1104pt>
 File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
 <use ./figures/pos_neg_IGND.pdf>
 Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
@@ -1326,7 +1321,7 @@ Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./figures/fig_ivxmos.tex
-<./figures/IVX4.pdf, id=1278, 144.54pt x 88.83188pt>
+<./figures/IVX4.pdf, id=1281, 144.54pt x 88.83188pt>
 File: ./figures/IVX4.pdf Graphic file (type pdf)
 <use ./figures/IVX4.pdf>
 Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
@@ -1340,13 +1335,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/pos_neg_IGND.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >] (./figures/invertersimu.tex
-<./figures/logic_gates_solo_M0_DW.pdf, id=1321, 635.73172pt x 893.16866pt>
+<./figures/logic_gates_solo_M0_DW.pdf, id=1324, 635.73172pt x 893.16866pt>
 File: ./figures/logic_gates_solo_M0_DW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_DW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_DW.pdf  used on input li
 ne 7.
 (pdftex.def)             Requested size: 127.51117pt x 179.13483pt.
-<./figures/logic_gates_solo_M0_TW.pdf, id=1322, 622.0313pt x 897.9932pt>
+<./figures/logic_gates_solo_M0_TW.pdf, id=1325, 622.0313pt x 897.9932pt>
 File: ./figures/logic_gates_solo_M0_TW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_TW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_TW.pdf  used on input li
@@ -1375,7 +1370,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  8808 strings out of 476041
  163759 string characters out of 5793164
- 1877388 words of memory out of 6000000
+ 1876388 words of memory out of 6000000
  28984 multiletter control sequences out of 15000+600000
  560624 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1386,19 +1381,22 @@ Here is how much of TeX's memory you used:
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/cbfonts/grmn1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/latxfont/lcircle1.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
-r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (12 pages, 11226446 bytes).
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grm
+n1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/l
+circle1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on 0_article.pdf (12 pages, 11250834 bytes).
 PDF statistics:
- 2694 PDF objects out of 2984 (max. 8388607)
- 1428 compressed objects within 15 object streams
+ 2709 PDF objects out of 2984 (max. 8388607)
+ 1437 compressed objects within 15 object streams
  0 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
