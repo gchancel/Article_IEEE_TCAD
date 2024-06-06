@@ -116,6 +116,42 @@
 			Depending on the IC behavior, the experiments cant take up to 36 hours.
 			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
 			\input{./figures/aesGiraud.tex}
+			Fig. \ref{giraud_fam} presents the FAM results for both a typical and an improved platform.
+			The mapped area encloses a little more than the actual AES, to be sure to map its entirety.
+			
+			Let us look at Fig. \ref{giraud_fam}.a first.
+			What is interesting here is that we can spot numerous location where the circuit crashed.
+			More specifically, they represent 70 \% of the mapped area.
+			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
+			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
+			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
+			
+			Then, let us discuss Fig. \ref{giraud_fam}.b.
+			The first interesting thing to remark is the total absence of IC crash.
+			It is a desirable behavior as it indicates that we did not set a too high voltage pulse.
+			Then, concerning monobit faults, we can spot five locations.
+			It is a good sign for a preliminary experiment as it indicates the feasibility of such faults.
+			It does not mean that we can perform the attack on one location.
+			However, it means that we can use these locations as good starting points to perform the DFA.
+			
+		\subsubsection{DFA results}
+			To perform the DFA, we focused on the five previously found monobit locations above the AES core.
+			Then, for each location, we used the following parameters:
+			\begin{itemize}
+				\item Voltage ranging from -300 V to -600 V;
+				\item Pulse width ranging from 4.5 ns to 5.5 ns;
+				\item Injection delay ranging from \textpm 10 ns around the penultimate AES round.
+			\end{itemize}
+			For each set of experimental settings, we had to set some limits when trying to inject faults.
+			Indeed, it is required to create a finite experiment.
+			The first limit consists in trying to retrieve a maximum of 100 single bit fault.
+			Then, and because it cannot be achieved for every set of parameters, we set another limit of 10000 tries to achieve the previous limit.
+			\input{./figures/table_dfa.tex}
+			Thanks to this, we retrieved, using the five locations, 14 out of 16 bytes of the AES secret key, as shown in Table \ref{table_giraud}.
+			The red cells indicate the two byes not retrieved thanks to the Giraud's DFA.
+			To retrieve these last two bytes, we used a brute force method.
+			Indeed, the 16 bits left are quite easy to retrieve using a common machine.
+			It took us around 10 seconds using a slow laptop.
 	
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
