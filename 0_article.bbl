@@ -4,12 +4,12 @@
 Mathieu Dumont, Philippe Maurine, and Mathieu Lisart.
 \newblock Modeling of electromagnetic fault injection.
 \newblock In {\em 2019 12th International Workshop on the Electromagnetic
-  Compatibility of Integrated Circuits (EMC Compo)}, pages 246--248, 2019.
+  Compatibility of Integrated Circuits ({EMC} Compo)}, pages 246--248, 2019.
 
 \bibitem{mathieuEMFI}
 M.~Lisart M.~Dumont and P.~Maurine.
 \newblock Modeling and simulating electromagnetic fault injection.
-\newblock {\em IEEE Transactions on Computer-Aided Design of Integrated
+\newblock {\em {IEEE} Transactions on Computer-Aided Design of Integrated
   Circuits and Systems}, 40(4):680--693, 2021.
 
 \bibitem{lfiFaultModel}
@@ -17,10 +17,10 @@ Jean-Max Dutertre, Vincent Beroulle, Philippe Candelier, Stephan De~Castro,
   Louis-Barthelemy Faber, Marie-Lise Flottes, Philippe Gendrier, David Hély,
   Regis Leveugle, Paolo Maistri, Giorgio Di~Natale, Athanasios Papadimitriou,
   and Bruno Rouzeyre.
-\newblock Laser fault injection at the cmos 28 nm technology node: an analysis
-  of the fault model.
+\newblock Laser fault injection at the {CMOS} 28 nm technology node: an
+  analysis of the fault model.
 \newblock In {\em 2018 Workshop on Fault Diagnosis and Tolerance in
-  Cryptography (FDTC)}, pages 1--6, 2018.
+  Cryptography ({FDTC})}, pages 1--6, 2018.
 
 \bibitem{bbiOrigin}
 Philippe Maurine, Karim Tobich, Thomas Ordas, and Pierre-Yvan Liardet.
@@ -53,16 +53,16 @@ Colin O'Flynn.
 Takuya Wadatsumi, Kohei Kawai, Rikuu Hasegawa, Takuji Miki, Makoto Nagata,
   Kikuo Muramatsu, Hiromu Hasegawa, Takuya Sawada, Takahito Fukushima, and
   Hisashi Kondo.
-\newblock Voltage surges by backside esd impacts on ic chip in flip chip
+\newblock Voltage surges by backside {ESD} impacts on {IC} chip in flip chip
   packaging.
-\newblock In {\em 2022 IEEE International Reliability Physics Symposium
-  (IRPS)}, pages P14--1--P14--6, 2022.
+\newblock In {\em 2022 {IEEE} International Reliability Physics Symposium
+  ({IRPS})}, pages P14--1--P14--6, 2022.
 
 \bibitem{japbbi2}
 Takuya Wadatsumi, Kohei Kawai, Rikuu Hasegawa, Kazuki Monta, Takuji Miki, and
   Makoto Nagata.
-\newblock Characterization of backside esd impacts on integrated circuits.
-\newblock In {\em 2023 IEEE International Reliability Physics Symposium
+\newblock Characterization of backside {ESD} impacts on integrated circuits.
+\newblock In {\em 2023 {IEEE} International Reliability Physics Symposium
   2IRPS)}, pages 1--6, 2023.
 
 \bibitem{mybbiCosade}
@@ -77,26 +77,26 @@ G.~Chancel, Jean-Marc Gallière, and P.~Maurine.
 \newblock Body biasing injection: Impact of substrate types on the induced
   disturbancesƒ.
 \newblock In {\em 2022 Workshop on Fault Detection and Tolerance in
-  Cryptography (FDTC)}, pages 50--60, 2022.
+  Cryptography ({FDTC})}, pages 50--60, 2022.
 
 \bibitem{mybbifdtc2023}
 G.~Chancel, J.-M. Galliere, and P.~Maurine.
 \newblock A better practice for body biasing injection.
 \newblock In {\em 2023 Workshop on Fault Detection and Tolerance in
-  Cryptography (FDTC)}, pages 48--59, 2023.
+  Cryptography ({FDTC})}, pages 48--59, 2023.
 
 \bibitem{colinFdtc2023}
 Colin O'Flynn.
-\newblock Picoemp: A low-cost emfi platform compared to bbi and voltage fault
-  injection using tdc and external vcc measurements.
+\newblock Picoemp: A low-cost emfi platform compared to {BBI} and voltage fault
+  injection using {TDC} and external {VCC} measurements.
 \newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
 \newblock \url{https://eprint.iacr.org/2023/1195}.
 
 \bibitem{giraudDfa}
 Christophe Giraud.
-\newblock Dfa on aes.
+\newblock {DFA} on {AES}.
 \newblock In Hans Dobbertin, Vincent Rijmen, and Aleksandra Sowa, editors, {\em
-  Advanced Encryption Standard -- AES}, pages 27--41, Berlin, Heidelberg, 2005.
-  Springer Berlin Heidelberg.
+  Advanced Encryption Standard -- {AES}}, pages 27--41, Berlin, Heidelberg,
+  2005. Springer Berlin Heidelberg.
 
 \end{thebibliography}
