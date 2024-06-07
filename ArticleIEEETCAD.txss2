@@ -29,7 +29,7 @@
                 "Col": 9,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
-                "FirstLine": 105,
+                "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 115
             },
@@ -37,7 +37,7 @@
                 "Col": 0,
                 "EditorGroup": 0,
                 "FileName": "references.bib",
-                "FirstLine": 522,
+                "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 533
             },
@@ -61,7 +61,7 @@
                 "Col": 113,
                 "EditorGroup": 0,
                 "FileName": "simuResults.tex",
-                "FirstLine": 53,
+                "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 78
             },
@@ -69,7 +69,7 @@
                 "Col": 139,
                 "EditorGroup": 0,
                 "FileName": "ic_modeling_v2.tex",
-                "FirstLine": 182,
+                "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 184
             },
@@ -77,12 +77,12 @@
                 "Col": 81,
                 "EditorGroup": 0,
                 "FileName": "ic_model_valid.tex",
-                "FirstLine": 43,
+                "FirstLine": 47,
                 "FoldedLines": "",
                 "Line": 74
             }
         ],
         "MasterFile": "",
-        "VerticalSplit": false
+        "VerticalSplit": true
     }
 }
