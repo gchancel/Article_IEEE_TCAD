@@ -45,10 +45,9 @@ Noemie Beringuier-Boher, Marc Lacruche, David El-Baze, Jean-Max Dutertre,
 
 \bibitem{bbiColin}
 Colin O'Flynn.
-\newblock Low-cost body biasing injection ({BBI}) attacks on {WLCSP} devices.
-\newblock In Pierre-Yvan Liardet and Nele Mentens, editors, {\em Smart Card
-  Research and Advanced Applications}, pages 166--180, Cham, 2021. Springer
-  International Publishing.
+\newblock Low-cost body biasing injection {(BBI)} attacks on {WLCSP} devices.
+\newblock In {\em Smart Card Research and Advanced Applications}, pages
+  166--180, Cham, 2020. Springer International Publishing.
 
 \bibitem{japbbi}
 Takuya Wadatsumi, Kohei Kawai, Rikuu Hasegawa, Takuji Miki, Makoto Nagata,
@@ -88,6 +87,10 @@ G.~Chancel, J.-M. Galliere, and P.~Maurine.
 
 \bibitem{colinFdtc2023}
 Colin O'Flynn.
+\newblock Picoemp: A low-cost emfi platform compared to bbi and voltage fault
+  injection using tdc and external vcc measurements.
+\newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
+\newblock \url{https://eprint.iacr.org/2023/1195}.
 
 \bibitem{giraudDfa}
 Christophe Giraud.
