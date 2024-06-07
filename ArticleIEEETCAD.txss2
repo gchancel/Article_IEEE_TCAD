@@ -10,28 +10,76 @@
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 66,
+                "Col": 44,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 10
+                "Line": 3
             },
             {
-                "Col": 15,
+                "Col": 2,
                 "EditorGroup": 0,
-                "FileName": "ic_model_valid.tex",
-                "FirstLine": 34,
-                "FoldedLines": "",
-                "Line": 64
-            },
-            {
-                "Col": 14,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_dffmos.tex",
+                "FileName": "0_abstract.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 8
+                "Line": 16
+            },
+            {
+                "Col": 9,
+                "EditorGroup": 0,
+                "FileName": "1_intro.tex",
+                "FirstLine": 105,
+                "FoldedLines": "",
+                "Line": 115
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "references.bib",
+                "FirstLine": 522,
+                "FoldedLines": "",
+                "Line": 533
+            },
+            {
+                "Col": 82,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_stdcellmodel.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 63,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_alimnetwork.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            },
+            {
+                "Col": 113,
+                "EditorGroup": 0,
+                "FileName": "simuResults.tex",
+                "FirstLine": 53,
+                "FoldedLines": "",
+                "Line": 78
+            },
+            {
+                "Col": 139,
+                "EditorGroup": 0,
+                "FileName": "ic_modeling_v2.tex",
+                "FirstLine": 182,
+                "FoldedLines": "",
+                "Line": 184
+            },
+            {
+                "Col": 81,
+                "EditorGroup": 0,
+                "FileName": "ic_model_valid.tex",
+                "FirstLine": 43,
+                "FoldedLines": "",
+                "Line": 74
             }
         ],
         "MasterFile": "",

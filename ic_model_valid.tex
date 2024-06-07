@@ -53,7 +53,7 @@
 		The voltages PSUB and NSUB depend on the substrate type.
 		On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
 		On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
-		
+
 		All of this gives us four scenarios	 to study.
 		For clarity and because two of the four scenario are less noteworthy, we will only talk about two of them:
 		\begin{itemize}
@@ -73,10 +73,23 @@
 		The signals extracted from the SCS simulations come from the standard-cell located directly below the BBI probe, a.k.a the cell targeted by the injection.
 		\input{./figures/invertersimu}
 		Fig. \ref{ivxsimu} presents the inverter simulation results for both considered scenarios.
-		
-		Let us now focus on the dual-well inverter.
-		The corresponding schematic is in Fig. \ref{ivxbufmos}.b, and the simulation results are shown in Fig. \ref{ivxsimu}.a.
+
+		First, let us focus on the dual-well inverter.
+		The corresponding schematic is shown in Fig. \ref{ivxbufmos}b, and the simulation results are shown in Fig. \ref{ivxsimu}a.
 		In that case, as we have seen before, the global IC coupling is resistive, with a discrepancy between VSS and VDD.
+		Therefore, the inverter current sum (green) follows a DC-response, similar to the differential power delivery voltage (black).
+		The inverter output follows the current sum curve, and its output goes from a low to a high logic value during 10 ns, then back to its original state.
+		It is further corroborated by looking at the load current, which is charged on the first pulse edge, then discharged on the second one.
+
+		Second, concerning the triple-well inverter, where the results are shown in Fig. \ref{ivxsimu}b and the schematic in Fig. \ref{ivxbufmos}a, the substrate is globally AC-coupled.
+		It can be seen on the current sum curve, which follows almost exactly the capacitive load current curve.
+		The inverter output, for its part, is discharged like the load, and goes from a high logic value to a low value during 12 ns before returning to its original value.
+
+		These observations are of great value because we can discuss a fault model for BBI, similar to what has been studied for EMFI and LFI.
+		The previous results seem to indicate that the faults created using BBI are data-dependent.
+		Indeed, if we lower the voltage of an inverter outputting a low value, or the opposite, it has theoretically no direct effect on the logic value.
+		However, we have seen that it is possible, depending on the substrate type, to observe bit set or reset.
+		Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
