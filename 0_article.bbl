@@ -88,10 +88,6 @@ G.~Chancel, J.-M. Galliere, and P.~Maurine.
 
 \bibitem{colinFdtc2023}
 Colin O'Flynn.
-\newblock Picoemp: A low-cost emfi platform compared to bbi and voltage fault
-  injection using tdc and external vcc measurements.
-\newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
-\newblock \url{https://eprint.iacr.org/2023/1195}.
 
 \bibitem{giraudDfa}
 Christophe Giraud.

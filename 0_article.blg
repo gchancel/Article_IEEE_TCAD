@@ -3,36 +3,41 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 0_article.aux
 The style file: unsrt.bst
 Database file #1: references.bib
+You're missing a field name---line 548 of file references.bib
+ : 
+ : %    title = {PicoEMP: A Low-Cost EMFI Platform Compared to BBI and Voltage Fault Injection using TDC and External VCC Measurements},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 You've used 14 entries,
             1791 wiz_defined-function locations,
-            545 strings with 7068 characters,
-and the built_in function-call counts, 4801 in all, are:
-= -- 419
+            542 strings with 6870 characters,
+and the built_in function-call counts, 4765 in all, are:
+= -- 410
 > -- 235
 < -- 11
 + -- 82
 - -- 68
-* -- 296
-:= -- 692
-add.period$ -- 47
+* -- 295
+:= -- 683
+add.period$ -- 44
 call.type$ -- 14
-change.case$ -- 14
+change.case$ -- 13
 chr.to.int$ -- 0
 cite$ -- 14
 duplicate$ -- 245
 empty$ -- 448
 format.name$ -- 68
-if$ -- 1155
+if$ -- 1146
 int.to.chr$ -- 0
 int.to.str$ -- 14
 missing$ -- 13
-newline$ -- 74
+newline$ -- 71
 num.names$ -- 20
-pop$ -- 71
+pop$ -- 69
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 166
+skip$ -- 174
 stack$ -- 0
 substring$ -- 287
 swap$ -- 112
@@ -43,4 +48,5 @@ type$ -- 0
 warning$ -- 0
 while$ -- 43
 width$ -- 16
-write$ -- 165
+write$ -- 158
+(There was 1 error message)

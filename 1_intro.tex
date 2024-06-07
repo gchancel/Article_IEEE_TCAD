@@ -10,9 +10,11 @@
 %	\subsection{Context}
 	\IEEEPARstart{N}{owadays}, electronic devices are found in every economic sector, and very often manipulate sensitive and confidential data, such as in bank transactions, Internet of Things (IoT) devices, smartcards, or smartphones.
 	To ensure data authenticity and confidentiality, these devices embed cryptographic algorithms.
-	While theoretically secure and robust, once implemented on actual devices, these algorithms become fallible by leaking the manipulated data through various physical quantities such as electromagnetic waves, infrared emissions, or sound emissions, not to cite them all, in addition to being sensitive to external disturbances.
+	While theoretically secure and robust, once implemented on actual devices, these algorithms become fallible by leaking parts of the manipulated data through various physical quantities such as electromagnetic waves, infrared emissions, or sound emissions, not to cite them all.
+	In addition to this, they are sensitive to external disturbances.
 
-	In this context, cybersecurity takes place, more specifically hardware security.
+	Cybersecurity, more specifically hardware security, takes place in this context
+%	In this context, cybersecurity takes place, more specifically hardware security.
 	When comes hardware security often comes side-channel attacks and fault injection attacks.
 	On the one hand, side-channel attacks take advantage of the circuit leakage by measuring the various physical quantities available.
 	On the other hand, fault injection aims at inducing physical disturbances into circuits, with methods like Electromagnetic Fault Injection (EMFI) \cite{mathieuEMFIFirst, mathieuEMFI}, Laser Fault Injection (LFI) \cite{lfiFaultModel}, or Body Biasing Injection (BBI) \cite{bbiOrigin}, not to cite them all.
@@ -39,8 +41,8 @@
 %		\textcolor{red}{To finish.}
 
 	\subsection{BBI in the state-of-the-art}
-		\textcolor{red}{Fait-on un paragraphe sur les plateformes industrielles comme dans la thèse ? Je trouve ça encombrant.}
-
+%		\textcolor{red}{Fait-on un paragraphe sur les plateformes industrielles comme dans la thèse ? Je trouve ça encombrant.}
+%
 		When compared to EMFI, BBI has a smaller state-of-the-art, whether in the amount of scientific papers published or in the amount of industrial platforms proposed.
 		Currently, there are ten main works lingering on BBI \cite{bbiOrigin, bbiSecond, bbiThird, bbiColin,japbbi, japbbi2, mybbiCosade, mybbiFdtc2022, mybbifdtc2023, colinFdtc2023}.
 		Each one of them made a unique contribution for a better understanding of BBI.
@@ -48,10 +50,14 @@
 		The first one \cite{bbiOrigin} introduced the technique and presented a Bellcore attack on the targeted IC.
 		Then, one year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
 		After that, another work presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
-		\textcolor{red}{To FINISH.}
+		Then, quite interestingly researchers proposed a study of BBI using an ESD gun as a voltage surge generator \cite{japbbi, japbbi2}.
+		At the same time, the impact of substrate thickness on BBI efficiency has been studied in \cite{mybbiCosade}, in addition to a simulation flow and better practices \cite{mybbiFdtc2022,mybbifdtc2023}.
+		Eventually, one last work proposed a safety-focused low-cost and open-source design for the practice of BBI \cite{colinFdtc2023}.
+%		\textcolor{red}{To FINISH.}
 
-		However, there are still unanswered questions, and the current works aims at bringing more answers thanks to previous and new data.
-		First, let us introduce the platform we are using during the present work.
+		However, despite this extensive work, there are still unanswered questions, and the current works aims at bringing more answers thanks to a compilation of our work on Body Biasing Injection.
+
+		Before going any further, let us introduce the platform we use for the present work.
 
 %		Before introducing the present work, let us eventually analyze the industrial platforms proposed by various manufacturers and introduce our own test platform.
 %		We can distinguish three major actors proposing BBI related products:
@@ -107,7 +113,8 @@
 		The total cost of the probe is of 20 \texteuro.
 
 	\subsection{BBI interrogations}
-		With all the work in the state-of-the-art in mind, there are still remaining questions unanswered about BBI, such as:
+%		With all the work in the state-of-the-art in mind, there are still remaining questions unanswered about BBI, such as:
+		With all
 		\begin{itemize}
 			\item What is the spatial resolution of BBI?
 			\item What is the time resolution of BBI?
