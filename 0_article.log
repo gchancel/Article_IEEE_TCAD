@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  7 JUN 2024 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 40) (preloaded format=pdflatex 2024.5.16)  7 JUN 2024 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,10 +971,6 @@ File: ./figures/s-bbi-better.pdf Graphic file (type pdf)
 <use ./figures/s-bbi-better.pdf>
 Package pdftex.def Info: ./figures/s-bbi-better.pdf  used on input line 7.
 (pdftex.def)             Requested size: 126.0pt x 66.31607pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 ) [2 <./figures/sondeBBI_loin_raw.png> <./figures/pointeBBI2.png> <./figures/st
 ate-of-the-art-platform.pdf> <./figures/s-bbi-better.pdf
 
@@ -987,7 +983,7 @@ File: ./figures/sondeGndSource.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./figures/sondeGndSource.jpg  used on input line 8.
 (pdftex.def)             Requested size: 63.0pt x 89.38098pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
 []\OT1/ptm/m/n/10 The pro-posed so-lu-tion con-cern-ing the ap-prox-i-mate
  []
 
@@ -1046,8 +1042,9 @@ Package textcomp Info: Symbol \textrightarrow not provided by
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 14.
- (./figures/fig_alimnetwork.tex
-<./figures/psu_std_cell2.pdf, id=133, 540.60239pt x 301.59921pt>
+ [4 <./figures/aesFastGndOnly-cropped.pdf> <./figures/aesFastImpGnd-cropped.pdf
+>] (./figures/fig_alimnetwork.tex
+<./figures/psu_std_cell2.pdf, id=277, 540.60239pt x 301.59921pt>
 File: ./figures/psu_std_cell2.pdf Graphic file (type pdf)
 <use ./figures/psu_std_cell2.pdf>
 Package pdftex.def Info: ./figures/psu_std_cell2.pdf  used on input line 6.
@@ -1057,17 +1054,17 @@ Overfull \hbox (0.84283pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [4 <./figures/aesFastGndOnly-cropped.pdf> <./figures/aesFastImpGnd-cropped.pd
-f>] (./mos_passive.tex
+) (./mos_passive.tex
 <./figures/std_cell_logic_passive.pdf, id=278, 341.43306pt x 170.71654pt>
 File: ./figures/std_cell_logic_passive.pdf Graphic file (type pdf)
 <use ./figures/std_cell_logic_passive.pdf>
 Package pdftex.def Info: ./figures/std_cell_logic_passive.pdf  used on input li
 ne 6.
 (pdftex.def)             Requested size: 252.0pt x 126.00262pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./figures/fig_substrate.tex
 <./figures/substrate_2.pdf, id=279, 295.61868pt x 303.73332pt>
 File: ./figures/substrate_2.pdf Graphic file (type pdf)
@@ -1093,10 +1090,7 @@ File: ./figures/dual+triple3.png Graphic file (type png)
 <use ./figures/dual+triple3.png>
 Package pdftex.def Info: ./figures/dual+triple3.png  used on input line 6.
 (pdftex.def)             Requested size: 490.19843pt x 311.25945pt.
-) (./table_op_point.tex)
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
- [6 <./figures/dual+triple3.png>] (./simuResults.tex
+) (./table_op_point.tex [6 <./figures/dual+triple3.png>]) (./simuResults.tex
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
 gative/vddMgndManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.7>, b
@@ -1320,13 +1314,16 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/po
 sitive/isub_dw_positif300.pdf): PDF inclusion: multiple pdfs with page group in
 cluded in a single page
 > <./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-crop
-ped.pdf>] [8 <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritT
-w-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellM
-anuscrit-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iSubcMan
-uscritTws-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/Current
-DistributionNormT140eT10_ExcTw-cropped.pdf> <./figures/modelesSimusResul/triple
-Well/positive/pdn_tw_positif300.pdf> <./figures/modelesSimusResul/tripleWell/po
-sitive/iepi_tw_positif300.pdf
+ped.pdf>]
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ [8 <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped
+.pdf> <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-
+cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws
+-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/CurrentDistribut
+ionNormT140eT10_ExcTw-cropped.pdf> <./figures/modelesSimusResul/tripleWell/posi
+tive/pdn_tw_positif300.pdf> <./figures/modelesSimusResul/tripleWell/positive/ie
+pi_tw_positif300.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
 positive/iepi_tw_positif300.pdf): PDF inclusion: multiple pdfs with page group 
@@ -1354,31 +1351,38 @@ File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
 <use ./figures/pos_neg_IGND.pdf>
 Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 158.13026pt.
-)
-[9 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/pos_neg_IGND.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
->] (./figures/fig_ivxmos.tex
-<./figures/IVX4.pdf, id=1319, 144.54pt x 88.83188pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [9 <./figures/stmPhotoImshow.pdf>] (./figures/fig_ivxmos.tex
+<./figures/IVX4.pdf, id=1306, 144.54pt x 88.83188pt>
 File: ./figures/IVX4.pdf Graphic file (type pdf)
 <use ./figures/IVX4.pdf>
 Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 154.88338pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./figures/invertersimu.tex
-<./figures/logic_gates_solo_M0_DW.pdf, id=1320, 635.73172pt x 893.16866pt>
+<./figures/logic_gates_solo_M0_DW.pdf, id=1307, 635.73172pt x 893.16866pt>
 File: ./figures/logic_gates_solo_M0_DW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_DW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_DW.pdf  used on input li
 ne 7.
 (pdftex.def)             Requested size: 127.51117pt x 179.13483pt.
-<./figures/logic_gates_solo_M0_TW.pdf, id=1321, 622.0313pt x 897.9932pt>
+<./figures/logic_gates_solo_M0_TW.pdf, id=1308, 622.0313pt x 897.9932pt>
 File: ./figures/logic_gates_solo_M0_TW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_TW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_TW.pdf  used on input li
 ne 8.
 (pdftex.def)             Requested size: 124.48883pt x 179.71877pt.
-) [10 <./figures/IVX4.pdf> <./figures/logic_gates_solo_M0_DW.pdf
+) [10 <./figures/pos_neg_IGND.pdf> <./figures/IVX4.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/IVX4.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./figures/logic_gates_solo_M0_DW.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/logic_gates_solo_M0_DW.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1417,7 +1421,7 @@ ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on 0_article.pdf (11 pages, 18343033 bytes).
+Output written on 0_article.pdf (11 pages, 18343265 bytes).
 PDF statistics:
  2705 PDF objects out of 2984 (max. 8388607)
  1434 compressed objects within 15 object streams

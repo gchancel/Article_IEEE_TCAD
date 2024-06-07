@@ -2,6 +2,7 @@
 % !TeX root = ./0_article.tex
 
 \section{How to perform BBI in a better way}
+	\IEEEPARstart{T}{his} section is dedicated in presenting the various improvements which can be brought to a BBI platform to increase experiments repeatability and reliability.
 	\subsection{BBI platforms in the state of the art}
 		In the first place, we will analyze, from a theoretical perspective, a typical BBI platform.
 		To do so, we created simple platform models allowing to highlight the major limiting factors of such platforms.
@@ -14,14 +15,14 @@
 			\item The IC target.
 		\end{itemize}
 		In addition to this, the schematic shows some important flaws we are going to address.
-		
+
 		While this is not always the case, voltage pulse generators are typically specified to be loaded with a 50 \textOmega\ load, or more generally with a fixed load.
 		When performing BBI, the backside of the IC is electrically connected to the generator output.
 		Therefore, outside of luck alone, it is very rare that the impedance presented by the IC to the generator perfectly matches the required one.
 		It implies that the generator will be, most of the time, out of specifications, and that the conditions will vary depending on the chosen IC and the location of the BBI probe.
 		This can lead to issues such as errors in the set-point voltage and pulse width, and ringing in the transmission line.
 		It then represents a first flaw to the typical approach.
-		
+
 		Then, there is the grounding installation.
 		The model presents a non-ideal but simple platform grounding.
 		The reference, used by the oscilloscope and the main computer, is represented in blue and called "equipment ground".
@@ -30,26 +31,26 @@
 		In the model, the secondaries generator and target grounds are connected to the reference thanks to vastly imperfect interconnections, whose impedance is significantly higher than zero.
 		This mainly lead to set-point errors due to shifts in the voltage pulse amplitude.
 		Therefore, it limits the inter-platform repeatability of BBI experiments.
-	
+
 	\subsection{Improvements proposed}
 		To circumvent the previously introduced limitations, we propose two corrections to generalize the platforms and improve the repeatability.
-		
+
 		First, let us talk about the improper grounding,
 		Alleviating this issue is fairly straightforward.
 		To do so, we propose to choose a reference, such as the equipment ground, and bypass all the grounds with low-impedance interconnections from this reference, as proposed in red in Fig. \ref{bbi_setups}.b.
-		
+
 		Then, concerning the impedance mismatch of the generator, multiple solutions can be approached.
 		The best solution would be to implement an adaptive impedance matching system with active feedback, able to measure in real-time the impedance seen by the generator.
 		However, adopting such a method is costly and long to set up in comparison to the next solution.
 		Therefore, we propose a much simpler approach.
 		Since, most of the time, the impedance presented by the IC on its backside is in the order of 1 k\textOmega\, approaching the 50 \textOmega\ expected by the generator can be done by connecting in parallel to the IC a 50 \textOmega\ resistor, as it is shown in the schematic in Fig. \ref{bbi_setups}.b.
-		
+
 	\subsection{Platform improvements in practice}
 		\input{./figures/real_imp_match.tex}
 		The proposed solution concerning the approximate impedance matching is shown in Fig. \ref{imp_match_real}.
 		The picture shows the BBI probe with a compensation load connected in parallel.
 		To show the actual interests of these improvements, let us analyze signals from an actual platform.
-		
+
 		We will compare before and after results and analyze the differences made by these improvements.
 		To that end, we set up simple experiments consisting in injecting a voltage pulse into our IC target, measuring the voltage pulse at the probe and the current in the IC.
 		\input{./figures/actual_improvements.tex}
@@ -61,7 +62,7 @@
 			\item Voltage pulse width = 20 ns;
 			\item Rise and fall times = 4 ns.
 		\end{itemize}
-		
+
 		The waveform S1P shows in blue the ideal waveform according to the generator settings and in red the measured waveform.
 		In addition to this are annotated some noteworthy values.
 		The first thing to notice here is the obvious undershoot of about -110 \% under the set-point.
@@ -70,18 +71,18 @@
 		It is an additional issue as it annihilates the accuracy needed in this context, and leads to longer pulses injected into the IC and potentially more energy than required.
 		Additionally, the rise and fall times are also 4 to 16 times higher than expected.
 		Eventually, we can notice damped oscillations, probably the proof of ringing in the transmission line.
-		
+
 		Then, the waveform S1G, associated with the previous one, shows the IC ground current.
 		Here, the damped oscillations are more clearly visible, in addition to the much longer than expected pulse duration.
 		The RMS value of the injected current measures around 25 mA.
-		
+
 		Afterwards, the waveform S2P shows the results with the proposed improvements
 		The voltage pulse amplitude is much closer to the set-point, with an undershoot of -31 \%.
 		It is not perfect, but considering the simple nature of the impedance matching we propose, it was to be expected.
 		On another note, the pulse width set-point is perfectly respected.
 		However, the rise and fall times are still 4 times higher.
 		Then, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
-		
+
 	\subsection{Further platform improvements comparison}
 		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
 		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
@@ -90,7 +91,7 @@
 		We then decided to perform the Giraud's DFA \cite{giraudDfa}, originally described in 2002.
 		This attack requires creating single bit faults in one or more bytes on the targeted AES.
 		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and powered with 3.3 V for the experiment.
-		
+
 		\subsubsection{Preliminary experiments}
 			Before setting up the attack, we had to set up experiments allowing us to find the optimal locations in the AES sub-circuit where the attack could be performed.
 			To do so, we created what we call Fault Analysis Mappings (FAM).
@@ -118,14 +119,14 @@
 			\input{./figures/aesGiraud.tex}
 			Fig. \ref{giraud_fam} presents the FAM results for both a typical and an improved platform.
 			The mapped area encloses a little more than the actual AES, to be sure to map its entirety.
-			
+
 			Let us look at Fig. \ref{giraud_fam}.a first.
 			What is interesting here is that we can spot numerous location where the circuit crashed.
 			More specifically, they represent 70 \% of the mapped area.
 			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
 			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
 			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
-			
+
 			Then, let us discuss Fig. \ref{giraud_fam}.b.
 			The first interesting thing to remark is the total absence of IC crash.
 			It is a desirable behavior as it indicates that we did not set a too high voltage pulse.
@@ -133,7 +134,7 @@
 			It is a good sign for a preliminary experiment as it indicates the feasibility of such faults.
 			It does not mean that we can perform the attack on one location.
 			However, it means that we can use these locations as good starting points to perform the DFA.
-			
+
 		\subsubsection{DFA results}
 			To perform the DFA, we focused on the five previously found monobit locations above the AES core.
 			Then, for each location, we used the following parameters:
@@ -152,7 +153,7 @@
 			To retrieve these last two bytes, we used a brute force method.
 			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every possibility.
 			That represents around 6.5 seconds of total computation.
-	
+
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
 %		\item The pulse generator
