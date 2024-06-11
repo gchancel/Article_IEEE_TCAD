@@ -1,7 +1,7 @@
 % !TeX spellcheck = en_US
 % !TeX root = ./0_article.tex
 
-\section{How to perform BBI in a better way}
+\section{Practicing BBI in a better way}
 	\IEEEPARstart{T}{his} section is dedicated in presenting the various improvements which can be brought to a BBI platform to increase experiments repeatability and reliability.
 	\subsection{BBI platforms in the state of the art}
 		In the first place, we will analyze, from a theoretical perspective, a typical BBI platform.
@@ -63,7 +63,7 @@
 		It is specified for a 1.5 A nominal current, and its electrical resistance measures around 70 m\textOmega.
 		The total cost of the probe is of 20 \texteuro.
 
-	\subsection{Improvements proposed}
+	\subsection{The proposed platform enhancements}
 		To circumvent the previously introduced limitations, we propose two corrections to generalize the platforms and improve the repeatability.
 
 		First, let us talk about the improper grounding,
@@ -76,7 +76,7 @@
 		Therefore, we propose a much simpler approach.
 		Since, most of the time, the impedance presented by the IC on its backside is in the order of 1 k\textOmega\, approaching the 50 \textOmega\ expected by the generator can be done by connecting in parallel to the IC a 50 \textOmega\ resistor, as it is shown in the schematic in Fig. \ref{bbi_setups}.b.
 
-	\subsection{Platform improvements in practice}
+	\subsection{Platform enhancement validation}
 		\input{./figures/real_imp_match.tex}
 		The proposed solution concerning the approximate impedance matching is shown in Fig. \ref{imp_match_real}.
 		The picture shows the BBI probe with a compensation load connected in parallel.
@@ -114,7 +114,7 @@
 		However, the rise and fall times are still 4 times higher.
 		Then, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
 
-	\subsection{Further platform improvements comparison}
+	\subsection{Platform enhancement application}
 		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
 		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
 		We chose to perform a single bit DFA ou our IC target.

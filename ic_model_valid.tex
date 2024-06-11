@@ -1,36 +1,8 @@
 % !TeX spellcheck = en_US
 % !TeX root = ./0_article.tex
 
-\section{Validating and completing the models}
-\subsection{Validation the models}
-	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
-	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not.
-
-	The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
-	The IC die measures approximately 5.5 mm \texttimes\ 4.5 mm.
-	We call these experiments "IC ground current mapping", and quite naturally, they consist in measuring in specific conditions the current at the target circuit external ground connection.
-	The entirety of the IC is mapped, and a voltage pulse is injected at each location.
-	Then, we measure the current at the circuit ground and calculate its RMS value to represent it into a two-dimensional cartography.
-	\input{./figures/stmphoto.tex}
-	Knowing the coarse structure of the considered IC, in addition to having insights on the substrate type, we could draw the coarse structure picture shown in Fig. \ref{stm_ir_photo}.
-	The "glue logic" regions are known to be made with triple-well substrates, while the "flash control" and "analog" regions are made with dual-well substrates.
-	\textcolor{orange}{The memories, however, are made of a mix of both.}
-	\input{./figures/stmignd.tex}
-	The experimental results are shown in Fig. \ref{stm_ignd}, and the experimental parameters are the following:
-	\begin{itemize}
-		\item Negative voltage pulse of 70 V amplitude;
-		\item Pulse width of 20 ns;
-		\item IC substrate thickness of 50 \textmu m.
-	\end{itemize}
-	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC subjected to positive voltage pulses, therefore we decided to avoid them at all cost.
-	When analyzing the results, we can notice significant differences in the measured current depending on various regions, and the IC floorplan seems to draw itself on the current map.
-	The measured RMS current ranges from 10 mArms to 140 mArms, and as predicted by the simulation results, in the regions where the substrate is of dual-well type, the current is higher than on regions where the substrate is of triple-well type, such as the analog block or the flash control region.
-
-	These observations confirm the soundness of the proposed models.
-	However, as we have seen previously, these models do not consider the functional nature of the considered ICs: their logic behavior.
-	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, thus the name "hybrid simulation flow".
-
-\subsection{Completing the models}
+\section{Effects of BBI on IC operation}
+\subsection{Extending the models: logic gates simulation}
 	As we have stated previously, it is required, to complete the models, to properly consider the logical behavior of the considered circuits, which allows for a better appreciation of BBI induced effects and their consequences.
 	These additional steps consist in modeling actual logic and sequential elements in the same or in a close technology as the considered IC, while extracting the significant disturbed signals from the SCS simulation and injecting them into these logic devices.
 	For this purpose, split this section into two subsections:
@@ -39,7 +11,7 @@
 		\item A second section dedicated to studying a sequential element: the DFF.
 	\end{itemize}
 
-	\subsubsection{Static inverters under BBI}
+	\subsubsection{BBI effects on static logic gates: inverters}
 		\input{./figures/fig_ivxmos}
 		Because inverters can have two stable output states, we will consider two cases for each substrate scenario: a normally high inverter (Fig. \ref{ivxbufmos}.a) and a normally low inverter (Fig. \ref{ivxbufmos}.b).
 %		 as it is illustrated on the model shown in Fig. \ref{ivxbufmos}: a normally high and a normally low inverter.
@@ -90,6 +62,8 @@
 		Indeed, if we lower the voltage of an inverter outputting a low value, or the opposite, it has theoretically no direct effect on the logic value.
 		However, we have seen that it is possible, depending on the substrate type, to observe bit set or reset.
 		Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
+
+	\subsubsection{BBI effects on dynamic logic gates: DFF}
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.

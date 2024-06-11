@@ -13,9 +13,9 @@
 	While theoretically secure and robust, once implemented on actual devices, these algorithms become fallible by leaking parts of the manipulated data through various physical quantities such as electromagnetic waves, infrared emissions, or sound emissions, not to cite them all.
 	In addition to this, they are sensitive to external disturbances.
 
-	Cybersecurity, more specifically hardware security, takes place in this context
+	Cybersecurity, more specifically hardware security, takes place in this context.
 %	In this context, cybersecurity takes place, more specifically hardware security.
-	When comes hardware security often comes side-channel attacks and fault injection attacks.
+	Commonly, When comes hardware security often comes side-channel attacks and fault injection attacks.
 	On the one hand, side-channel attacks take advantage of the circuit leakage by measuring the various physical quantities available.
 	On the other hand, fault injection aims at inducing physical disturbances into circuits, with methods like Electromagnetic Fault Injection (EMFI) \cite{mathieuEMFIFirst, mathieuEMFI}, Laser Fault Injection (LFI) \cite{lfiFaultModel}, or Body Biasing Injection (BBI) \cite{bbiOrigin}, not to cite them all.
 	Among these methods, EMFI and LFI are widely studied and understood.
@@ -42,13 +42,13 @@
 %		\textcolor{red}{Fait-on un paragraphe sur les plateformes industrielles comme dans la thèse ? Je trouve ça encombrant.}
 %
 		When compared to EMFI, BBI has a smaller state-of-the-art, whether in the amount of scientific papers published or in the amount of industrial platforms proposed.
-		Currently, there are ten main works lingering on BBI \cite{bbiOrigin, bbiSecond, bbiThird, bbiColin,japbbi, japbbi2, mybbiCosade, mybbiFdtc2022, mybbifdtc2023, colinFdtc2023}.
+		Currently, there are ten main works focusing on BBI \cite{bbiOrigin, bbiSecond, bbiThird, bbiColin,japbbi, japbbi2, mybbiCosade, mybbiFdtc2022, mybbifdtc2023, colinFdtc2023}.
 		Each one of them made a unique contribution for a better understanding of BBI.
 
-		The first one \cite{bbiOrigin} introduced the technique and presented a Bellcore attack on the targeted IC.
-		Then, one year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
+		The original work \cite{bbiOrigin} introduced the technique and demonstrated the feasibility of a Bellcore attack on the targeted IC, as the Bellcore attack does not have strong fault requirements.
+		One year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
 		After that, another work presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
-		Then, quite interestingly researchers proposed a study of BBI using an ESD gun as a voltage surge generator \cite{japbbi, japbbi2}.
+		Then, quite interestingly researchers proposed a study of BBI using an ESD gun as a voltxage surge generator \cite{japbbi, japbbi2}.
 		At the same time, the impact of substrate thickness on BBI efficiency has been studied in \cite{mybbiCosade}, in addition to a simulation flow and better practices \cite{mybbiFdtc2022,mybbifdtc2023}.
 		Eventually, one last work proposed a safety-focused low-cost and open-source design for the practice of BBI \cite{colinFdtc2023}.
 %		\textcolor{red}{To FINISH.}
