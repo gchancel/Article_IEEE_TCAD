@@ -32,6 +32,37 @@
 		This mainly lead to set-point errors due to shifts in the voltage pulse amplitude.
 		Therefore, it limits the inter-platform repeatability of BBI experiments.
 
+	\subsection{Our BBI platform}
+		As the commercial platforms, our platform is focused on two main pieces of equipment: a voltage pulse generator and a metallic probe.
+		
+		The generator model is the AVRK-4-B from the society Avtech Electrosystems Ltd.
+		This model is commonly used for EMFI, but is suitable for BBI, and its specifications are the following:
+		\begin{itemize}
+			\item Pulse amplitude: \textpm\ [150, 750] V;
+			\item Pulse width: [6, 20] ns;
+			\item First edge rise/fall time: 4 ns;
+			\item Second edge rise/fall time: load dependent;
+			\item Recovery time: \textless\ 1 ms;
+			\item Propagation delay (PD): 150 ns;
+			\item Jitter: \textpm\ 100 ps \textpm\ 0.03 \% of PD;
+			\item DC-coupled output;
+			\item Loaded with 50 \textOmega.
+		\end{itemize}
+		\input{./figures/our_probe.tex}
+		Probably the most distinctive piece of equipment when it comes top BBI is the probe.
+		Some BBI probes can be active, others passive and less expensive.
+		However, it is important to keep this piece of equipment relatively cheap as it endures most of the physical strain on a BBI platform, and should be easy to replace or repair.
+		Fig. \ref{bbi_probe} shows two pictures of our probe from different angles.
+		The one we use is custom made around three parts:
+		\begin{itemize}
+			\item A spring-loaded metallic tip, with a 20 \textmu m head diameter;
+			\item A SMA connector, where the tip is soldered;
+			\item A custom 3D-printed enclosure holding the pieces together and cheap to replace.
+		\end{itemize}
+		The spring-loaded tip is 17 mm long and has a global diameter of 0.635 mm.
+		It is specified for a 1.5 A nominal current, and its electrical resistance measures around 70 m\textOmega.
+		The total cost of the probe is of 20 \texteuro.
+
 	\subsection{Improvements proposed}
 		To circumvent the previously introduced limitations, we propose two corrections to generalize the platforms and improve the repeatability.
 
