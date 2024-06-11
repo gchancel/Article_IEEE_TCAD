@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.6.7)  11 JUN 2024 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.6.7)  11 JUN 2024 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,13 +1378,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8716 strings out of 476091
- 161755 string characters out of 5794082
+ 8717 strings out of 476091
+ 161765 string characters out of 5794082
  1875330 words of memory out of 5000000
- 28819 multiletter control sequences out of 15000+600000
+ 28820 multiletter control sequences out of 15000+600000
  560624 words of font info for 125 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 87i,15n,91p,464b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,15n,91p,464b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/geoff/.texlive2022/texmf-var/fonts/pk/ljfour/public/skull/skull.400pk
 >{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/f
 onts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/t
@@ -1404,7 +1404,7 @@ courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (11 pages, 18643590 bytes).
+Output written on 0_article.pdf (11 pages, 18643580 bytes).
 PDF statistics:
  2706 PDF objects out of 2984 (max. 8388607)
  1434 compressed objects within 15 object streams
