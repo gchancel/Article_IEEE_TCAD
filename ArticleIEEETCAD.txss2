@@ -10,12 +10,12 @@
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 44,
+                "Col": 16,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 3
+                "Line": 56
             },
             {
                 "Col": 2,
@@ -26,60 +26,68 @@
                 "Line": 16
             },
             {
-                "Col": 9,
+                "Col": 192,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 115
+                "Line": 55
             },
             {
-                "Col": 0,
+                "Col": 30,
                 "EditorGroup": 0,
-                "FileName": "references.bib",
+                "FileName": "good_practices.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 533
+                "Line": 34
             },
             {
-                "Col": 82,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_stdcellmodel.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 6
-            },
-            {
-                "Col": 63,
-                "EditorGroup": 0,
-                "FileName": "figures/fig_alimnetwork.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 5
-            },
-            {
-                "Col": 113,
-                "EditorGroup": 0,
-                "FileName": "simuResults.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 78
-            },
-            {
-                "Col": 139,
+                "Col": 44,
                 "EditorGroup": 0,
                 "FileName": "ic_modeling_v2.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 184
+                "Line": 190
             },
             {
-                "Col": 81,
+                "Col": 130,
                 "EditorGroup": 0,
                 "FileName": "ic_model_valid.tex",
-                "FirstLine": 47,
+                "FirstLine": 46,
                 "FoldedLines": "",
-                "Line": 74
+                "Line": 71
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "conclusion.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "figures/bbi-typical.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 10
+            },
+            {
+                "Col": 73,
+                "EditorGroup": 0,
+                "FileName": "references.bib",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 14
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "figures/dffchain.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
             }
         ],
         "MasterFile": "",
