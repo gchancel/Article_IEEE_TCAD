@@ -64,6 +64,12 @@
 	Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
 
 \subsection{BBI effects on dynamic logic gates: DFF}
+	\input{./figures/dffchain.tex}
+	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common one: the D Flip-Flop.
+	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
+	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
+	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, outputting to a non-disturbed path.
+	The non-disturbed path is here ti mimic the behavior of logic gates receiving disturbed data while having a correct power supply.
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
