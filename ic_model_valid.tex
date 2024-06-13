@@ -70,6 +70,19 @@
 	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
 	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, outputting to a non-disturbed path.
 	The non-disturbed path is here to mimic the behavior of logic gates receiving disturbed data while having a correct power supply.
+	
+	Similar to what we have done in the previous section, we will extract signals from the SCS simulation and inject them into this test circuit.
+	The first ten inverters, the buffer and the DFF are disturbed, while the four last inverters are not disturbed.
+	The load $C_L$ mimics another set of logic gates which are loaded into the four inverters.
+	As we did with the inverters, we will only consider negative pulses, both for a dual-well and a triple-well substrate.
+	\input{./figures/dffidle.tex}
+	Fig. \ref{dffidle} presents
+%	During these simulations, we initialize the DFF with a low logic level, then a 
+	
+	\subsubsection{Dual-well substrate, negative pulse}
+		Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
+		Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting according to us.
+		\input{}
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
