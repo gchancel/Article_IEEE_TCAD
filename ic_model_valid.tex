@@ -79,12 +79,26 @@
 	Before diving into the simulation results, let us analyze what would be the normal behavior of the considered DFF.
 	Fig. \ref{dffidle} presents the normal behavior of the modeled DFF.
 	The flip-flop is governed by a 40 MHz clock, and we perform three write operations with alternating logic levels (H \textrightarrow\ L \textrightarrow\ H), to finally let it rest at the last logic level.
+		Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
+	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting according to us.
+	First, we will analyze results where the injections are performed during the stead state of the DFF chain,
+	Then, we will analyze the DFF behavior during the write operations.
 %	During these simulations, we initialize the DFF with a low logic level, then a 
 	
 	\subsubsection{Dual-well substrate, negative pulse}
-		Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
-		Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting according to us.
-		\input{}
+		\input{./figures/dff-dw-neg.tex}
+		Fig. \ref{dffstatic-dw} shows the simulation results for a dual-well negative pulse disturbed DFF.
+		Five signals are represented in this order, allowing us to get insights on the circuit behavior:
+		\begin{itemize}
+			\item The BBI voltage pulse for reference;
+			\item The DFF input signal;
+			\item The buffered DFF clock;
+			\item The DFF output;
+			\item The four last inverters output;
+		\end{itemize}
+		The results show that the DFF input is not disturbed, while the DFF output drops down to -1 V.
+		We can observe a similar voltage drop on the DFF clock.
+		This voltage drop then reverberates on the clean inverters output, resulting in a low logical value being output.
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.

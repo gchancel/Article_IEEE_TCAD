@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.6.7)  13 JUN 2024 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.6.7)  14 JUN 2024 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1398,9 +1398,15 @@ Package textcomp Info: Symbol \textrightarrow not provided by
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 81.
- (/usr/share/texlive/texmf-dist/tex/latex/tools/.tex File ignored))
-(./conclusion.tex) (./0_article.bbl [11 <./figures/logic_gates_solo_M0_DW.pdf> 
-<./figures/logic_gates_solo_M0_TW.pdf
+ (./figures/dff-dw-neg.tex
+<./figures/dff-pdf-dw-neg/anim0108.pdf, id=1336, 1011.78pt x 650.43pt>
+File: ./figures/dff-pdf-dw-neg/anim0108.pdf Graphic file (type pdf)
+<use ./figures/dff-pdf-dw-neg/anim0108.pdf>
+Package pdftex.def Info: ./figures/dff-pdf-dw-neg/anim0108.pdf  used on input l
+ine 6.
+(pdftex.def)             Requested size: 252.0pt x 162.00168pt.
+) [11 <./figures/logic_gates_solo_M0_DW.pdf> <./figures/logic_gates_solo_M0_TW.
+pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/logic_gates_solo_M0_TW.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1408,18 +1414,17 @@ PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/dff_ivx_chain_3.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
-> <./figures/anim0000-cropped.pdf>]) [12
-
-] (./0_article.aux)
+> <./figures/anim0000-cropped.pdf> <./figures/dff-pdf-dw-neg/anim0108.pdf>])
+(./conclusion.tex) (./0_article.bbl) [12] (./0_article.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8746 strings out of 476091
- 162616 string characters out of 5794082
+ 8756 strings out of 476091
+ 162934 string characters out of 5794082
  1875330 words of memory out of 5000000
- 28839 multiletter control sequences out of 15000+600000
+ 28846 multiletter control sequences out of 15000+600000
  560624 words of font info for 125 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  87i,15n,91p,464b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1442,10 +1447,10 @@ courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
 are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (12 pages, 18666790 bytes).
+Output written on 0_article.pdf (12 pages, 18687381 bytes).
 PDF statistics:
- 2763 PDF objects out of 2984 (max. 8388607)
- 1448 compressed objects within 15 object streams
+ 2809 PDF objects out of 2984 (max. 8388607)
+ 1453 compressed objects within 15 object streams
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
