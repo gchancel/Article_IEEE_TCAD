@@ -6,7 +6,7 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "ic_model_valid.tex",
+        "CurrentFile": "1_intro.tex",
         "FileVersion": 1,
         "Files": [
             {
@@ -18,20 +18,20 @@
                 "Line": 56
             },
             {
-                "Col": 2,
+                "Col": 18,
                 "EditorGroup": 0,
                 "FileName": "0_abstract.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 16
+                "Line": 20
             },
             {
-                "Col": 192,
+                "Col": 0,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
-                "FirstLine": 0,
+                "FirstLine": 26,
                 "FoldedLines": "",
-                "Line": 55
+                "Line": 30
             },
             {
                 "Col": 30,
@@ -50,12 +50,12 @@
                 "Line": 190
             },
             {
-                "Col": 130,
+                "Col": 81,
                 "EditorGroup": 0,
                 "FileName": "ic_model_valid.tex",
-                "FirstLine": 46,
+                "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 71
+                "Line": 85
             },
             {
                 "Col": 0,
@@ -64,14 +64,6 @@
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 0
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "figures/bbi-typical.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 10
             },
             {
                 "Col": 73,
@@ -84,10 +76,26 @@
             {
                 "Col": 0,
                 "EditorGroup": 0,
+                "FileName": "figures/dffidle.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 10
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
                 "FileName": "figures/dffchain.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 6
+                "Line": 3
+            },
+            {
+                "Col": 40,
+                "EditorGroup": 0,
+                "FileName": "figures/dff-dw-neg.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
             }
         ],
         "MasterFile": "",
