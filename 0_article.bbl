@@ -92,6 +92,12 @@ Colin O'Flynn.
 \newblock Cryptology ePrint Archive, Paper 2023/1195, 2023.
 \newblock \url{https://eprint.iacr.org/2023/1195}.
 
+\bibitem{bellcore}
+Dan Boneh, Richard~A. DeMillo, and Richard~J. Lipton.
+\newblock On the importance of checking cryptographic protocols for faults.
+\newblock In Walter Fumy, editor, {\em Advances in Cryptology --- EUROCRYPT
+  '97}, pages 37--51, Berlin, Heidelberg, 1997. Springer Berlin Heidelberg.
+
 \bibitem{giraudDfa}
 Christophe Giraud.
 \newblock {DFA} on {AES}.
