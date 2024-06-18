@@ -23,14 +23,14 @@ Overall, it is similar to what has been done for EMFI in \cite{mathieuEMFI}.
 The resulting simulation flow is divided in three consecutive steps:
 \begin{itemize}
 	\item The simulation of an IC under BBI using a transistor-less model, allowing for a purely electrical analysis;
-	\item The extraction of significant disturbed signals from the previous simulation;
+	\item The extraction of significant disturbed power signals from the previous simulation;
 	\item The simulation of functional logic gates under BBI thanks to the previously extracted signals.
 \end{itemize}
 
 %\subsection{An hybrid simulation flow: building the models}
 \subsection{Modeling ICs and BBI platforms}
 	Building the correct models for the simulation flow pass through multiple steps.
-	As the goal of the hybrid flow is to reduce the computational power required to evaluate an IC, it is still important to maintain a certain accuracy concerning the IC physical structure.
+	As the goal of the hybrid flow is to reduce the computational time required to evaluate an IC, it is still important to maintain a certain accuracy concerning the IC physical structure.
 	To do so, the models are designed around actual IC implementations.
 	The main building blocks of the models are the power supply network, the standard-cells, and the substrate structure.
 	In this work, we are only focusing on bulk substrates: specifically dual-well and triple-well substrates.
@@ -40,7 +40,7 @@ The resulting simulation flow is divided in three consecutive steps:
 		The power distribution inside an IC is typically made with a grid-like structure, composed of metal wires stacked on top of each other on planes.
 		In each layer, the metal wires are equally spaced and have a dedicated width, which becomes thinner the deeper they are.
 		The lowest layer brings the power directly to the transistors.
-		Fig. \ref{fig_alim_std} presents a common power delivery network, designed with two metal levels for simplicity.
+		Fig. \ref{fig_alim_std} presents a common power delivery network, designed with two metal levels for simplicity (in blue and green).
 
 		Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements, and are pre-characterized by foundries and categorized depending on their performance (mainly but not exclusively power consumption and speed).
 		As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a variable width depending on how much logic gates each one of them embed.
@@ -60,7 +60,7 @@ The resulting simulation flow is divided in three consecutive steps:
 		Because BBI can be performed thanks to the silicon substrate as the main physical environment transferring energy from a generator to an IC, it is fundamental to elaborate a proper substrate model to precisely represent the various involved phenomena.
 		As stated previously, our work focuses on bulk substrates, and in most cases, the substrate silicon is P-doped.
 		There are two typical ways of lithographing the transistors in a bulk substrate, using dual-well or triple-well structures.
-		Dual-well substrates are commonly found in moderately old circuits, while triple-well substrates are found in more recent circuits, while not bleeding-edge.
+		Dual-well substrates are commonly found in moderately old circuits, while triple-well substrate is found mixed with dual-well in more recent circuits, while not bleeding-edge.
 
 		To properly understand how the differences between dual-well and triple-well substrates change the resulting model, let us analyze the cross-sectional schematics of an inverter created respectively in a triple-well and a dual-well substrate, as shown respectively in Fig. \ref{fig_sub}.a and Fig. \ref{fig_sub}.b:
 		\begin{itemize}
