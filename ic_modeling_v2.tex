@@ -94,12 +94,12 @@ The resulting simulation flow is divided in three consecutive steps:
 		To create an entire IC of a defined size, it is required to instantiate and interconnect as much as needed the elementary models.
 		By doing so, we can create a bigger model of virtually any size.
 		The language we have chosen to work with the simulation is the SPICE language.
-		However, we created a custom Python script to interconnect the SCS together, place external power connections, and generate a SPICE file.
+		However, we created a custom Python script to interconnect the SCS together, place external power connections, and generate a SPICE netlist.
 		For the current work, we decided to put the external power connections at the top and bottom of the IC (seen from above), and the BBI probe at the center of the IC (on the backside).
 
 %\subsection{An hybrid simulation flow: performing simulations}
 \subsection{Simulation results: operating point}
-	Now that we set up the base models and their duplication, we can perform simulations with those models.
+	Now that we set up the base models and their duplication, we can perform BBI simulations with those models.
 	To properly use these models, it is required, in the first place, to validate them through various steps to ensure their reliability.
 	To that end, we generated an IC measuring 550 \textmu m by 450 \textmu m with a 140 \textmu m substrate thickness, and performed an operating point to verify the correctness of the models for each substrate type.
 	\input{table_op_point.tex}
@@ -110,7 +110,7 @@ The resulting simulation flow is divided in three consecutive steps:
 	However, verifying the bias point alone is not sufficient to consider the model validated.
 	As these models are dedicated to be mainly used in transient simulations, it is required to perform one and evaluate the soundness of its results.
 
-	Therefore, we performed transient simulations with a triple-well and dual-well IC, with the following parameters:
+	Therefore, we performed BBI transient simulations with a triple-well and dual-well IC, with the following parameters:
 	\begin{itemize}
 		\item A nominal power supply voltage of 1.2 V;
 		\item A voltage pulse amplitude of \textpm\ 300 V;
@@ -136,7 +136,7 @@ The resulting simulation flow is divided in three consecutive steps:
 	\subsection{Simulation results: dual-well negative pulse}
 		Fig. \ref{sim_res_dw_neg} shows the dual-well positive pulse results.
 
-		Sub-fig. left \ref{sim_res_dw_neg}a represents the power delivery network (PDN) voltage across the entire IC as seen from above.
+		Sub-fig. \ref{sim_res_dw_neg}a left represents the power delivery network (PDN) voltage distribution across the entire simulated IC, seen from above.
 		In other words, it is the supply voltage of the transistors.
 		Expectedly, far from the external power connections, we observe some deviation from the nominal 1.2 V power supply voltage.
 		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 33 \% increase from the nominal value.
