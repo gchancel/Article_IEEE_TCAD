@@ -141,8 +141,8 @@ The resulting simulation flow is divided in three consecutive steps:
 		Expectedly, far from the external power connections, we observe some deviation from the nominal 1.2 V power supply voltage.
 		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 33 \% increase from the nominal value.
 
-		To put these values into perspective, let us look at sub-fig. right \ref{sim_res_dw_neg}a, showing the epitaxial current distribution, representing the charges going from the substrate to the top of the SCS.
-		According to the sub-figure, most of the charges are flowing at the center of the IC, under the BBI probe, as the current is the highest in that location.
+		To put these values into perspective, let us look at sub-fig. \ref{sim_res_dw_neg}a right, showing the epitaxial current distribution, representing the charges going from the substrate to the top of the SCS.
+		According to these results, most of the charges are passing through at the center of the IC (under the BBI probe), as the current is the highest in that location.
 		It is sound when comparing left and right sub-fig. \ref{sim_res_dw_neg}a, as the voltage difference from the nominal value is higher where the epitaxial current is higher.
 
 		Sub-fig. \ref{sim_res_dw_neg}b and sub-fig. \ref{sim_res_dw_neg}c both represent the same physical quantity in two different ways.
@@ -162,30 +162,30 @@ The resulting simulation flow is divided in three consecutive steps:
 
 	\subsection{Simulation results: dual-well positive pulse}
 		Concerning the positive pulse dual-well results, let us look at Fig. \ref{sim_res_dw_pos}.
-		Compared to the previous results, sub-fig. left \ref{sim_res_dw_pos}(a) shows that the PDN voltage exhibits not a voltage increase, but rather a voltage drop.
+		Compared to the previous results, sub-fig. \ref{sim_res_dw_pos}a left shows that the PDN voltage exhibits not a voltage increase, but rather a voltage drop.
 		Indeed, under the probe, the PDN voltage drops to 500 mV from 1.2 V.
-		This is a substantial difference, which could lead, if applied to actual transistors, a significant change in behavior such as an incorrect biasing.
+		This is a substantial difference, which could lead, if applied to actual transistors, a significant change in behavior such as an incorrect biasing and a temporary halt of operations.
 
-		Concerning the epitaxial current, shown in sub-fig. right \ref{sim_res_dw_pos}a, we can notice two key changes.
+		Concerning the epitaxial current, shown in sub-fig. \ref{sim_res_dw_pos}a right, we can notice two key changes.
 		First, the current polarity has changed, from a negative to a positive one.
 		Once again, it was to be expected, as the voltage pulse polarity has changed.
 		Then, in absolute value, the maximal current is 500 mV higher than previously, which indicates that more energy has been injected into the circuit.
-		Eventually, regarding the substrate current, there are no major differences except the current polarity, both for sub-fig. \ref{sim_res_dw_pos}b and sub-fig. \ref{sim_res_dw_pos}c.
+		Eventually, regarding the substrate current, there are no major differences compared to the previous scenario, except the current polarity, both for sub-fig. \ref{sim_res_dw_pos}b and sub-fig. \ref{sim_res_dw_pos}c.
 
 	\subsection{Simulation results: triple-well negative pulse}
 		Let us take a closer look at Fig. \ref{sim_res_tw_neg}.
 		These results stand out all of the others, in many ways.
-		First, if we take a look at sub-fig. left \ref{sim_res_tw_neg}(a) regarding the PDN voltage, we can see that there are very little variations from the nominal voltage.
+		First, if we take a look at sub-fig. \ref{sim_res_tw_neg}a left regarding the PDN voltage, we can see that there are very little variations from the nominal voltage.
 		Indeed, the voltage drops only to 1.1 V.
-		Then, concerning the epitaxial current shown in sub-fig. right \ref{sim_res_tw_neg}a, we can see that it is almost a hundred times lower than on other results.
-		It is then confirmed in sub-fig. \ref{sim_res_tw_neg}(c) with the substrate current distribution.
-		However, the current density stays consistent with the previous results.
+		Then, concerning the epitaxial current shown in sub-fig. \ref{sim_res_tw_neg}a right, we can see that it is almost a hundred times lower than on other results.
+		It is then confirmed in sub-fig. \ref{sim_res_tw_neg}c and sub-fig. \ref{sim_res_tw_neg}d with the substrate current distribution.
+%		However, the current density stays consistent with the previous results.
 		Before analyzing further these results and explaining them, let us analyze the last case.
 
 	\subsection{Simulation results: triple-well positive pulse}
-		Quite interestingly, with a triple-well substrate and a positive voltage pulse, as displayed in Fig. \ref{sim_res_tw_pos}, we observe results that are very similar to the dual-well negative case (Fig. \ref{sim_res_dw_neg}), whether it is on the PDN voltage or on the epitaxial current.
-		Indeed, the PDN voltage disturbance is almost identical to sub-fig. left \ref{sim_res_dw_neg}a, with an increase in voltage from 1.2 V to 2.8 V.
-		Then, the epitaxial and substrate current maps are mirrors (in polarity) of sub-fig. left \ref{sim_res_dw_neg}a and \ref{sim_res_dw_neg}c.
+		Quite interestingly, with a triple-well substrate and a positive voltage pulse, as displayed in Fig. \ref{sim_res_tw_pos}, we observe results that are very similar to the dual-well negative case (Fig. \ref{sim_res_dw_neg}), whether on the PDN voltage or on the epitaxial current.
+		Indeed, the PDN voltage disturbance is almost identical to sub-fig. \ref{sim_res_dw_neg}a left, with an increase in voltage from 1.2 V to 2.8 V.
+		Then, the epitaxial and substrate current maps looks like a mirrored copy (in polarity) of sub-fig. \ref{sim_res_dw_neg}a left and \ref{sim_res_dw_neg}c.
 		Eventually, the current density graph is very close to the other results.
 
 %	\subsubsection{Differences between dual-well and triple-well (negative and positive pulses)}
