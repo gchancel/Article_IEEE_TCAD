@@ -72,7 +72,7 @@
 		For this purpose, multiple solutions can be approached.
 		The best solution would be to implement an adaptive impedance matching system with active feedback, able to measure in real-time the impedance seen by the generator.
 		However, adopting such a method is costly and long to set up in comparison to the next solution.
-		Therefore, we propose a much simpler approach: since most of the time the impedance presented by the IC on its backside is in the order of 1 k \textOmega\ in our platform, approaching the 50 \textOmega\ expected by the generator can be done by connecting in parallel to the IC a 50 \textOmega\ resistor, as shown in the schematic in Fig. \ref{bbi_setups}.b.
+		Therefore, we propose a much simpler approach: since most of the time the impedance presented by the IC on its backside is in the order of 1 k \textOmega\ in our platform \cite{mybbifdtc2023}, approaching the 50 \textOmega\ expected by the generator can be done by connecting in parallel to the IC a 50 \textOmega\ resistor, as shown in the schematic in Fig. \ref{bbi_setups}.b.
 
 %		First, let us talk about the improper grounding,
 %		Alleviating this issue is fairly straightforward.
@@ -105,8 +105,8 @@
 		The waveform S1P shows in blue the ideal waveform according to the generator settings and in red the measured waveform.
 		In addition to this are annotated some noteworthy values.
 		The first thing to notice here is the obvious undershoot of about -110 \% under the set-point.
-		It is far from being desirable when performing fault injection as the voltage amplitude is of great importance when considering the method effects on the IC.
-		Furthermore, the pulse width is 275 \& higher than the set-point, measuring 75 ns instead of 20 ns.
+		It is far from being desirable when performing fault injection as the voltage amplitude is of great importance when considering the method effects on the IC \cite{mybbifdtc2023}.
+		Furthermore, the pulse width is 275 \% higher than the set-point, measuring 75 ns instead of 20 ns.
 		It is an additional issue as it annihilates the accuracy needed in this context, and leads to longer pulses injected into the IC and potentially more energy than required.
 		Additionally, the rise and fall times are also 4 to 16 times higher than expected.
 		Eventually, we can notice damped oscillations, probably the proof of ringing in the transmission line.
@@ -125,7 +125,7 @@
 	\subsection{Platform enhancement application}
 		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
 		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
-		We chose to perform a single bit DFA ou our IC target.
+		We chose to perform a single bit DFA on our IC target.
 		The target embeds a dedicated cryptographic core, which we set up using a 128 bits AES.
 		We then decided to perform the Giraud's DFA \cite{giraudDfa}, originally described in 2002.
 		This attack requires creating single bit faults in one or more bytes on the targeted AES.
@@ -146,7 +146,7 @@
 				\item Timeout: the circuit did not respond.
 			\end{itemize}
 			Therefore, as we need single bit faults, only two cases are valid for the Giraud's DFA.
-			To be able to compare the two platforms, we performed a FAM on each one of them, using the following parameters:
+			To compare the two platforms, we performed a FAM on each one of them, using the following parameters:
 			\begin{itemize}
 				\item Pulse amplitude: from -150 V to -400 V with -5 V steps;
 				\item Pulse width = 4.5 ns;
@@ -157,14 +157,14 @@
 			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
 			\input{./figures/aesGiraud.tex}
 			Fig. \ref{giraud_fam} presents the FAM results for both a typical and an improved platform.
-			The mapped area encloses a little more than the actual AES, to be sure to map its entirety.
+			The mapped area encloses a little more than the actual AES location, to be sure to map its entirety.
 
 			Let us look at Fig. \ref{giraud_fam}.a first.
 			What is interesting here is that we can spot numerous location where the circuit crashed.
 			More specifically, they represent 70 \% of the mapped area.
 			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
 			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
-			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
+%			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
 
 			Then, let us discuss Fig. \ref{giraud_fam}.b.
 			The first interesting thing to remark is the total absence of IC crash.
@@ -182,7 +182,7 @@
 				\item Pulse width ranging from 4.5 ns to 5.5 ns;
 				\item Injection delay ranging from \textpm 10 ns around the penultimate AES round.
 			\end{itemize}
-			For each set of experimental settings, we had to set some limits when trying to inject faults.
+			For each set of experimental parameters, we had to set some limits when trying to inject faults.
 			Indeed, it is required to create a finite experiment.
 			The first limit consists in trying to retrieve a maximum of 100 single bit fault.
 			Then, and because it cannot be achieved for every set of parameters, we set another limit of 10000 tries to achieve the previous limit.
