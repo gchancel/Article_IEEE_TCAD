@@ -1,25 +1,25 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.6.7)  18 JUN 2024 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 - Flatpak) (preloaded format=pdflatex 2024.4.4)  19 JUN 2024 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **0_article.tex
 (./0_article.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-01-16>
-(/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/app/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen140
 \@IEEEtrantmpdimenB=\dimen141
 \@IEEEtrantmpdimenC=\dimen142
-\@IEEEtrantmpcountA=\count185
-\@IEEEtrantmpcountB=\count186
-\@IEEEtrantmpcountC=\count187
-\@IEEEtrantmptoksA=\toks16
+\@IEEEtrantmpcountA=\count188
+\@IEEEtrantmpcountB=\count189
+\@IEEEtrantmpcountC=\count190
+\@IEEEtrantmptoksA=\toks17
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 03.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/app/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -91,56 +91,56 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEiednormlabelsep=\dimen156
 \IEEEiedmathlabelsep=\dimen157
 \IEEEiedtopsep=\skip48
-\c@section=\count188
-\c@subsection=\count189
-\c@subsubsection=\count190
-\c@paragraph=\count191
-\c@IEEEsubequation=\count192
+\c@section=\count191
+\c@subsection=\count192
+\c@subsubsection=\count193
+\c@paragraph=\count194
+\c@IEEEsubequation=\count195
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count193
-\c@table=\count194
-\@IEEEeqnnumcols=\count195
-\@IEEEeqncolcnt=\count196
-\@IEEEsubeqnnumrollback=\count197
+\c@figure=\count196
+\c@table=\count197
+\@IEEEeqnnumcols=\count198
+\@IEEEeqncolcnt=\count199
+\@IEEEsubeqnnumrollback=\count266
 \@IEEEquantizeheightA=\dimen158
 \@IEEEquantizeheightB=\dimen159
 \@IEEEquantizeheightC=\dimen160
 \@IEEEquantizeprevdepth=\dimen161
-\@IEEEquantizemultiple=\count198
+\@IEEEquantizemultiple=\count267
 \@IEEEquantizeboxA=\box51
 \@IEEEtmpitemindent=\dimen162
 \IEEEPARstartletwidth=\dimen163
-\c@IEEEbiography=\count199
+\c@IEEEbiography=\count268
 \@IEEEtranrubishbin=\box52
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
+) (/app/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks18
 \ex@=\dimen164
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen165
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/app/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count266
+\inf@bad=\count269
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count267
-\leftroot@=\count268
+\uproot@=\count270
+\leftroot@=\count271
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count269
-\DOTSCASE@=\count270
+\classnum@=\count272
+\DOTSCASE@=\count273
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -153,35 +153,35 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen166
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count271
+\macc@depth=\count274
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count272
+\c@MaxMatrixCols=\count275
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
-\tag@help=\toks18
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
-\andhelp@=\toks19
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks19
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks20
 \eqnshift@=\dimen167
 \alignsep@=\dimen168
 \tagshift@=\dimen169
 \tagwidth@=\dimen170
 \totwidth@=\dimen171
 \lineht@=\dimen172
-\@envbody=\toks20
+\@envbody=\toks21
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/app/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -189,50 +189,50 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+(/app/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/app/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
+\KV@toks@=\toks23
 )
-\c@ALC@unique=\count278
-\c@ALC@line=\count279
-\c@ALC@rem=\count280
-\c@ALC@depth=\count281
+\c@ALC@unique=\count281
+\c@ALC@line=\count282
+\c@ALC@rem=\count283
+\c@ALC@depth=\count284
 \ALC@tlm=\skip54
 \algorithmicindent=\skip55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+(/app/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(/app/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
-\float@exts=\toks23
+\c@float@type=\count285
+\float@exts=\toks24
 \float@box=\box55
-\@float@everytoks=\toks24
+\@float@everytoks=\toks25
 \@floatcapt=\box56
 )
-\@float@every@algorithm=\toks25
-\c@algorithm=\count283
+\@float@every@algorithm=\toks26
+\c@algorithm=\count286
 )
-(/usr/share/texlive/texmf-dist/tex/latex/textgreek/textgreek.sty
+(/app/texlive/texmf-dist/tex/latex/textgreek/textgreek.sty
 Package: textgreek 2011/10/09 v0.7 Greek symbols in text
 Package textgreek Info: Loading the definitions for the Greek fontencoding. on 
 input line 39.
 
-(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
-File: lgrenc.def 2022/06/14 2.1 LGR Greek font encoding definitions
+(/app/texlive/texmf-dist/tex/latex/greek-fontenc/lgrenc.def
+File: lgrenc.def 2023-09-12 2.5 LGR Greek font encoding definitions
 Now handling font encoding LGR ...
 ... processing UTF-8 mapping file for font encoding LGR
 
-(/usr/share/texlive/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
-File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
+(/app/texlive/texmf-dist/tex/latex/greek-inputenc/lgrenc.dfu
+File: lgrenc.dfu 2023-03-21 1.9 UTF-8 support for Greek
    defining Unicode char U+00A8 (decimal 168)
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00AF (decimal 175)
@@ -327,6 +327,7 @@ File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
    defining Unicode char U+03DB (decimal 987)
    defining Unicode char U+03DC (decimal 988)
    defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DE (decimal 990)
    defining Unicode char U+03DF (decimal 991)
    defining Unicode char U+03E0 (decimal 992)
    defining Unicode char U+03E1 (decimal 993)
@@ -582,116 +583,116 @@ File: lgrenc.dfu 2019/07/11 1.7 UTF-8 support for Greek
    defining Unicode char U+10146 (decimal 65862)
    defining Unicode char U+10147 (decimal 65863)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
-File: greek-fontenc.def 2020/10/30 2.0 Common Greek font encoding definitions
+(/app/texlive/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
+File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
 ))
 Package textgreek Info: Loaded fontmap: {eur/*/*}{U/eur/*/*} {phv/*/*}{U/psy/*/
 *}. on input line 69.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+(/app/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen173
 \ar@mcellbox=\box57
 \extrarowheight=\dimen174
-\NC@list=\toks26
+\NC@list=\toks27
 \extratabsurround=\skip56
 \backup@length=\skip57
 \ar@cellbox=\box58
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
+(/app/texlive/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/app/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen175
 \Gin@req@width=\dimen176
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-01-16 L3 programming layer (loader) 
+(/app/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+(/app/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/app/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count284
+(/app/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box59
 ))
-Package: l3keys2e 2023-01-16 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count285
-\l__lipsum_a_int=\count286
-\l__lipsum_b_int=\count287
+\g__lipsum_par_int=\count288
+\l__lipsum_a_int=\count289
+\l__lipsum_b_int=\count290
 
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+(/app/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(/app/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(/app/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count288
-\c@Blindtext=\count289
-\c@blind@countparstart=\count290
-\blind@countxx=\count291
-\blindtext@numBlindtext=\count292
-\blind@countyy=\count293
-\c@blindlist=\count294
-\c@blindlistlevel=\count295
-\c@blindlist@level=\count296
-\blind@listitem=\count297
-\c@blind@listcount=\count298
-\c@blind@levelcount=\count299
-\blind@mathformula=\count300
-\blind@Mathformula=\count301
-\c@blind@randomcount=\count302
-\c@blind@randommax=\count303
-\c@blind@pangramcount=\count304
-\c@blind@pangrammax=\count305
+\c@blindtext=\count291
+\c@Blindtext=\count292
+\c@blind@countparstart=\count293
+\blind@countxx=\count294
+\blindtext@numBlindtext=\count295
+\blind@countyy=\count296
+\c@blindlist=\count297
+\c@blindlistlevel=\count298
+\c@blindlist@level=\count299
+\blind@listitem=\count300
+\c@blind@listcount=\count301
+\c@blind@levelcount=\count302
+\blind@mathformula=\count303
+\blind@Mathformula=\count304
+\c@blind@randomcount=\count305
+\c@blind@randommax=\count306
+\c@blind@pangramcount=\count307
+\c@blind@pangrammax=\count308
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+(/app/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/app/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-\everycr=\toks27
+(/app/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+\everycr=\toks28
 \minrowclearance=\skip58
-\rownum=\count306
+\rownum=\count309
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/app/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip59
-\multirow@cntb=\count307
+\multirow@cntb=\count310
 \multirow@dima=\skip60
 \bigstrutjot=\dimen177
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/app/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+(/app/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen178
 \captionmargin=\dimen179
 \caption@leftmargin=\dimen180
@@ -712,112 +713,112 @@ malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
 ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
 ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
-\fi  on input line 1176.
+\fi  on input line 1175.
 )
-\c@KVtest=\count308
+\c@KVtest=\count311
 \sf@farskip=\skip61
 \sf@captopadj=\dimen186
 \sf@capskip=\skip62
 \sf@nearskip=\skip63
-\c@subfigure=\count309
-\c@subfigure@save=\count310
-\c@lofdepth=\count311
-\c@subtable=\count312
-\c@subtable@save=\count313
-\c@lotdepth=\count314
+\c@subfigure=\count312
+\c@subfigure@save=\count313
+\c@lofdepth=\count314
+\c@subtable=\count315
+\c@subtable@save=\count316
+\c@lotdepth=\count317
 \sf@top=\skip64
 \sf@bottom=\skip65
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/app/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
+(/app/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count315
-\c@dblbotnumber=\count316
+\@dblbotnum=\count318
+\c@dblbotnumber=\count319
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/app/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
+(/app/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+(/app/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(/app/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+(/app/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+(/app/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen187
 \TX@old@table=\dimen188
 \TX@old@col=\dimen189
 \TX@target=\dimen190
 \TX@delta=\dimen191
-\TX@cols=\count317
-\TX@ftn=\toks30
+\TX@cols=\count320
+\TX@ftn=\toks31
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(/app/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 
 Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count318
-\c@continuedfloat=\count319
+\c@caption@flags=\count321
+\c@continuedfloat=\count322
 Package caption Info: float package is loaded.
-) (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+) (/app/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box60
 \shadowsize=\dimen192
 \@Sbox=\box61
-\do@VerbBox=\toks31
-\the@fancyput=\toks32
-\this@fancyput=\toks33
-\EndVerbatimTokens=\toks34
+\do@VerbBox=\toks32
+\the@fancyput=\toks33
+\this@fancyput=\toks34
+\EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/app/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks35
-\inpenc@posthook=\toks36
+\inpenc@prehook=\toks36
+\inpenc@posthook=\toks37
 )
-(/usr/share/texlive/texmf-dist/tex/latex/showlabels/showlabels.sty
+(/app/texlive/texmf-dist/tex/latex/showlabels/showlabels.sty
 Package: showlabels 2022/07/18 v1.9.2
 
 Package: `showlabels' v1.9.2 <2022/07/18>
 with amsmath equation tags
-\SL@labelposition=\count320
-) (/usr/share/texlive/texmf-dist/tex/latex/preprint/balance.sty
+\SL@labelposition=\count323
+) (/app/texlive/texmf-dist/tex/latex/preprint/balance.sty
 Package: balance 1999/02/23 4.3 (PWD)
 \oldvsize=\dimen193
 )
@@ -845,31 +846,31 @@ LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 44.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
 4.
- (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
+ (/app/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 44.
 
 -- Lines per column: 58 (exact).
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count324
 \scratchdimen=\dimen194
 \scratchbox=\box62
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count324
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count327
 \MPscratchDim=\dimen195
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks38
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks39
+) (/app/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/app/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -880,13 +881,13 @@ Package caption Info: End \AtBeginDocument code.
 (./0_abstract.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/app/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/app/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) (./1_intro.tex
 Package textcomp Info: Symbol \textrightarrow not provided by
@@ -899,11 +900,12 @@ Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 35.
 )
-(./good_practices.tex (./figures/bbi-typical.tex [1{/var/lib/texmf/fonts/map/pd
-ftex/updmap/pdftex.map}
+(./good_practices.tex [1{/app/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex
+.map}{/app/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]
+{/app/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./figures
+/bbi-typical.tex
 <./figures/state-of-the-art-platform.pdf, id=12, 210.5504pt x 113.81102pt>
 File: ./figures/state-of-the-art-platform.pdf Graphic file (type pdf)
 <use ./figures/state-of-the-art-platform.pdf>
@@ -913,7 +915,7 @@ Package pdftex.def Info: ./figures/state-of-the-art-platform.pdf  used on input
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+(/app/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 <./figures/s-bbi-better.pdf, id=13, 216.24092pt x 113.81102pt>
@@ -924,7 +926,7 @@ Package pdftex.def Info: ./figures/s-bbi-better.pdf  used on input line 7.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+(/app/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ))
 LaTeX Font Info:    Trying to load font information for LGR+ptm on input line 1
@@ -937,19 +939,18 @@ LaTeX Font Warning: Font shape `LGR/ptm/m/n' undefined
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
 2.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+(/app/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ptm on input line 4
 6.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
+(/app/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 46.
-
-(./figures/our_probe.tex
+ (./figures/our_probe.tex
 <./figures/sondeBBI_loin_raw.png, id=14, 1397.22pt x 1254.18562pt>
 File: ./figures/sondeBBI_loin_raw.png Graphic file (type png)
 <use ./figures/sondeBBI_loin_raw.png>
@@ -961,17 +962,20 @@ File: ./figures/pointeBBI2.png Graphic file (type png)
 <use ./figures/pointeBBI2.png>
 Package pdftex.def Info: ./figures/pointeBBI2.png  used on input line 8.
 (pdftex.def)             Requested size: 100.79846pt x 90.38087pt.
-) (./figures/real_imp_match.tex
-<./figures/sondeGndSource.jpg, id=17, 992.20688pt x 1407.75937pt>
+)
+[2 <./figures/state-of-the-art-platform.pdf> <./figures/s-bbi-better.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/s-bbi-b
+etter.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./figures/sondeBBI_loin_raw.png> <./figures/pointeBBI2.png>]
+(./figures/real_imp_match.tex
+<./figures/sondeGndSource.jpg, id=54, 992.20688pt x 1407.75937pt>
 File: ./figures/sondeGndSource.jpg Graphic file (type jpg)
 <use ./figures/sondeGndSource.jpg>
 Package pdftex.def Info: ./figures/sondeGndSource.jpg  used on input line 8.
 (pdftex.def)             Requested size: 100.79846pt x 142.99669pt.
- [2 <./figures/state-of-the-art-platform.pdf> <./figures/s-bbi-better.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/s-bbi-better.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
-> <./figures/sondeBBI_loin_raw.png> <./figures/pointeBBI2.png>])
+)
 Underfull \hbox (badness 10000) in paragraph at lines 89--92
 []\OT1/ptm/m/n/10 The pro-posed so-lu-tion con-cern-ing the ap-prox-i-mate
  []
@@ -990,8 +994,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) [3 <./figures/sondeGndSource.jpg> <./figures/realPulsesComparisons.pdf>]
 (./figures/aesGiraud.tex
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/aesFastGndOnly-cropped.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/aesFast
+GndOnly-cropped.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
+on <1.5> allowed
 <./figures/aesFastGndOnly-cropped.pdf, id=496, 464.4251pt x 317.7772pt>
 File: ./figures/aesFastGndOnly-cropped.pdf Graphic file (type pdf)
 <use ./figures/aesFastGndOnly-cropped.pdf>
@@ -1000,8 +1005,9 @@ ne 6.
 (pdftex.def)             Requested size: 126.0pt x 86.21313pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/aesFastImpGnd-cropped.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/aesFast
+ImpGnd-cropped.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
 <./figures/aesFastImpGnd-cropped.pdf, id=497, 465.37866pt x 317.82741pt>
 File: ./figures/aesFastImpGnd-cropped.pdf Graphic file (type pdf)
 <use ./figures/aesFastImpGnd-cropped.pdf>
@@ -1060,32 +1066,33 @@ File: ./figures/substrate_2.pdf Graphic file (type pdf)
 <use ./figures/substrate_2.pdf>
 Package pdftex.def Info: ./figures/substrate_2.pdf  used on input line 6.
 (pdftex.def)             Requested size: 206.39685pt x 212.06499pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) [5 <./figures/psu_std_cell2.pdf> <./figures/std_cell_logic_passive.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/std_cell_logic_passive.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/substrate_2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/substrate_2.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/std_cel
+l_logic_passive.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
 >]
 Underfull \hbox (badness 3148) in paragraph at lines 67--68
 []\OT1/ptm/m/n/10 In the triple-well sub-strate, the NMOS tran-sis-tors
  []
 
 (./figures/fig_stdcellmodel.tex
-<./figures/dual+triple3.png, id=671, 3011.25pt x 1851.91875pt>
+<./figures/dual+triple3.png, id=664, 3011.25pt x 1851.91875pt>
 File: ./figures/dual+triple3.png Graphic file (type png)
 <use ./figures/dual+triple3.png>
 Package pdftex.def Info: ./figures/dual+triple3.png  used on input line 6.
 (pdftex.def)             Requested size: 516.0pt x 317.33698pt.
-) (./table_op_point.tex) (./simuResults.tex
+) (./table_op_point.tex) [6 <./figures/substrate_2.pdf>] (./simuResults.tex
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
-gative/vddMgndManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.7>, b
-ut at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf, id
-=672, 535.2497pt x 362.85562pt>
+=680, 535.2497pt x 362.85562pt>
 File: ./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pd
 f Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf
@@ -1095,11 +1102,11 @@ anuscrit-cropped.pdf  used on input line 14.
 (pdftex.def)             Requested size: 123.48138pt x 83.70972pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
-gative/iEpiDualWellManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.
-7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/negative/iEpiDualWellManuscrit-cropped.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropped.pd
-f, id=673, 558.58687pt x 362.85562pt>
+f, id=681, 558.58687pt x 362.85562pt>
 File: ./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-cropp
 ed.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/iEpiDualWellManuscrit-croppe
@@ -1114,11 +1121,11 @@ Overfull \hbox (10.50018pt too wide) in paragraph at lines 14--15
 
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
-gative/iSubcManuscrit-cropped.pdf): PDF inclusion: found PDF version <1.7>, but
- at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf, id=6
-74, 798.73407pt x 224.33812pt>
+82, 798.73407pt x 224.33812pt>
 File: ./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf 
 Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/iSubcManuscrit-cropped.pdf>
@@ -1127,11 +1134,11 @@ uscrit-cropped.pdf  used on input line 20.
 (pdftex.def)             Requested size: 252.0pt x 70.77641pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/ne
-gative/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf): PDF inclusion: found
- PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/negative/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140eT10_
-ExcDw-cropped.pdf, id=675, 706.13812pt x 234.8775pt>
+ExcDw-cropped.pdf, id=683, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140
 eT10_ExcDw-cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/negative/CurrentDistributionNormT140e
@@ -1139,7 +1146,7 @@ T10_ExcDw-cropped.pdf>
 Package pdftex.def Info: ./figures/modelesSimusResul/dualWell/negative/CurrentD
 istributionNormT140eT10_ExcDw-cropped.pdf  used on input line 23.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
-<./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf, id=676, 5
+<./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf, id=684, 5
 55.57562pt x 365.11406pt>
 File: ./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf Graph
 ic file (type pdf)
@@ -1147,7 +1154,7 @@ ic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/dualWell/positive/pdn_dw_p
 ositif300.pdf  used on input line 36.
 (pdftex.def)             Requested size: 126.0pt x 82.8045pt.
-<./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf, id=677, 
+<./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf, id=685, 
 550.47705pt x 365.62901pt>
 File: ./figures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf Grap
 hic file (type pdf)
@@ -1160,7 +1167,7 @@ Overfull \hbox (7.00012pt too wide) in paragraph at lines 36--37
  [][] 
  []
 
-<./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf, id=678, 
+<./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf, id=686, 
 789.33653pt x 227.99149pt>
 File: ./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf Grap
 hic file (type pdf)
@@ -1170,11 +1177,11 @@ positif300.pdf  used on input line 42.
 (pdftex.def)             Requested size: 252.0pt x 72.78482pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/po
-sitive/isubDensity_dw_positif300-cropped.pdf): PDF inclusion: found PDF version
- <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/positive/isubDensity_dw_positif300-cropped.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-croppe
-d.pdf, id=679, 706.13812pt x 234.8775pt>
+d.pdf, id=687, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-c
 ropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-cr
@@ -1184,11 +1191,11 @@ ity_dw_positif300-cropped.pdf  used on input line 45.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-negative/vddMgndManuscritTw-cropped.pdf): PDF inclusion: found PDF version <1.7
->, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/negative/vddMgndManuscritTw-cropped.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped.pdf
-, id=680, 544.28343pt x 362.85562pt>
+, id=688, 544.28343pt x 362.85562pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-croppe
 d.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cropped
@@ -1198,11 +1205,11 @@ dManuscritTw-cropped.pdf  used on input line 58.
 (pdftex.def)             Requested size: 126.0pt x 83.99763pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-negative/iEpiTripleWellManuscrit-cropped.pdf): PDF inclusion: found PDF version
- <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/negative/iEpiTripleWellManuscrit-cropped.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-croppe
-d.pdf, id=681, 551.81157pt x 362.85562pt>
+d.pdf, id=689, 551.81157pt x 362.85562pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-c
 ropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManuscrit-cr
@@ -1217,11 +1224,11 @@ Overfull \hbox (7.00012pt too wide) in paragraph at lines 58--59
 
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-negative/iSubcManuscritTws-cropped.pdf): PDF inclusion: found PDF version <1.7>
-, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/negative/iSubcManuscritTws-cropped.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped.pdf,
- id=682, 803.25093pt x 224.33812pt>
+ id=690, 803.25093pt x 224.33812pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped
 .pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/iSubcManuscritTws-cropped.
@@ -1231,11 +1238,11 @@ anuscritTws-cropped.pdf  used on input line 64.
 (pdftex.def)             Requested size: 252.0pt x 70.37933pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-negative/CurrentDistributionNormT140eT10_ExcTw-cropped.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/negative/CurrentDistributionNormT140eT10_ExcTw-cropped.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT140eT1
-0_ExcTw-cropped.pdf, id=683, 706.13812pt x 234.8775pt>
+0_ExcTw-cropped.pdf, id=691, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT1
 40eT10_ExcTw-cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT14
@@ -1243,7 +1250,7 @@ File: ./figures/modelesSimusResul/tripleWell/negative/CurrentDistributionNormT1
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/negative/Curren
 tDistributionNormT140eT10_ExcTw-cropped.pdf  used on input line 67.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
-<./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf, id=684,
+<./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf, id=692,
  536.78993pt x 364.1234pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/pdn_tw_positif300.pdf Gra
 phic file (type pdf)
@@ -1251,7 +1258,7 @@ phic file (type pdf)
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/positive/pdn_tw
 _positif300.pdf  used on input line 80.
 (pdftex.def)             Requested size: 126.0pt x 85.469pt.
-<./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf, id=685
+<./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf, id=693
 , 549.72423pt x 364.8762pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf Gr
 aphic file (type pdf)
@@ -1264,7 +1271,7 @@ Overfull \hbox (7.00012pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-<./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf, id=686
+<./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf, id=694
 , 788.58371pt x 227.99149pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf Gr
 aphic file (type pdf)
@@ -1274,11 +1281,11 @@ w_positif300.pdf  used on input line 86.
 (pdftex.def)             Requested size: 252.0pt x 72.85439pt.
 
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-positive/isubDensity_tw_positif300-cropped.pdf): PDF inclusion: found PDF versi
-on <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/positive/isubDensity_tw_positif300-cropped.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
 <./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-crop
-ped.pdf, id=687, 706.13812pt x 234.8775pt>
+ped.pdf, id=695, 706.13812pt x 234.8775pt>
 File: ./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300
 -cropped.pdf Graphic file (type pdf)
 <use ./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-
@@ -1286,39 +1293,45 @@ cropped.pdf>
 Package pdftex.def Info: ./figures/modelesSimusResul/tripleWell/positive/isubDe
 nsity_tw_positif300-cropped.pdf  used on input line 89.
 (pdftex.def)             Requested size: 252.0pt x 83.82112pt.
-) [6] [7 <./figures/dual+triple3.png> <./figures/modelesSimusResul/dualWell/neg
-ative/vddMgndManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/negat
-ive/iEpiDualWellManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/ne
-gative/iSubcManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/negati
-ve/CurrentDistributionNormT140eT10_ExcDw-cropped.pdf> <./figures/modelesSimusRe
-sul/dualWell/positive/pdn_dw_positif300.pdf> <./figures/modelesSimusResul/dualW
-ell/positive/iepi_dw_positif300.pdf
+) [7 <./figures/dual+triple3.png> <./figures/modelesSimusResul/dualWell/negativ
+e/vddMgndManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/negative/
+iEpiDualWellManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/negati
+ve/iSubcManuscrit-cropped.pdf> <./figures/modelesSimusResul/dualWell/negative/C
+urrentDistributionNormT140eT10_ExcDw-cropped.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/po
-sitive/iepi_dw_positif300.pdf): PDF inclusion: multiple pdfs with page group in
-cluded in a single page
+ [8 <./figures/modelesSimusResul/dualWell/positive/pdn_dw_positif300.pdf> <./fi
+gures/modelesSimusResul/dualWell/positive/iepi_dw_positif300.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/positive/iepi_dw_positif300.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
 > <./figures/modelesSimusResul/dualWell/positive/isub_dw_positif300.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/dualWell/po
-sitive/isub_dw_positif300.pdf): PDF inclusion: multiple pdfs with page group in
-cluded in a single page
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/dualWell/positive/isub_dw_positif300.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
 > <./figures/modelesSimusResul/dualWell/positive/isubDensity_dw_positif300-crop
-ped.pdf>] [8 <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritT
-w-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellM
-anuscrit-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iSubcMan
-uscritTws-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/Current
-DistributionNormT140eT10_ExcTw-cropped.pdf> <./figures/modelesSimusResul/triple
-Well/positive/pdn_tw_positif300.pdf> <./figures/modelesSimusResul/tripleWell/po
-sitive/iepi_tw_positif300.pdf
+ped.pdf> <./figures/modelesSimusResul/tripleWell/negative/vddMgndManuscritTw-cr
+opped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iEpiTripleWellManus
+crit-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/iSubcManuscr
+itTws-cropped.pdf> <./figures/modelesSimusResul/tripleWell/negative/CurrentDist
+ributionNormT140eT10_ExcTw-cropped.pdf> <./figures/modelesSimusResul/tripleWell
+/positive/pdn_tw_positif300.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-positive/iepi_tw_positif300.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/positive/pdn_tw_positif300.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./figures/modelesSimusResul/tripleWell/positive/iepi_tw_positif300.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/positive/iepi_tw_positif300.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 > <./figures/modelesSimusResul/tripleWell/positive/isub_tw_positif300.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/modelesSimusResul/tripleWell/
-positive/isub_tw_positif300.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/modeles
+SimusResul/tripleWell/positive/isub_tw_positif300.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
 > <./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-cr
 opped.pdf>] (./dw_tw_table.tex
 
@@ -1326,7 +1339,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 4.
 
 ) (./figures/stmphoto.tex
-<./figures/stmPhotoImshow.pdf, id=1639, 293.59688pt x 234.8775pt>
+<./figures/stmPhotoImshow.pdf, id=1640, 293.59688pt x 234.8775pt>
 File: ./figures/stmPhotoImshow.pdf Graphic file (type pdf)
 <use ./figures/stmPhotoImshow.pdf>
 Package pdftex.def Info: ./figures/stmPhotoImshow.pdf  used on input line 6.
@@ -1335,63 +1348,52 @@ Package pdftex.def Info: ./figures/stmPhotoImshow.pdf  used on input line 6.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./figures/stmignd.tex
-<./figures/pos_neg_IGND.pdf, id=1640, 366.70473pt x 230.1104pt>
+) (./figures/stmignd.tex [9]
+<./figures/pos_neg_IGND.pdf, id=1645, 366.70473pt x 230.1104pt>
 File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
 <use ./figures/pos_neg_IGND.pdf>
 Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 158.13026pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [9]) (./ic_model_valid.tex (./figures/fig_ivxmos.tex
-<./figures/IVX4.pdf, id=1645, 127.97812pt x 70.76437pt>
+)) (./ic_model_valid.tex (./figures/fig_ivxmos.tex
+<./figures/IVX4.pdf, id=1646, 127.97812pt x 70.76437pt>
 File: ./figures/IVX4.pdf Graphic file (type pdf)
 <use ./figures/IVX4.pdf>
 Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
 (pdftex.def)             Requested size: 252.0pt x 139.35046pt.
-)
-(./figures/invertersimu.tex
-<./figures/logic_gates_solo_M0_DW.pdf, id=1646, 635.73172pt x 893.16866pt>
+) [10 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/pos_neg
+_IGND.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./figures/IVX4.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/IVX4.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>] (./figures/invertersimu.tex
+<./figures/logic_gates_solo_M0_DW.pdf, id=1694, 635.73172pt x 893.16866pt>
 File: ./figures/logic_gates_solo_M0_DW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_DW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_DW.pdf  used on input li
 ne 7.
 (pdftex.def)             Requested size: 127.51117pt x 179.13483pt.
-<./figures/logic_gates_solo_M0_TW.pdf, id=1647, 622.0313pt x 897.9932pt>
+<./figures/logic_gates_solo_M0_TW.pdf, id=1695, 622.0313pt x 897.9932pt>
 File: ./figures/logic_gates_solo_M0_TW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_TW.pdf>
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_TW.pdf  used on input li
 ne 8.
 (pdftex.def)             Requested size: 124.48883pt x 179.71877pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [10 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/pos_neg_IGND.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
-> <./figures/IVX4.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/IVX4.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->] (./figures/dffchain.tex
-<./figures/dff_ivx_chain_3.pdf, id=1695, 118.94438pt x 33.12375pt>
+) (./figures/dffchain.tex
+<./figures/dff_ivx_chain_3.pdf, id=1696, 118.94438pt x 33.12375pt>
 File: ./figures/dff_ivx_chain_3.pdf Graphic file (type pdf)
 <use ./figures/dff_ivx_chain_3.pdf>
 Package pdftex.def Info: ./figures/dff_ivx_chain_3.pdf  used on input line 7.
 (pdftex.def)             Requested size: 252.0pt x 70.18105pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 ) (./figures/dffidle.tex
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/anim0000-cropped.pdf): PDF in
-clusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures/anim0000-cropped.pdf, id=1696, 1011.78pt x 613.96375pt>
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/anim000
+0-cropped.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
+5> allowed
+<./figures/anim0000-cropped.pdf, id=1697, 1011.78pt x 613.96375pt>
 File: ./figures/anim0000-cropped.pdf Graphic file (type pdf)
 <use ./figures/anim0000-cropped.pdf>
 Package pdftex.def Info: ./figures/anim0000-cropped.pdf  used on input line 7.
@@ -1403,62 +1405,63 @@ Package textcomp Info: Symbol \textrightarrow not provided by
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 81.
- (./figures/dff-dw-neg.tex
-<./figures/dff-pdf-dw-neg/anim0108.pdf, id=1697, 1011.78pt x 650.43pt>
+ [11 <./figures/logic_gates_solo_M0_DW.pdf> <./figures/logic_gates_solo_M0_TW.p
+df
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/logic_g
+ates_solo_M0_TW.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <./figures/dff_ivx_chain_3.pdf
+
+pdfTeX warning: /app/texlive/bin/aarch64-linux/pdflatex (file ./figures/dff_ivx
+_chain_3.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <./figures/anim0000-cropped.pdf>] (./figures/dff-dw-neg.tex
+<./figures/dff-pdf-dw-neg/anim0108.pdf, id=3041, 1011.78pt x 650.43pt>
 File: ./figures/dff-pdf-dw-neg/anim0108.pdf Graphic file (type pdf)
 <use ./figures/dff-pdf-dw-neg/anim0108.pdf>
 Package pdftex.def Info: ./figures/dff-pdf-dw-neg/anim0108.pdf  used on input l
 ine 6.
 (pdftex.def)             Requested size: 252.0pt x 162.00168pt.
+))
+(./conclusion.tex) (./0_article.bbl) [12 <./figures/dff-pdf-dw-neg/anim0108.pdf
+>] (./0_article.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [11 <./figures/logic_gates_solo_M0_DW.pdf> <./figures/logic_gates_solo_M0_TW.
-pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/logic_gates_solo_M0_TW.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/dff_ivx_chain_3.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/dff_ivx_chain_3.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./figures/anim0000-cropped.pdf>]) (./conclusion.tex) (./0_article.bbl)
-[12 <./figures/dff-pdf-dw-neg/anim0108.pdf>] (./0_article.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8757 strings out of 476091
- 162944 string characters out of 5794082
- 1883330 words of memory out of 5000000
- 28847 multiletter control sequences out of 15000+600000
- 560624 words of font info for 125 fonts, out of 8000000 for 9000
+ 8838 strings out of 474116
+ 164002 string characters out of 5745188
+ 1952187 words of memory out of 5000000
+ 30946 multiletter control sequences out of 15000+600000
+ 606406 words of font info for 129 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 87i,15n,91p,464b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/geoff/.texlive2022/texmf-var/fonts/pk/ljfour/public/skull/skull.400pk
->{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/f
-onts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/cbfonts/grmn1000.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (12 pages, 18696210 bytes).
+ 94i,15n,107p,464b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/geoff/.texlive2024/texmf-var/fonts/pk/ljfour/public/skull/skull.400pk
+></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></app/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></app/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></app/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></app/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></app/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></app/texlive/texmf-dist/fonts/type1
+/public/cbfonts/grmn1000.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/latxfont/lcircle1.pfb></app/texlive/texmf-dist/fonts/type1/public/cm-super/s
+frm1000.pfb></app/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></app/t
+exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></app/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times
+/utmbi8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></app/te
+xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 0_article.pdf (12 pages, 18696564 bytes).
 PDF statistics:
- 3171 PDF objects out of 3580 (max. 8388607)
+ 3172 PDF objects out of 3580 (max. 8388607)
  1733 compressed objects within 18 object streams
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
