@@ -34,8 +34,8 @@
 			\item Verification bypass \textrightarrow\ Modify data on the fly to fake authenticity (e.g. to bypass bootloader security);
 			\item Confidential data extraction \textrightarrow\ Modify data to perform differential fault analysis.
 		\end{itemize}
-		To perform these objectives, we can use various injection methods, such as EMFI, LFI or BBI.
-		Before presenting our work on BBI further, let us analyze the available and existing BBI platforms in the state-of-the-art.
+		To perform these objectives, we can use the previously mentioned injection methods, such as EMFI, LFI or BBI.
+		Before presenting further our work on BBI, let us analyze the available and existing BBI platforms in the state-of-the-art.
 %		\textcolor{red}{To finish.}
 
 	\subsection{BBI in the state-of-the-art}
@@ -45,9 +45,16 @@
 		Currently, there are ten main works focusing on BBI \cite{bbiOrigin, bbiSecond, bbiThird, bbiColin,japbbi, japbbi2, mybbiCosade, mybbiFdtc2022, mybbifdtc2023, colinFdtc2023}.
 		Each one of them made a unique contribution for a better understanding of BBI.
 
-		The original work \cite{bbiOrigin} introduced the technique for the first time using an ASIC embedding counter-measures and performing a Bellcore attack \cite{bellcore}, as this attack has weak fault requirements, on a modular exponentiation using an arithmetic co-processor.
-		One year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
-		After that, another work presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
+		The original works \cite{bbiOrigin, bbiSecond} introduced the technique for the first time using an ASIC embedding counter-measures and performing a Bellcore attack \cite{bellcore}, as this attack has weak fault requirements, on a modular exponentiation using an arithmetic co-processor.
+		
+		Then, another paper \cite{bbiThird} introduced an advanced BBI test bench aiming at performing reproducible attacks.
+		In addition to this, it introduced a dual-well substrate model for the BBI attack.
+		
+%		One year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
+		After that, another work \cite{bbiColin} demonstrated that BBI can be performed quite easily using Wafer-Level Chip-Scale Packaging (WLCSP), naturally exposing the backside of ICs.
+		In addition to this, it introduced a low-cost tool to perform BBI
+		
+%		presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
 		Then, quite interestingly researchers proposed a study of BBI using an ESD gun as a voltage surge generator \cite{japbbi, japbbi2}.
 		At the same time, the impact of substrate thickness on BBI efficiency has been studied in \cite{mybbiCosade}, in addition to a simulation flow and better practices \cite{mybbiFdtc2022,mybbifdtc2023}.
 		Eventually, one last work proposed a safety-focused low-cost and open-source design for the practice of BBI \cite{colinFdtc2023}.
