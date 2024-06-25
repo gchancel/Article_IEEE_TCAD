@@ -52,17 +52,24 @@
 		
 %		One year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
 		After that, another work \cite{bbiColin} demonstrated that BBI can be performed quite easily using Wafer-Level Chip-Scale Packaging (WLCSP), naturally exposing the backside of ICs.
-		In addition to this, it introduced a low-cost tool to perform BBI
+		In addition to this, it introduced a low-cost tool to perform BBI: the Pico-EMP, a cheap and open-source device able to generate high voltage pulse with entry level hardware.
 		
 %		presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
-		Then, quite interestingly researchers proposed a study of BBI on flip-chip packaging ICs using an ESD gun as a voltage surge generator \cite{japbbi, japbbi2}.
-		At the same time, the impact of substrate thickness on BBI efficiency has been studied in \cite{mybbiCosade}, in addition to a simulation flow and better practices \cite{mybbiFdtc2022,mybbifdtc2023}.
+		Then, quite interestingly, researchers proposed a study of BBI on flip-chip packaging ICs using an ESD gun as a voltage surge generator, but concluded that its accuracy, either spatially or in terms of analytical capabilities was pretty limited \cite{japbbi, japbbi2}.
+		Therefore, they developed a custom tool called a high-voltage pulse injector (HVPI), equipped with a transformer, controller through a NMOS transistor.
+		They tested their design against DFF registers and observed bit flips in those.
+		
+		
+		At the same time, the impact of substrate thickness on BBI efficiency has been studied in \cite{mybbiCosade}, comparing the effects of BBI on identical ICs with their substrate thinned to various levels, in addition to introducing a simulation flow.
+		
+		Then, \cite{mybbiFdtc2022} studied the impact of dual-well and triple-well substrate types on BBI induced effects, and \cite{mybbifdtc2023} proposed better practices for BBI platform design while studying a logic gate level model of BBI.
+		
 		Eventually, one last work proposed a safety-focused low-cost and open-source design for the practice of BBI \cite{colinFdtc2023}.
 %		\textcolor{red}{To FINISH.}
 
 		However, despite this extensive work, there are still unanswered questions, and the current works aims at bringing more answers thanks to a compilation of our work on Body Biasing Injection.
 
-		Before continuing, let us introduce the platform we use for the present work.
+%		Before continuing, let us introduce the platform we use for the present work.
 
 %		Before introducing the present work, let us eventually analyze the industrial platforms proposed by various manufacturers and introduce our own test platform.
 %		We can distinguish three major actors proposing BBI related products:

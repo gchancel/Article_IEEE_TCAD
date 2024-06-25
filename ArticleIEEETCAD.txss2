@@ -18,44 +18,44 @@
                 "Line": 56
             },
             {
-                "Col": 18,
+                "Col": 0,
                 "EditorGroup": 0,
                 "FileName": "0_abstract.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 20
+                "Line": 8
             },
             {
-                "Col": 0,
+                "Col": 192,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
-                "FirstLine": 26,
+                "FirstLine": 56,
                 "FoldedLines": "",
-                "Line": 30
-            },
-            {
-                "Col": 30,
-                "EditorGroup": 0,
-                "FileName": "good_practices.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 34
+                "Line": 69
             },
             {
                 "Col": 44,
                 "EditorGroup": 0,
+                "FileName": "good_practices.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 25
+            },
+            {
+                "Col": 128,
+                "EditorGroup": 0,
                 "FileName": "ic_modeling_v2.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 190
+                "Line": 187
             },
             {
-                "Col": 81,
+                "Col": 96,
                 "EditorGroup": 0,
                 "FileName": "ic_model_valid.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 85
+                "Line": 98
             },
             {
                 "Col": 0,
@@ -63,42 +63,50 @@
                 "FileName": "conclusion.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 4
             },
             {
-                "Col": 73,
+                "Col": 6,
                 "EditorGroup": 0,
                 "FileName": "references.bib",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 14
+                "Line": 19
+            },
+            {
+                "Col": 42,
+                "EditorGroup": 0,
+                "FileName": "figures/stmphoto.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 50,
+                "EditorGroup": 0,
+                "FileName": "figures/stmignd.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
+            },
+            {
+                "Col": 28,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_ivxmos.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 6
             },
             {
                 "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "figures/dffidle.tex",
+                "FileName": "dw_tw_table.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 10
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "figures/dffchain.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 3
-            },
-            {
-                "Col": 40,
-                "EditorGroup": 0,
-                "FileName": "figures/dff-dw-neg.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 5
+                "Line": 21
             }
         ],
         "MasterFile": "",
-        "VerticalSplit": true
+        "VerticalSplit": false
     }
 }
