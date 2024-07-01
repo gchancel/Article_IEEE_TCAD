@@ -72,7 +72,11 @@
 		For this purpose, multiple solutions can be approached.
 		The best solution would be to implement an adaptive impedance matching system with active feedback, able to measure in real-time the impedance seen by the generator.
 		However, adopting such a method is costly and long to set up in comparison to the next solution.
-		Therefore, we propose a much simpler approach: since most of the time the impedance presented by the IC on its backside is in the order of 1 k \textOmega\ in our platform \cite{mybbifdtc2023}, approaching the 50 \textOmega\ expected by the generator can be done by connecting in parallel to the IC a 50 \textOmega\ resistor, as shown in the schematic in Fig. \ref{bbi_setups}.b.
+		Therefore, we propose a much simpler approach.
+		Since, most of the time with our platform and targets, the impedance presented by the IC on its backside is in the order of 1 k \textOmega\ \cite{mybbifdtc2023}, approaching the 50 \textOmega\ expected by the generator can be done by connecting a 50 \textOmega\ resistor in parallel to the IC, as shown in the schematic in Fig. \ref{bbi_setups}b.
+		
+		Then, concerning the platform grounding, the solution is fairly straightforward.
+		We propose to choose a reference, such as the equipment ground in our scenario, and bypass every other ground on the platform with low-impedance interconnections from the previously chosen reference, as proposed in Fig. \ref{bbi_setups}b.
 
 %		First, let us talk about the improper grounding,
 %		Alleviating this issue is fairly straightforward.
@@ -86,9 +90,10 @@
 
 	\subsection{Platform enhancement validation}
 		\input{./figures/real_imp_match.tex}
-		The proposed solution concerning the approximate impedance matching is shown in Fig. \ref{imp_match_real}.
-		The picture shows the BBI probe with a compensation load connected in parallel.
-		To show the actual interests of these improvements, let us analyze signals from an actual platform.
+		Now that we theoretically presented platform improvements, let us analyze their effective impact on our actual BBI platform.
+		The proposed solution concerning the approximate impedance matching and ground bypassing is shown in Fig. \ref{imp_match_real}.
+		The picture shows the BBI probe with a compensation load connected in parallel. in addition to the probe ground bypass.
+		To show the actual interests of these improvements, let us analyze measured signals using our platform.
 
 		We will compare before and after results and analyze the differences made by these improvements.
 		To that end, we set up simple experiments consisting in injecting a voltage pulse into our IC target, measuring the voltage pulse at the probe and the current in the IC.
