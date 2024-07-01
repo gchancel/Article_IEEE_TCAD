@@ -99,7 +99,14 @@
 		To that end, we set up simple experiments consisting in injecting a voltage pulse into our IC target, measuring the voltage pulse at the probe and the current in the IC.
 		\input{./figures/actual_improvements.tex}
 		Fig. \ref{actual_imp} presents the waveform results of such experiments.
-		The figure is split in two main parts, the top row shows the results before the improvements, and the bottom row shows the results after the improvements.
+		The figure shows four distinctive signals, in the following order:
+		\begin{itemize}
+			\item S1P: the voltage pulse before improvements;
+			\item S1G: the IC ground current before improvements;
+			\item S2P: the voltage pulse after improvements;
+			\item S2G: the IC ground current after improvements.
+		\end{itemize}
+%		The figure is split in two main parts, the top row shows the results before the improvements, and the bottom row shows the results after the improvements.
 		The experimental conditions are the following:
 		\begin{itemize}
 			\item Voltage pulse amplitude = -140 V;
@@ -108,39 +115,43 @@
 		\end{itemize}
 
 		The waveform S1P shows in blue the ideal waveform according to the generator settings and in red the measured waveform.
-		In addition to this are annotated some noteworthy values.
+		In addition to this are annotated some noteworthy values: such as the set-point voltage of -140 V, the max absolute measured voltage of 292 V, and rise and fall times.
 		The first thing to notice here is the obvious undershoot of about -110 \% under the set-point.
-		It is far from being desirable when performing fault injection as the voltage amplitude is of great importance when considering the method effects on the IC \cite{mybbifdtc2023}.
+		It is far from being desirable when performing fault injection as the voltage amplitude control is of great importance for precision purposes when considering the method effects on the IC \cite{mybbifdtc2023}.
 		Furthermore, the pulse width is 275 \% higher than the set-point, measuring 75 ns instead of 20 ns.
-		It is an additional issue as it annihilates the accuracy needed in this context, and leads to longer pulses injected into the IC and potentially more energy than required.
+		It is an additional issue as it annihilates the accuracy needed in this context, and leads to longer pulses injected into the IC, and therefore energy than required and uncontrollable behavior.
 		Additionally, the rise and fall times are also 4 to 16 times higher than expected.
-		Eventually, we can notice damped oscillations, probably the proof of ringing in the transmission line.
+		Eventually, we can notice damped oscillations, an observation of ringing in the transmission line.
 
 		Then, the waveform S1G, associated with the previous one, shows the IC ground current.
 		Here, the damped oscillations are more clearly visible, in addition to the much longer than expected pulse duration.
 		The RMS value of the injected current measures around 25 mA.
 
-		Afterwards, the waveform S2P shows the results with the proposed improvements
-		The voltage pulse amplitude is much closer to the set-point, with an undershoot of -31 \%.
+		Afterward, the waveform S2P shows the voltage results with the proposed improvements.
+		The voltage pulse amplitude is much closer to the set-point, with an undershoot reduced to -31 \%.
 		It is not perfect, but considering the simple nature of the impedance matching we propose, it was to be expected.
 		On another note, the pulse width set-point is perfectly respected.
 		However, the rise and fall times are still 4 times higher.
-		Then, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
+		
+		Eventually, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
 
 	\subsection{Platform enhancement application}
 		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
 		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
-		We chose to perform a single bit DFA on our IC target.
-		The target embeds a dedicated cryptographic core, which we set up using a 128 bits AES.
+		We chose to perform a single bit DFA on our IC target, as the fault criterion is hard to obtain, and therefore it can easily show the interest, or the lack of interest, of performing such improvements to the platform.
+		
+		The target we used embeds a dedicated cryptographic core, which we set up using an AES on 128 bits.
 		We then decided to perform the Giraud's DFA \cite{giraudDfa}, originally described in 2002.
 		This attack requires creating single bit faults in one or more bytes on the targeted AES.
-		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and powered with 3.3 V for the experiment.
+		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and externally powered with 3.3 V.
 
 		\subsubsection{Preliminary experiments}
-			Before setting up the attack, we had to set up experiments allowing us to find the optimal locations in the AES sub-circuit where the attack could be performed.
+			Before setting up the attack, we had to set up preliminary experiments allowing us to find optimal locations in the AES sub-circuit where the attack would be performed.
+			Indeed, many areas and experimental parameters do not allow observing single-bit faults.
+			
 			To do so, we created what we call Fault Analysis Mappings (FAM).
-			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, and analyzing the IC behavior while performing BBI.
-			The behavior is split into seven cases:
+			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, and analyzing the IC behavior while performing BBI for a set of various experimental parameters.
+			We split the observed behavior into seven cases:
 			\begin{itemize}
 				\item Correct: the AES responds normally;
 				\item Monobit Monobyte fault;
@@ -150,34 +161,35 @@
 				\item Crash: the circuit did not respond correctly;
 				\item Timeout: the circuit did not respond.
 			\end{itemize}
-			Therefore, as we need single bit faults, only two cases are valid for the Giraud's DFA.
+			Therefore, as we only need single bit faults, only two cases are valid for the Giraud's DFA.
 			To compare the two platforms, we performed a FAM on each one of them, using the following parameters:
 			\begin{itemize}
 				\item Pulse amplitude: from -150 V to -400 V with -5 V steps;
-				\item Pulse width = 4.5 ns;
-				\item Pulse delay of 150 ns + 553 ns targeting the penultimate AES round;
-				\item A 40 mm displacement step.
+				\item Pulse width: 4.5 ns;
+				\item Pulse delay: 150 ns + 553 ns targeting the penultimate AES round;
+				\item Displacement step: 40 mm for the BBI probe over the mapped area.
 			\end{itemize}
-			Depending on the IC behavior, the experiments cant take up to 36 hours.
+			Depending on the IC behavior, the experiments can take up to 36 hours.
 			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
 			\input{./figures/aesGiraud.tex}
-			Fig. \ref{giraud_fam} presents the FAM results for both a typical and an improved platform.
+			Fig. \ref{giraud_fam} presents the FAM results for both a typical (top) and an improved (bottom) platform.
 			The mapped area encloses a little more than the actual AES location, to be sure to map its entirety.
 
-			Let us look at Fig. \ref{giraud_fam}.a first.
+			Let us look at Fig. \ref{giraud_fam} (top) first.
 			What is interesting here is that we can spot numerous location where the circuit crashed.
 			More specifically, they represent 70 \% of the mapped area.
 			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
-			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
+			We first thought that the experimental parameters were at fault, so we reiterated the experiment using various different set of parameters, only to observe a majority of crashed locations, while never observing any single bit fault.
+%			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
 %			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
 
-			Then, let us discuss Fig. \ref{giraud_fam}.b.
-			The first interesting thing to remark is the total absence of IC crash.
-			It is a desirable behavior as it indicates that we did not set a too high voltage pulse.
-			Then, concerning monobit faults, we can spot five locations.
-			It is a good sign for a preliminary experiment as it indicates the feasibility of such faults.
-			It does not mean that we can perform the attack on one location.
-			However, it means that we can use these locations as good starting points to perform the DFA.
+			Then, let us discuss Fig. \ref{giraud_fam} (bottom).
+			The first interesting thing to remark here is the total absence of IC crash.
+			It is a desirable behavior as it indicates that we did not set a too high voltage or a too long pulse.
+			Then, concerning single bit faults, we can spot five locations.
+			It is a good sign for a preliminary experiment as it indicates the feasibility of such faults without much effort.
+			However, it does not mean that we can perform the attack on one location with one set of parameters.
+			It rather means that we can use these locations as good starting points to perform the DFA.
 
 		\subsubsection{DFA results}
 			To perform the DFA, we focused on the five previously found monobit locations above the AES core.
@@ -189,14 +201,14 @@
 			\end{itemize}
 			For each set of experimental parameters, we had to set some limits when trying to inject faults.
 			Indeed, it is required to create a finite experiment.
-			The first limit consists in trying to retrieve a maximum of 100 single bit fault.
-			Then, and because it cannot be achieved for every set of parameters, we set another limit of 10000 tries to achieve the previous limit.
+			The first limit consists in trying to retrieve a maximum of 100 single bit fault, as it is far more than suggested by Giraud's DFA \cite{giraudDfa}.
+			Then, and because it cannot be achieved for every set of parameters, we set another limit of 10000 trials to achieve the previous limit.
 			\input{./figures/table_dfa.tex}
 			Thanks to this, we retrieved, using the five locations, 14 out of 16 bytes of the AES secret key, as shown in Table \ref{table_giraud}.
 			The red cells indicate the two byes not retrieved thanks to the Giraud's DFA.
-			To retrieve these last two bytes, we used a brute force method.
+			To retrieve them, we used a brute force method.
 			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every possibility.
-			That represents around 6.5 seconds of total computation.
+			This calculation represents around 6.5 seconds of total computation time.
 
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
