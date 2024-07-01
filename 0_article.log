@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 - Flatpak) (preloaded format=pdflatex 2024.4.4)  1 JUL 2024 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 - Flatpak) (preloaded format=pdflatex 2024.4.4)  1 JUL 2024 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1013,10 +1013,8 @@ File: ./figures/aesFastImpGnd-cropped.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/aesFastImpGnd-cropped.pdf  used on input lin
 e 9.
 (pdftex.def)             Requested size: 252.0pt x 172.0995pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./figures/table_dfa.tex
+) [4 <./figures/aesFastGndOnly-cropped.pdf> <./figures/aesFastImpGnd-cropped.pd
+f>] (./figures/table_dfa.tex
 Overfull \hbox (0.75896pt too wide) in paragraph at lines 10--10
 []|\OT1/ptm/m/n/8 0xCA| 
  []
@@ -1036,8 +1034,7 @@ Overfull \hbox (1.19899pt too wide) in paragraph at lines 10--10
 []|\OT1/ptm/m/n/8 0xAD| 
  []
 
-) [4 <./figures/aesFastGndOnly-cropped.pdf> <./figures/aesFastImpGnd-cropped.pd
-f>]) (./ic_modeling_v2.tex
+)) (./ic_modeling_v2.tex
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 14.
@@ -1062,12 +1059,9 @@ File: ./figures/std_cell_logic_passive.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/std_cell_logic_passive.pdf  used on input li
 ne 6.
 (pdftex.def)             Requested size: 252.0pt x 126.00262pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [5 <./figures/psu_std_cell2.pdf>] (./figures/fig_substrate.tex
-<./figures/substrate_2.pdf, id=656, 295.61868pt x 303.73332pt>
+ [5 <./figures/psu_std_cell2.pdf>])
+(./figures/fig_substrate.tex
+<./figures/substrate_2.pdf, id=655, 295.61868pt x 303.73332pt>
 File: ./figures/substrate_2.pdf Graphic file (type pdf)
 <use ./figures/substrate_2.pdf>
 Package pdftex.def Info: ./figures/substrate_2.pdf  used on input line 6.
@@ -1078,18 +1072,17 @@ Underfull \hbox (badness 3148) in paragraph at lines 67--68
  []
 
 (./figures/fig_stdcellmodel.tex
-<./figures/dual+triple3.png, id=657, 3011.25pt x 1851.91875pt>
+<./figures/dual+triple3.png, id=656, 3011.25pt x 1851.91875pt>
 File: ./figures/dual+triple3.png Graphic file (type png)
 <use ./figures/dual+triple3.png>
 Package pdftex.def Info: ./figures/dual+triple3.png  used on input line 6.
 (pdftex.def)             Requested size: 516.0pt x 317.33698pt.
-) (./table_op_point.tex) [6 <./figures/std_cell_logic_passive.pdf> <./figures/s
-ubstrate_2.pdf
+) [6 <./figures/std_cell_logic_passive.pdf> <./figures/substrate_2.pdf
 
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/substrat
 e_2.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
->] (./simuResults.tex
+>] (./table_op_point.tex) (./simuResults.tex
 
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/modelesS
 imusResul/dualWell/negative/vddMgndManuscrit-cropped.pdf): PDF inclusion: found
@@ -1334,17 +1327,21 @@ pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/modelesS
 imusResul/tripleWell/positive/isub_tw_positif300.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 > <./figures/modelesSimusResul/tripleWell/positive/isubDensity_tw_positif300-cr
-opped.pdf>] (./dw_tw_table.tex
+opped.pdf>] [9] (./dw_tw_table.tex
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 4.
 
-) [9] (./figures/stmphoto.tex
+) (./figures/stmphoto.tex
 <./figures/stmPhotoImshow.pdf, id=1643, 293.59688pt x 234.8775pt>
 File: ./figures/stmPhotoImshow.pdf Graphic file (type pdf)
 <use ./figures/stmPhotoImshow.pdf>
 Package pdftex.def Info: ./figures/stmPhotoImshow.pdf  used on input line 6.
 (pdftex.def)             Requested size: 209.16046pt x 167.32686pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./figures/stmignd.tex
 <./figures/pos_neg_IGND.pdf, id=1644, 366.70473pt x 230.1104pt>
 File: ./figures/pos_neg_IGND.pdf Graphic file (type pdf)
@@ -1355,22 +1352,19 @@ Package pdftex.def Info: ./figures/pos_neg_IGND.pdf  used on input line 6.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (./ic_model_valid.tex (./figures/fig_ivxmos.tex
-<./figures/IVX4.pdf, id=1645, 127.97812pt x 70.76437pt>
-File: ./figures/IVX4.pdf Graphic file (type pdf)
-<use ./figures/IVX4.pdf>
-Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
-(pdftex.def)             Requested size: 252.0pt x 139.35046pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [10 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_IGND.pdf
+)) (./ic_model_valid.tex [10 <./figures/stmPhotoImshow.pdf> <./figures/pos_neg_
+IGND.pdf
 
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/pos_neg_
 IGND.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
->] (./figures/invertersimu.tex
+>] (./figures/fig_ivxmos.tex
+<./figures/IVX4.pdf, id=1686, 127.97812pt x 70.76437pt>
+File: ./figures/IVX4.pdf Graphic file (type pdf)
+<use ./figures/IVX4.pdf>
+Package pdftex.def Info: ./figures/IVX4.pdf  used on input line 6.
+(pdftex.def)             Requested size: 252.0pt x 139.35046pt.
+) (./figures/invertersimu.tex
 <./figures/logic_gates_solo_M0_DW.pdf, id=1687, 635.73172pt x 893.16866pt>
 File: ./figures/logic_gates_solo_M0_DW.pdf Graphic file (type pdf)
 <use ./figures/logic_gates_solo_M0_DW.pdf>
@@ -1383,14 +1377,21 @@ File: ./figures/logic_gates_solo_M0_TW.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/logic_gates_solo_M0_TW.pdf  used on input li
 ne 8.
 (pdftex.def)             Requested size: 124.48883pt x 179.71877pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./figures/dffchain.tex
 <./figures/dff_ivx_chain_3.pdf, id=1689, 118.94438pt x 33.12375pt>
 File: ./figures/dff_ivx_chain_3.pdf Graphic file (type pdf)
 <use ./figures/dff_ivx_chain_3.pdf>
 Package pdftex.def Info: ./figures/dff_ivx_chain_3.pdf  used on input line 7.
 (pdftex.def)             Requested size: 252.0pt x 70.18105pt.
-) (./figures/dffidle.tex [11 <./figures/IVX4.pdf> <./figures/logic_gates_solo_M
-0_DW.pdf
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [11 <./figures/IVX4.pdf> <./figures/logic_gates_solo_M0_DW.pdf
 
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/logic_ga
 tes_solo_M0_DW.pdf): PDF inclusion: multiple pdfs with page group included in a
@@ -1400,17 +1401,12 @@ tes_solo_M0_DW.pdf): PDF inclusion: multiple pdfs with page group included in a
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/logic_ga
 tes_solo_M0_TW.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
-> <./figures/dff_ivx_chain_3.pdf
-
-pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/dff_ivx_
-chain_3.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
->]
+>] (./figures/dffidle.tex
 
 pdfTeX warning: /app/texlive/bin/x86_64-linux/pdflatex (file ./figures/anim0000
 -cropped.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<./figures/anim0000-cropped.pdf, id=2996, 1011.78pt x 613.96375pt>
+<./figures/anim0000-cropped.pdf, id=2989, 1011.78pt x 613.96375pt>
 File: ./figures/anim0000-cropped.pdf Graphic file (type pdf)
 <use ./figures/anim0000-cropped.pdf>
 Package pdftex.def Info: ./figures/anim0000-cropped.pdf  used on input line 7.
@@ -1423,14 +1419,18 @@ Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 81.
  (./figures/dff-dw-neg.tex
-<./figures/dff-pdf-dw-neg/anim0108.pdf, id=2997, 1011.78pt x 650.43pt>
+<./figures/dff-pdf-dw-neg/anim0108.pdf, id=2990, 1011.78pt x 650.43pt>
 File: ./figures/dff-pdf-dw-neg/anim0108.pdf Graphic file (type pdf)
 <use ./figures/dff-pdf-dw-neg/anim0108.pdf>
 Package pdftex.def Info: ./figures/dff-pdf-dw-neg/anim0108.pdf  used on input l
 ine 6.
 (pdftex.def)             Requested size: 252.0pt x 162.00168pt.
-)) (./conclusion.tex) (./0_article.bbl [12 <./figures/anim0000-cropped.pdf> <./
-figures/dff-pdf-dw-neg/anim0108.pdf>]) [13
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)) (./conclusion.tex) (./0_article.bbl [12 <./figures/dff_ivx_chain_3.pdf> <./f
+igures/anim0000-cropped.pdf> <./figures/dff-pdf-dw-neg/anim0108.pdf>]) [13
 
 ]
 (./0_article.aux)
@@ -1467,10 +1467,10 @@ pp/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></app/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></app/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></ap
 p/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (13 pages, 18697364 bytes).
+Output written on 0_article.pdf (13 pages, 18697920 bytes).
 PDF statistics:
- 3176 PDF objects out of 3580 (max. 8388607)
- 1736 compressed objects within 18 object streams
+ 3177 PDF objects out of 3580 (max. 8388607)
+ 1737 compressed objects within 18 object streams
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
