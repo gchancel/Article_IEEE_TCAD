@@ -48,7 +48,7 @@
 
 	First, let us focus on the dual-well inverter.
 	The corresponding schematic is shown in Fig. \ref{ivxbufmos}b, and the simulation results are shown in Fig. \ref{ivxsimu}a.
-	In that case, as we have seen before, the global IC coupling is resistive, with a discrepancy between VSS and VDD.
+	In that case, as we have seen before, the global IC coupling is resistive, with a discrepancy between VSS and VDD: VSS being purely resistive, and VDD being purely capacitive.
 	Therefore, the inverter current sum (green) follows a DC-response, similar to the differential power delivery voltage (black).
 	The inverter output follows the current sum curve, and its output goes from a low to a high logic value during 10 ns, then back to its original state.
 	It is further corroborated by looking at the load current, which is charged on the first pulse edge, then discharged on the second one.
@@ -110,7 +110,17 @@
 	\subsubsection{Triple-well substrate, negative pulse}
 		\input{./figures/dff-tw-neg.tex}
 		Fig. \ref{dffstatic-tw} shows the simulation results for a triple-well negative pulse for a steady state disturbed DFF.
+		In that case, the DFF input is disturbed, similarly to its output, by the BBI pulse.
+		This causes a voltage drop significant enough to create a parasitic low logical value at the net FOUT.
+		Concerning the clock, its maximum voltage is damped by the BBI pulse down 700 mV for one period.
 		
+		\input{./figures/dff-tw-neg-dyn.tex}
+		Eventually, Fig. \ref{dffdynamic-tw} shows the results for a dynamic BBI in a triple-well under a negative pulse.
+		Similar to the steady state result, the clock voltage is damped down to 800 mV.
+		The DFF input is clearly disturbed and the disturbance follows the BBI pulse, which is similar on the DFF output.
+		These disturbances then cause an error during the sampling of the high logic value, which reverberates on the net FOUT, which shows a short pulse instead of a plateau, around 50 ns.
+		
+\subsection{BBI effects on dynamic logic gates: DFF in practice}
 	\textcolor{orange}{The rest of this section is in the making. Some experiments are missing to illustrate the DFF results. We are waiting for the newly opened circuits.}
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
