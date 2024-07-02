@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.2)  2 JUL 2024 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.2)  2 JUL 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1451,7 +1451,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  8878 strings out of 476000
  165157 string characters out of 5792234
- 1954187 words of memory out of 5000000
+ 1955187 words of memory out of 5000000
  30735 multiletter control sequences out of 15000+600000
  606406 words of font info for 129 fonts, out of 8000000 for 9000
  63 hyphenation exceptions out of 8191
@@ -1472,7 +1472,7 @@ w/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on 0_article.pdf (14 pages, 18752599 bytes).
+Output written on 0_article.pdf (14 pages, 18752319 bytes).
 PDF statistics:
  3316 PDF objects out of 3580 (max. 8388607)
  1754 compressed objects within 18 object streams
