@@ -200,15 +200,17 @@
 				\item Injection delay ranging from \textpm 10 ns around the penultimate AES round.
 			\end{itemize}
 			For each set of experimental parameters, we had to set some limits when trying to inject faults.
-			Indeed, it is required to create a finite experiment.
-			The first limit consists in trying to retrieve a maximum of 100 single bit fault, as it is far more than suggested by Giraud's DFA \cite{giraudDfa}.
-			Then, and because it cannot be achieved for every set of parameters, we set another limit of 10000 trials to achieve the previous limit.
+			Indeed, it is required to create a finite and of reasonable length experiment.
+			The first limit consists in trying to retrieve a maximum of 100 single bit faults.
+			We have chosen this value as it is far more than what is suggested by Giraud's DFA \cite{giraudDfa} description.
+			However, if reaching this limit can be easy on some sets of location and parameters, on others, it is almost impossible.
+			Therefore, we have set another limit of 10000 trials to achieve the previous goal.
 			\input{./figures/table_dfa.tex}
-			Thanks to this, we retrieved, using the five locations, 14 out of 16 bytes of the AES secret key, as shown in Table \ref{table_giraud}.
-			The red cells indicate the two byes not retrieved thanks to the Giraud's DFA.
-			To retrieve them, we used a brute force method.
-			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every possibility.
-			This calculation represents around 6.5 seconds of total computation time.
+			Thanks to this experiment, we retrieved, using the five previously identified locations, 14 bytes out of 16 of the AES K10 key, which is directly linked to the secret key in an AES-128 bits implementation, as shown in Table \ref{table_giraud}.
+			We could not retrieve with the Giraud's DFA the bytes number 2 and 5, which are located in the red cells in the previous table.
+			To retrieve the key in its entirety, we performed a brute force method consisting in calculating every possibility for the remaining two bytes.
+			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, and the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every combination.
+			This calculation represents around 6.5 seconds of total computation time, and the results are shown in Table \ref{table_giraud}.
 
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
