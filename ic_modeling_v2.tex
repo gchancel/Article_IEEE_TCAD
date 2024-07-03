@@ -3,7 +3,7 @@
 
 \section{Body Biasing Injection: disturbances nature and propagation}
 \IEEEPARstart{S}{imulating} a fault injection method behavior is an important part in understanding its mechanisms.
-Whether it is EMFI, LFI or BBI, it allows predicting and understanding the underlying phenomena at work to set up reliable experiments and perform predictions.
+Whether it is EMFI, LFI or BBI, it allows predicting and understanding the underlying phenomena at work to set up reliable experiments.
 
 Ideally, we would want to directly observe signals inside integrated circuits, allowing for fine measurements of power supply voltages, currents, and logic levels at a transistor-level.
 However, embedding sensors into an already existing IC is not possible, and doing so on future IC is costly, takes time to fully implement, and requires the manufacturer to do so.
@@ -13,9 +13,10 @@ Therefore, we have decided to take the following approach:
 %	Simulation \textrightarrow\ Conclusions \textrightarrow\ Verification
 	Simulation \textrightarrow\ Analysis \textrightarrow\ Hardware Verification
 \end{center}
+which can be used in any existing commercial circuit.
 
 By doing so, we have freed ourselves from hardware limitations.
-However, other limitations remains.
+However, other limitations remain.
 Indeed, modern ICs, even the smallest, embed millions of transistors, and with current technologies, it is impossible to evaluate with simulations entire circuits at a transistor level.
 Therefore, to tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and local logic gates simulations.
 This approach is a compromise between accuracy and computational cost/time, and allows simulating relatively big circuits under BBI disturbances
