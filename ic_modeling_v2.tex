@@ -43,7 +43,8 @@ The resulting simulation flow is then divided in three consecutive steps:
 		The lowest layer is directly connected to the transistors.
 		Fig. \ref{fig_alim_std} presents a common power delivery network, designed with two metal levels for simplicity (in blue and green).
 
-		Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements, and are pre-characterized by foundries and categorized depending on their performance (mainly according to, but not exclusively, power consumption and speed).
+		Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements.
+		These SCS are pre-characterized by foundries and categorized depending on their performance (mainly according to, but not exclusively, their power consumption and speed).
 		As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a variable width depending on how much logic gates each one of them embed.
 		As we have stated previously, the hybrid simulation flow use transistor-less models as basic IC building blocks.
 		Therefore, the transistors, hence the standard-cell segments, are modeled with passive elements such as resistors and capacitors.
