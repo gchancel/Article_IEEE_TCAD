@@ -13,15 +13,15 @@ Therefore, we have decided to take the following approach:
 %	Simulation \textrightarrow\ Conclusions \textrightarrow\ Verification
 	Simulation \textrightarrow\ Analysis \textrightarrow\ Hardware Verification
 \end{center}
-which can be used in any existing commercial circuit.
+which is flexible and can be used in any existing commercial circuit.
 
 By doing so, we have freed ourselves from hardware limitations.
 However, other limitations remain.
-Indeed, modern ICs, even the smallest, embed millions of transistors, and with current technologies, it is impossible to evaluate with simulations entire circuits at a transistor level.
-Therefore, to tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and local logic gates simulations.
+Indeed, modern ICs, even the smallest, embed millions of transistors, and with current technologies, it is impossible to evaluate entire circuits at a transistor level with brute-force simulations.
+Therefore, to tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and targeted logic gates simulations.
 This approach is a compromise between accuracy and computational cost/time, and allows simulating relatively big circuits under BBI disturbances
 Overall, it is similar to what has been done for EMFI in \cite{mathieuEMFI}.
-The resulting simulation flow is divided in three consecutive steps:
+The resulting simulation flow is then divided in three consecutive steps:
 \begin{itemize}
 	\item The simulation of an IC under BBI using a transistor-less model, allowing for a purely electrical analysis;
 	\item The extraction of significant disturbed power signals from the previous simulation;
