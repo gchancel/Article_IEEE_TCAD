@@ -6,19 +6,19 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "ic_model_valid.tex",
+        "CurrentFile": "ic_modeling_v2.tex",
         "FileVersion": 1,
         "Files": [
             {
                 "Col": 15,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
-                "FirstLine": 39,
+                "FirstLine": 18,
                 "FoldedLines": "",
                 "Line": 56
             },
             {
-                "Col": 0,
+                "Col": 123,
                 "EditorGroup": 0,
                 "FileName": "0_abstract.tex",
                 "FirstLine": 0,
@@ -26,36 +26,60 @@
                 "Line": 8
             },
             {
-                "Col": 34,
+                "Col": 213,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
-                "FirstLine": 34,
+                "FirstLine": 6,
                 "FoldedLines": "",
-                "Line": 91
+                "Line": 22
             },
             {
-                "Col": 76,
+                "Col": 131,
                 "EditorGroup": 0,
                 "FileName": "good_practices.tex",
-                "FirstLine": 182,
+                "FirstLine": 186,
                 "FoldedLines": "",
-                "Line": 210
+                "Line": 212
             },
             {
-                "Col": 158,
+                "Col": 39,
                 "EditorGroup": 0,
                 "FileName": "ic_modeling_v2.tex",
+                "FirstLine": 70,
+                "FoldedLines": "",
+                "Line": 105
+            },
+            {
+                "Col": 120,
+                "EditorGroup": 0,
+                "FileName": "ic_model_valid.tex",
+                "FirstLine": 41,
+                "FoldedLines": "",
+                "Line": 71
+            },
+            {
+                "Col": 27,
+                "EditorGroup": 0,
+                "FileName": "figures/fig_stdcellmodel.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 5
             },
             {
-                "Col": 38,
+                "Col": 28,
                 "EditorGroup": 0,
-                "FileName": "ic_model_valid.tex",
-                "FirstLine": 81,
+                "FileName": "figures/fig_substrate.tex",
+                "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 104
+                "Line": 5
+            },
+            {
+                "Col": 27,
+                "EditorGroup": 0,
+                "FileName": "mos_passive.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
             }
         ],
         "MasterFile": "",
