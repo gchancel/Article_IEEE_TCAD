@@ -3,7 +3,7 @@
 
 \section{Body Biasing Injection: disturbances nature and propagation}
 \IEEEPARstart{S}{imulating} a fault injection method behavior is an important part in understanding its mechanisms.
-Whether it is EMFI, LFI or BBI, it allows predicting and understanding the underlying phenomena at work to set up reliable experiments.
+Whether it is EMFI, LFI or BBI, it allows predicting and understanding the underlying phenomena at work to set up reliable experiments, perform predictions and develop countermeasures.
 
 Ideally, we would want to directly observe signals inside integrated circuits, allowing for fine measurements of power supply voltages, currents, and logic levels at a transistor-level.
 However, embedding sensors into an already existing IC is not possible, and doing so on future IC is costly, takes time to fully implement, and requires the manufacturer to do so.
@@ -18,8 +18,8 @@ which is flexible and can be used in any existing commercial circuit.
 By doing so, we have freed ourselves from hardware limitations.
 However, other limitations remain.
 Indeed, modern ICs, even the smallest, embed millions of transistors, and with current technologies, it is impossible to evaluate entire circuits at a transistor level with brute-force simulations.
-Therefore, to tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and targeted logic gates simulations.
-This approach is a compromise between accuracy and computational cost/time, and allows simulating relatively big circuits under BBI disturbances
+To tackle these limitations, we decided to adopt an hybrid approach, combining transistor-less models and targeted logic gates simulations.
+This approach is a compromise between accuracy and computational cost/time, and allows simulating relatively big circuits under BBI disturbances.
 Overall, it is similar to what has been done for EMFI in \cite{mathieuEMFI}.
 The resulting simulation flow is then divided in three consecutive steps:
 \begin{itemize}
@@ -44,14 +44,14 @@ The resulting simulation flow is then divided in three consecutive steps:
 		Fig. \ref{fig_alim_std} presents a common power delivery network, designed with two metal levels for simplicity (in blue and green).
 
 		Within the metal lines are located standard-cell segments (SCS), composed of decoupling, logic and sequential elements.
-		These SCS are pre-characterized by foundries and categorized depending on their performance (mainly according to, but not exclusively, their power consumption and speed).
-		As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a variable width depending on how much logic gates each one of them embed.
+		These SCS are pre-characterized by foundries and categorized depending on their performance (mainly according to, but not exclusively, their power consumption and timing).
+		As illustrated in Fig. \ref{fig_alim_std}, SCS have a constant height, in our case of 2.5 \textmu m, and a width depending on the power routing policy (in our case W = 30 \textmu m).
 		As we have stated previously, the hybrid simulation flow use transistor-less models as basic IC building blocks.
 		Therefore, the transistors, hence the standard-cell segments, are modeled with passive elements such as resistors and capacitors.
 
 		\input{mos_passive}
 		To that end, the elementary SCS chosen measures 30 \textmu m by 5 \textmu m, representing two rows of logic cells.
-		An SCS contains about a hundred of logic gates, which are represented with passive elements, such as four capacitors and two resistors, as shown in Fig. \ref{mos_passive}.
+		An SCS contains about a hundred of logic gates in a 90 nm bulk technology, which are represented with passive elements, such as four capacitors and two resistors, as shown in Fig. \ref{mos_passive}.
 		These elementary models consider that half of the transistor are conducting, and half are not, which represents an average behavior.
 		The values of $R_P,\;R_N,\;C_{GP}$ and $C_{GN}$ depend on the targeted technology, i.e. the transistor size.
 %		This represents about a hundred of logic gates, represented with four resistors and two capacitors, as shown in Fig. \ref{mos_passive}, with half of the transistors conducting, half not conducting.
@@ -63,7 +63,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 
 	\subsubsection{The substrate}
 		\input{./figures/fig_substrate}
-		Because BBI can be performed thanks to the silicon substrate as the main physical environment transferring energy from a generator to an IC, it is fundamental to elaborate a proper substrate model to precisely represent the various involved phenomena.
+		Because BBI can be performed thanks to the silicon substrate as the main physical environment transferring energy from a generator to the active port of an IC, it is fundamental to elaborate a proper substrate model to precisely represent the various involved phenomena.
 		As stated previously, our work focuses on bulk substrates, and in most cases, the substrate silicon is P-doped, therefore we only considered a P-substrate.
 		There are two typical ways of lithographing the transistors in a bulk substrate, either using dual-well or triple-well structures.
 		Dual-well substrates are commonly found in moderately old circuits, while triple-well substrate is commonly found mixed with dual-well in more recent circuits, while not bleeding-edge.
@@ -83,7 +83,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 	\subsubsection{The resulting model}
 		Thanks to what we have previously introduced, we can now build the elementary building blocks for our hybrid simulation flow.
 		It combines the power delivery network architecture, the equivalent logic gates models, and the substrate structure, all in an embedded model.
-		This model represents an elementary section of the simulated IC, measuring 30 \textmu m by 5 \textmu m by $t_{Sub}$ \textmu m, the latter being the substrate thickness, a parameter which may vary depending on each considered IC.
+		This model represents an elementary SCS of the simulated IC, measuring 30 \textmu m by 5 \textmu m by $t_{Sub}$ \textmu m, the latter being the substrate thickness, a parameter which may vary depending on each considered IC.
 		\input{./figures/fig_stdcellmodel}
 		As we consider both triple-well and dual-well substrate, there are two resulting elementary models, shown in Fig. \ref{fig_triplewellstdcell}.
 		Each model is composed of various sub-regions, whose descriptions follow:
@@ -110,11 +110,11 @@ The resulting simulation flow is then divided in three consecutive steps:
 	Now that we set up the base models and their duplication, we can perform BBI simulations with those models.
 	To properly use these models, it is required, in the first place, to validate them through various steps to ensure their reliability.
 	To that end, we generated an IC measuring 550 \textmu m by 450 \textmu m with a 140 \textmu m substrate thickness, and performed an operating point to verify the correctness of the models for each substrate type.
-	\input{table_op_point.tex}
 	We should expect almost no voltage drop and zero current consumption from such a model.
 	Otherwise, it indicates an underlying issue with the model.
 
 	Table \ref{tab_op} shows the operating point results for both a triple-well and a dual-well circuit, and indicates a correct operating point, with idle currents and voltage drops close to zero.
+	\input{table_op_point.tex}
 	However, verifying the bias point alone is not sufficient to consider the model validated.
 	As these models are dedicated to be mainly used in transient simulations, it is required to perform one and evaluate the soundness of its results.
 
@@ -142,12 +142,12 @@ The resulting simulation flow is then divided in three consecutive steps:
 	\input{simuResults.tex}
 %	\subsubsection{Negative dual-well simulation results}
 	\subsection{Simulation results: dual-well negative pulse}
-		Fig. \ref{sim_res_dw_neg} shows the dual-well positive pulse results.
+		Fig. \ref{sim_res_dw_neg} shows the simulation results for a negative pulse aplpied to a dual-well IC
 
 		Sub-fig. \ref{sim_res_dw_neg}a left represents the power delivery network (PDN) voltage distribution across the entire simulated IC, seen from above.
 		In other words, it is the supply voltage of the transistors.
 		Expectedly, far from the external power connections, we observe some deviation from the nominal 1.2 V power supply voltage.
-		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 33 \% increase from the nominal value.
+		However, at the center of the circuit, in other words under the BBI probe, the voltage goes up to 2.8 V, being a 133 \% increase from the nominal value.
 
 		To put these values into perspective, let us look at sub-fig. \ref{sim_res_dw_neg}a right, showing the epitaxial current distribution, representing the charges going from the substrate to the top of the SCS.
 		According to these results, most of the charges are passing through at the center of the IC (under the BBI probe), as the current is the highest in that location.
@@ -155,7 +155,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 
 		Sub-fig. \ref{sim_res_dw_neg}b and sub-fig. \ref{sim_res_dw_neg}c both represent the same physical quantity in two different ways.
 		We have chosen this approach to extract as much information as possible from these models and simulations.
-		Sub-fig. \ref{sim_res_dw_neg}b shows the cross-sectional view (from the Y-axis) of the current distribution inside the silicon substrate.
+		Sub-fig. \ref{sim_res_dw_neg}b shows the cross-sectional view (from the Y-axis) of the current distribution inside the substrate.
 		The substrate being an isotropic environment, in other words, its resistivity is homogeneous in every spatial directions, we can observe a hemispheric current distribution in it.
 		However, due to the large difference between the first layer (the farthest to the probe) and the last layer (the closest to the probe), it is difficult to do more observations.
 		Therefore, we can look at sub-fig. \ref{sim_res_dw_neg}c, which represents the same data in a different perspective.
@@ -165,7 +165,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 		The layer 0 is the closest to the logic gates, while the layer 13 is the closest to the backside (the probe).
 		What is interesting to note here is that for each substrate layer, the current is focused where the probe is located.
 		It is to be expected, as the substrate is isotropic.
-		However, the deeper we are into the substrate, the less focused the current is.
+		However, the deeper (starting from the backside) we are into the substrate, the less focused the current is.
 		Once again, it is quite logical as the charges diffuse homogeneously inside the substrate.
 
 	\subsection{Simulation results: dual-well positive pulse}
@@ -177,7 +177,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 		Concerning the epitaxial current, shown in sub-fig. \ref{sim_res_dw_pos}a right, we can notice two key changes.
 		First, the current polarity has changed, from a negative to a positive one.
 		Once again, it was to be expected, as the voltage pulse polarity has changed.
-		Then, in absolute value, the maximal current is 500 mV higher than previously, which indicates that more energy has been injected into the circuit.
+		Then, in absolute value, the maximal current is 500 \textmu A higher than previously, which indicates that more energy has been injected into the circuit.
 		Eventually, regarding the substrate current, there are no major differences compared to the previous scenario, except the current polarity, both for sub-fig. \ref{sim_res_dw_pos}b and sub-fig. \ref{sim_res_dw_pos}c.
 
 	\subsection{Simulation results: triple-well negative pulse}
@@ -227,10 +227,11 @@ The resulting simulation flow is then divided in three consecutive steps:
 
 		\input{dw_tw_table.tex}
 		Eventually, the main outcomes these simulation results show are in Table \ref{dw_tw_table}, alongside a qualitative dangerousness appreciation of each scenario.
+		In that case, what we mean by dangerousness is how fast we have observed a complete circuit destruction according to the voltage pulse polarity and the substrate type.
 
 \subsection{Validating the models}
 	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
-	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not.
+	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not, as predicted by the simulations.
 	
 	The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
 	The IC die measures approximately 5.5 mm \texttimes\ 4.5 mm.
@@ -248,10 +249,10 @@ The resulting simulation flow is then divided in three consecutive steps:
 		\item Pulse width of 20 ns;
 		\item IC substrate thickness of 50 \textmu m.
 	\end{itemize}
-	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC subjected to positive voltage pulses, therefore we decided to avoid them at all cost.
+	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC exposed to positive voltage pulses, therefore we decided to avoid them at all costs.
 	When analyzing the results, we can notice significant differences in the measured current depending on various regions, and the IC floorplan seems to draw itself on the current map.
 	The measured RMS current ranges from 10 mArms to 140 mArms, and as predicted by the simulation results, in the regions where the substrate is of dual-well type, the current is higher than on regions where the substrate is of triple-well type, such as the analog block or the flash control region.
 	
 	These observations confirm the soundness of the proposed models.
 	However, as we have seen previously, these models do not consider the functional nature of the considered ICs: their logic behavior.
-	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, thus the name "hybrid simulation flow".
+	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, hence the name "hybrid simulation flow".

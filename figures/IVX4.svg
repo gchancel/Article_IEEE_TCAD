@@ -7,7 +7,7 @@
    viewBox="0 0 44.979195 24.870849"
    version="1.1"
    id="svg1"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
    sodipodi:docname="IVX4.svg"
    inkscape:export-filename="IVX4.pdf"
    inkscape:export-xdpi="96"
@@ -27,13 +27,13 @@
      inkscape:deskcolor="#707070"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="7.0935535"
-     inkscape:cx="106.29369"
-     inkscape:cy="54.627064"
+     inkscape:zoom="10.0318"
+     inkscape:cx="87.073111"
+     inkscape:cy="47.050382"
      inkscape:window-width="2560"
-     inkscape:window-height="1338"
+     inkscape:window-height="1368"
      inkscape:window-x="1920"
-     inkscape:window-y="35"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -916,6 +916,50 @@
          y="11.401762"
          id="tspan30-4-2-9-2"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2000ff;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-opacity:1">L=0.090</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="8.387641"
+       y="6.2624984"
+       id="text20-5-2-1-0-6-5-8-5"><tspan
+         sodipodi:role="line"
+         x="8.387641"
+         y="6.2624984"
+         id="tspan30-4-2-9-2-5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-opacity:1">T1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="8.2542915"
+       y="20.787064"
+       id="text20-5-2-1-0-6-5-8-5-1"><tspan
+         sodipodi:role="line"
+         x="8.2542915"
+         y="20.787064"
+         id="tspan30-4-2-9-2-5-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-opacity:1">T2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="30.612642"
+       y="6.2624984"
+       id="text20-5-2-1-0-6-5-8-5-3"><tspan
+         sodipodi:role="line"
+         x="30.612642"
+         y="6.2624984"
+         id="tspan30-4-2-9-2-5-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-opacity:1">T1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="30.479294"
+       y="20.787064"
+       id="text20-5-2-1-0-6-5-8-5-1-0"><tspan
+         sodipodi:role="line"
+         x="30.479294"
+         y="20.787064"
+         id="tspan30-4-2-9-2-5-2-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#a92e18;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-opacity:1">T2</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.05833px;line-height:1;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2000ff;fill-opacity:1;stroke:none;stroke-width:0.097;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"

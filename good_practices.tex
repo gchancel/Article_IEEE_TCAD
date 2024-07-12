@@ -4,10 +4,10 @@
 \section{Practicing BBI in a better way}
 	\IEEEPARstart{T}{his} section is dedicated in presenting BBI platforms and the various improvements which can be brought to a them to increase experiments repeatability and reliability.
 	\subsection{BBI platforms in the state of the art}
-		In the first place, we will analyze, from a theoretical perspective, a typical BBI platform, such as the one found in the state of the art.
+		In the first place, let us analyze, from a theoretical perspective, a typical BBI platform, such as the one found in the state of the art.
 		To do so, we created simple platform models highlighting the major limiting factors of such platforms.
 		\input{./figures/bbi-typical.tex}
-		The typical platform model is described in Fig. \ref{bbi_setups}a and shows the main components of a BBI platform, omitting positioning tables, such as:
+		The typical platform model is described in Fig. \ref{bbi_setups}a, and shows the main components of a BBI platform, omitting positioning tables, such as:
 		\begin{itemize}
 			\item The voltage pulse generator;
 			\item The transmission line;
@@ -21,7 +21,7 @@
 		Therefore, outside of luck alone, it is very rare that the impedance presented by the IC to the generator perfectly matches the required one.
 		It implies that the generator will be, most of the time, out of specifications, and that the conditions will vary depending on the chosen IC, the substrate thickness, and the location of the BBI probe.
 		This can lead to issues such as errors in the set-point voltage and pulse width, in addition to ringing in the transmission line.
-		It then represents a first flaw to the typical approach.
+		This represents a first flaw to the typical approach.
 
 		Then, there is the grounding installation.
 		The model presents a non-ideal but simple platform grounding.
@@ -63,7 +63,7 @@
 		\end{itemize}
 		The spring-loaded tip is 17 mm long and has a global diameter of 0.635 mm.
 		It is specified for a 1.5 A nominal current, and its electrical resistance measures around 70 m\textOmega.
-		The total cost of the probe is roughly of 20 \texteuro.
+%		The total cost of the probe is roughly of 20 \texteuro.
 
 	\subsection{The proposed platform enhancements}
 		To circumvent the previously introduced limitations, we propose two corrections to generalize the platforms and improve repeatability.
@@ -146,18 +146,18 @@
 		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and externally powered with 3.3 V.
 
 		\subsubsection{Preliminary experiments}
-			Before setting up the attack, we had to set up preliminary experiments allowing us to find optimal locations in the AES sub-circuit where the attack would be performed.
+			Before setting up the attack, we had to set up preliminary experiments allowing us to find optimal locations on the IC backside where the attack would be performed.
 			Indeed, many areas and experimental parameters do not allow observing single-bit faults.
 			
 			To do so, we created what we call Fault Analysis Mappings (FAM).
-			These experiments consist in creating maps of a specific region of the IC, in that case the AES sub-circuit, and analyzing the IC behavior while performing BBI for a set of various experimental parameters.
+			These experiments consist in creating maps of a specific region of the IC, in that case the AES co-processor, and analyzing the IC behavior while performing BBI for a set of various experimental parameters.
 			We split the observed behavior into seven cases:
 			\begin{itemize}
 				\item Correct: the AES responds normally;
-				\item Monobit Monobyte fault;
-				\item Multibit Monobyte faults;
-				\item Monobit Multibyte faults;
-				\item Multibit Multibyte faults;
+				\item Monobit Monobyte fault: a unique bit faulted on a unique byte;
+				\item Multibit Monobyte faults: multiple bits faulted on a unique byte;
+				\item Monobit Multibyte faults: multiple bytes faulted with a single bit each;
+				\item Multibit Multibyte faults: multiple bytes faulted with multiple bits each;
 				\item Crash: the circuit did not respond correctly;
 				\item Timeout: the circuit did not respond.
 			\end{itemize}
@@ -172,14 +172,14 @@
 			Depending on the IC behavior, the experiments can take up to 36 hours.
 			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
 			\input{./figures/aesGiraud.tex}
-			Fig. \ref{giraud_fam} presents the FAM results for both a typical (top) and an improved (bottom) platform.
+			Fig. \ref{giraud_fam} presents the FAM results for both a typical (top) and the improved (bottom) platforms.
 			The mapped area encloses a little more than the actual AES location, to be sure to map its entirety.
 
 			Let us look at Fig. \ref{giraud_fam} (top) first.
-			What is interesting here is that we can spot numerous location where the circuit crashed.
+			What is interesting here is that we can spot numerous locations where the circuit crashed.
 			More specifically, they represent 70 \% of the mapped area.
 			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
-			We first thought that the experimental parameters were at fault, so we reiterated the experiment using various different set of parameters, only to observe a majority of crashed locations, while never observing any single bit fault.
+			We first thought that the experimental parameters were at fault, so we reiterated the experiment using various different sets of parameters, only to observe a majority of crashed locations, while never observing any single bit fault.
 %			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
 %			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
 
@@ -211,6 +211,7 @@
 			To retrieve the key in its entirety, we performed a brute force method consisting in calculating every possibility for the remaining two bytes.
 			Considering a slow laptop being able to compute approximately $10 \cdot 10^3$ AES encryptions per second, and the 16 remaining bits representing 65536 combinations, we decided to blindly calculate every combination.
 			This calculation represents around 6.5 seconds of total computation time, and the results are shown in Table \ref{table_giraud}.
+			This experiment demonstrates the soundness of the proposed platform enhancements in terms of end user applications, i.e. a differential fault attack.
 
 %	Three main flaws lie in the platform in its current state:
 %	\begin{itemize}
