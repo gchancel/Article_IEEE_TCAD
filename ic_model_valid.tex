@@ -35,12 +35,12 @@
 	Then, for each scenario, we will analyze seven signals of interest:
 	\begin{itemize}
 		\item The backside voltage pulse, for reference purposes;
-		\item The local differential power supply voltage;
-		\item The current sum of the inverter;
-		\item The inverter load current;
-		\item The inverter output;
-		\item The NSUB voltage;
-		\item the PSUB voltage.
+		\item The local differential power supply voltage (VDD - VSS);
+		\item The current sum of the inverter ($I_{DS}^{T1} + I_{DS}^{T2}$);
+		\item The inverter load current, a.k.a. the current flowing through the capacitive output load;
+		\item The inverter output voltage;
+		\item The NSUB voltage (NMOS bulk voltage);
+		\item the PSUB voltage (PMOS bulk voltage).
 	\end{itemize}
 	The signals extracted from the SCS simulations come from the standard-cell located directly below the BBI probe, a.k.a the cell targeted by the injection.
 	\input{./figures/invertersimu}
