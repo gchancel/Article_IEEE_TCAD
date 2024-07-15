@@ -60,13 +60,13 @@
 	These observations are of great value because we can discuss a fault model for BBI, similar to what has been studied for EMFI and LFI.
 	The previous results seem to indicate that the faults created using BBI are data-dependent.
 	Indeed, if we lower the voltage of an inverter outputting a low value, or the opposite, it has theoretically no direct effect on the logic value.
-	However, we have seen that it is possible, depending on the substrate type, to observe bit set or reset.
+	However, we have seen that it is possible, depending on the substrate type, to temporarily flip the value of a bit for the same amount of time than the pule width duration.
 	Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
 
 \subsection{BBI effects on dynamic logic gates: DFF}
 	\input{./figures/dffchain.tex}
 	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common one: the D Flip-Flop.
-	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
+%	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
 	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
 	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, outputting to a non-disturbed logic path.
 	The non-disturbed path is here to mimic the behavior of far away logic gates receiving disturbed data while having a correct power supply.
@@ -79,9 +79,9 @@
 	\input{./figures/dffidle.tex}
 	Before diving into the simulation results, let us analyze what would be the normal behavior of the considered DFF.
 	Fig. \ref{dffidle} presents the normal behavior of the modeled DFF path.
-	The flip-flop is governed by a 40 MHz clock, and we perform three write operations with alternating logic levels (H \textrightarrow\ L \textrightarrow\ H), to finally let it rest at the last logic level.
+	The flip-flop is governed by a 40 MHz clock, similar to what we have used on our target, and we perform three data input sampling operations with alternating logic levels (High \textrightarrow\ Low \textrightarrow\ High), to finally let it rest at the last logic level.
 	Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
-	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting according to us.
+	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting.
 	First, we will analyze results where the injections are performed during the steady state of the DFF chain,
 	Then, we will analyze the DFF behavior during the write operations.
 %	During these simulations, we initialize the DFF with a low logic level, then a 
@@ -92,8 +92,8 @@
 		Five signals are represented in this order, allowing us to get insights on the circuit behavior:
 		\begin{itemize}
 			\item The BBI voltage pulse for reference;
-			\item The DFF input signal;
-			\item The buffered DFF clock;
+			\item The DFF input signal (DFF IN), being the output of the first ten inverters;
+			\item The buffered DFF clock (CLK BUF), the clock fed to the DFF after the buffer;
 			\item The DFF output;
 			\item The four last inverters output;
 		\end{itemize}
