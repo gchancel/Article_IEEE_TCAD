@@ -18,7 +18,7 @@
 	Commonly, when comes hardware security often comes side-channel attacks and fault injection attacks.
 	On the one hand, side-channel attacks take advantage of the circuit leakage by measuring the various physical quantities available.
 	On the other hand, fault injection aims at inducing controlled physical disturbances into integrated circuits, with methods like Electromagnetic Fault Injection (EMFI) \cite{mathieuEMFIFirst, mathieuEMFI}, Laser Fault Injection (LFI) \cite{lfiFaultModel}, or Body Biasing Injection (BBI) \cite{bbiOrigin}, not to cite them all.
-	Among these methods, EMFI and LFI are widely studied and understood.
+	Among these methods, EMFI and LFI are widely studied and well understood.
 	However, despite a resurgence in the past few years, BBI knowledge is still less mature compared to the previously cited methods.
 	Therefore, this article is dedicated in presenting our work on Body Biasing Injection, such as the description of better practices to improve BBI reproducibility, in addition to an entire simulation flow for BBI, designed to understand the underlying mechanisms of BBI.
 
@@ -34,8 +34,8 @@
 			\item Verification bypass \textrightarrow\ Modify data on the fly to fake authenticity (e.g. to bypass bootloader security);
 			\item Confidential data extraction \textrightarrow\ Modify data to perform differential fault analysis.
 		\end{itemize}
-		To perform these objectives, an attacker can use the previously mentioned injection methods, such as EMFI, LFI or BBI.
-		Before presenting further our work on BBI, let us analyze the available and existing BBI platforms in the state-of-the-art.
+		To achieve these objectives, an attacker can use the previously mentioned injection methods, such as EMFI, LFI or BBI.
+		Prior to presenting further our work on BBI, let us analyze the available and existing BBI platforms in the state-of-the-art.
 %		\textcolor{red}{To finish.}
 
 	\subsection{BBI in the state-of-the-art}
@@ -49,11 +49,11 @@
 		The researchers performed a Bellcore attack \cite{bellcore}, as this attack has weak fault requirements, on a modular exponentiation partially performed by the target thanks to its arithmetic co-processor.
 		
 		Then, another paper \cite{bbiThird} introduced an advanced BBI test bench aiming at performing reproducible attacks.
-		In addition to this, it introduced a dual-well substrate lumped model for BBI attacks.
+		In addition to this, it introduced a dual-well substrate lumped model to analyze and evaluate electrical phenomena occuring during BBI.
 		
 %		One year later, another work \cite{bbiSecond} further studied the method, followed by a third work three years later \cite{bbiThird}, introducing an advanced test bench to work and perform attacks with BBI.
 		Four years later, another work \cite{bbiColin} demonstrated that BBI can be performed quite easily using Wafer-Level Chip-Scale Packaging (WLCSP), naturally exposing the backside of ICs and thus reducing the complexity to set up BBI attacks.
-		In addition to this, it introduced a low-cost tool to perform BBI: the Pico-EMP, a cheap and open-source device able to generate high voltage pulse with entry level hardware.
+		In addition to this, it introduced a low-cost tool to perform BBI: the Pico-EMP, a cheap and open-source device able to generate high voltage pulse with simple hardware.
 		
 %		presented a low-cost BBI platform, dedicated to WLCSP devices \cite{bbiColin}.
 		Then, quite interestingly, researchers proposed a study of BBI on flip-chip packaging ICs using an ESD gun as a voltage surge generator, but concluded that its accuracy, either spatially or in terms of analytical capabilities was pretty limited \cite{japbbi, japbbi2}.

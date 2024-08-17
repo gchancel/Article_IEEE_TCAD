@@ -2,12 +2,12 @@
 % !TeX root = ./0_article.tex
 
 \section{Practicing BBI in a better way}
-	\IEEEPARstart{T}{his} section is dedicated in presenting BBI platforms and the various improvements which can be brought to a them to increase experiments repeatability and reliability.
+	\IEEEPARstart{T}{his} section is dedicated in presenting BBI platforms and the various improvements which can be brought to increase experiments repeatability and reliability.
 	\subsection{BBI platforms in the state of the art}
 		In the first place, let us analyze, from a theoretical perspective, a typical BBI platform, such as the one found in the state of the art.
 		To do so, we created simple platform models highlighting the major limiting factors of such platforms.
 		\input{./figures/bbi-typical.tex}
-		The typical platform model is described in Fig. \ref{bbi_setups}a, and shows the main components of a BBI platform, omitting positioning tables, such as:
+		The typical platform model is described in Fig. \ref{bbi_setups}a, and illustrates the main components of a BBI platform, while omitting positioning tables, such as:
 		\begin{itemize}
 			\item The voltage pulse generator;
 			\item The transmission line;
@@ -25,15 +25,15 @@
 
 		Then, there is the grounding installation.
 		The model presents a non-ideal but simple platform grounding.
-		The reference, used by the oscilloscope and the main computer, is represented in blue and called "equipment ground".
-		Ideally, every ground on the platform is connected to this reference with a very low impedance interconnection.
+		The reference node, used by the oscilloscope and the main computer, is represented in blue and called "equipment ground".
+		Ideally, every ground on the platform is connected to this reference node with a very low impedance interconnection.
 		However, depending on the hardware used, it may greatly vary from one platform to another.
-		In the model, the generator and target grounds are connected to the reference thanks to vastly imperfect interconnections, whose impedance is significantly greater than zero.
+		In the model, the generator and target grounds are connected to the reference node thanks to vastly imperfect interconnections, whose impedance is significantly greater than zero.
 		This mainly lead to set-point errors due to shifts in the voltage pulse amplitude.
 		Therefore, it limits the inter-platform repeatability and comparison of BBI experiments.
 
 	\subsection{Our BBI platform}
-		As most BBI platforms, our platform is focused on three main pieces of equipment: a voltage pulse generator, a metallic probe, and a positioning table.
+		As most BBI platforms, our platform is focused on three main pieces of equipment: a voltage pulse generator, a metallic probe (Fig. \ref{bbi_probe}), and a positioning table.
 		
 		The positioning table we use is an OWIS PS 35 control unit, allowing to drive three motors for free movement in three dimensions.
 		The generator model is the AVRK-4-B from the company Avtech Electrosystems Ltd.
@@ -53,7 +53,7 @@
 		Eventually, the most distinctive piece of equipment when it comes to BBI is the probe.
 %		Probably the most distinctive piece of equipment when it comes top BBI is the probe.
 		Some BBI probes can be active, others passive and less expensive.
-		However, it is important to keep this piece of equipment relatively cheap as it endures most of the physical strain on a BBI platform, and should be easy to replace or repair.
+		However, it is important to keep this piece of equipment relatively cheap as it endures most of the physical strain on the setup, and should be easy to replace or repair.
 		Fig. \ref{bbi_probe} shows two pictures of our probe from different angles.
 		The one we use is custom-made around three parts:
 		\begin{itemize}
@@ -66,7 +66,7 @@
 %		The total cost of the probe is roughly of 20 \texteuro.
 
 	\subsection{The proposed platform enhancements}
-		To circumvent the previously introduced limitations, we propose two corrections to generalize the platforms and improve repeatability.
+		To address the aforementioned limitations, we propose two modifications to generalize the platform and improve  their repeatability.
 
 		First, let us talk about the generator impedance mismatch.
 		For this purpose, multiple solutions can be approached.
@@ -76,7 +76,7 @@
 		Since, most of the time with our platform and targets, the impedance presented by the IC on its backside is in the order of 1 k \textOmega\ \cite{mybbifdtc2023}, approaching the 50 \textOmega\ expected by the generator can be done by connecting a 50 \textOmega\ resistor in parallel to the IC, as shown in the schematic in Fig. \ref{bbi_setups}b.
 		
 		Then, concerning the platform grounding, the solution is fairly straightforward.
-		We propose to choose a reference, such as the equipment ground in our scenario, and bypass every other ground on the platform with low-impedance interconnections from the previously chosen reference, as proposed in Fig. \ref{bbi_setups}b.
+		We propose to choose a reference node, such as the equipment ground in our scenario, and bypass every other ground on the platform with low-impedance interconnections from the previously chosen reference node, as proposed in Fig. \ref{bbi_setups}b.
 
 %		First, let us talk about the improper grounding,
 %		Alleviating this issue is fairly straightforward.
@@ -90,16 +90,16 @@
 
 	\subsection{Platform enhancement validation}
 		\input{./figures/real_imp_match.tex}
-		Now that we theoretically presented platform improvements, let us analyze their effective impact on our actual BBI platform.
-		The proposed solution concerning the approximate impedance matching and ground bypassing is shown in Fig. \ref{imp_match_real}.
-		The picture shows the BBI probe with a compensation load connected in parallel. in addition to the probe ground bypass.
-		To show the actual interests of these improvements, let us analyze measured signals using our platform.
+		Now that we have outlined the platform improvements theoretically, let us analyze their actual impact on our BBI platform.
+		The proposed solution concerning the approximate impedance matching and ground bypassing is shown in \mbox{Fig. \ref{imp_match_real}}.
+		The picture illustrates the BBI probe with a compensation load connected in parallel. in addition to the probe ground bypass.
+		To highlight the practical benefits of these enhancements, let us analyze measured signals extracted from our platform.
 
 		We will compare before and after results and analyze the differences made by these improvements.
 		To that end, we set up simple experiments consisting in injecting a voltage pulse into our IC target, measuring the voltage pulse at the probe and the current in the IC.
 		\input{./figures/actual_improvements.tex}
-		Fig. \ref{actual_imp} presents the waveform results of such experiments.
-		The figure shows four distinctive signals, in the following order:
+		Fig. \ref{actual_imp} shows the waveform results from these experiments.
+		The figure shows four distinct signals, arranged in the following order:
 		\begin{itemize}
 			\item S1P: the voltage pulse before improvements;
 			\item S1G: the IC ground current before improvements;
@@ -129,7 +129,7 @@
 
 		Afterward, the waveform S2P shows the voltage results with the proposed improvements.
 		The voltage pulse amplitude is much closer to the set-point, with an undershoot reduced to -31 \%.
-		It is not perfect, but considering the simple nature of the impedance matching we propose, it was to be expected.
+		It is not perfect, but considering the simple nature of the impedance matching method we propose, it was to be expected.
 		On another note, the pulse width set-point is perfectly respected.
 		However, the rise and fall times are still 4 times higher.
 		
