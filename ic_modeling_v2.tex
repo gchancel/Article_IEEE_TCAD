@@ -86,7 +86,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 		This model represents an elementary SCS of the simulated IC, measuring 30 \textmu m by 5 \textmu m by $t_{Sub}$ \textmu m, the latter being the substrate thickness, a parameter which may vary depending on each considered IC.
 		\input{./figures/fig_stdcellmodel}
 		As we consider both triple-well and dual-well substrate, there are two resulting elementary models, shown in Fig. \ref{fig_triplewellstdcell}.
-		Each model is composed of various sub-regions, whose descriptions follow:
+		Each model consists in multiplesub-regions, whose descriptions follow:
 		\begin{itemize}
 			\item \ovalbox{1} is the elementary substrate network, divided into six sub-networks of six resistors for finer details;
 			\item \ovalbox{2} is the first P-N silicon junction, common to both models;
@@ -96,7 +96,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 			\item \ovalbox{5, 5'} are the power supply metal layers (upper metal in green, first level in blue);
 			\item \ovalbox{6} is the power supply decoupling.
 		\end{itemize}
-		In addition to this, the desired substrate thickness can be achieved by instanciating as much as needed the elementary substrate layer inside the model itself, its thickness being eT \textmu m.
+		In addition to this, the desired substrate thickness can be achieved by instanciating as much as needed the elementary substrate layer inside the model itself, its elementary thickness being eT \textmu m.
 		
 		As we have stated before, these models only represent a small portion of the modeled IC.
 		To create an entire IC of a defined size, it is required to instantiate and interconnect as much as needed the elementary models.
@@ -107,10 +107,10 @@ The resulting simulation flow is then divided in three consecutive steps:
 
 %\subsection{An hybrid simulation flow: performing simulations}
 \subsection{Simulation results: operating point}
-	Now that we set up the base models and their duplication, we can perform BBI simulations with those models.
+	Now that we have described the base models and their replication, we can perform BBI simulations using these models.
 	To properly use these models, it is required, in the first place, to validate them through various steps to ensure their reliability.
-	To that end, we generated an IC measuring 550 \textmu m by 450 \textmu m with a 140 \textmu m substrate thickness, and performed an operating point to verify the correctness of the models for each substrate type.
-	We should expect almost no voltage drop and zero current consumption from such a model.
+	To that end, we generated an IC measuring 550 \textmu m by 450 \textmu m with a 140 \textmu m substrate thickness (tSub), and performed an operating point to verify the correctness of the models for each substrate type.
+	We should expect almost no voltage drop and almost zero current consumption from such a model.
 	Otherwise, it indicates an underlying issue with the model.
 
 	Table \ref{tab_op} shows the operating point results for both a triple-well and a dual-well circuit, and indicates a correct operating point, with idle currents and voltage drops close to zero.
@@ -138,11 +138,11 @@ The resulting simulation flow is then divided in three consecutive steps:
 	\end{itemize}
 	The observed signals are displayed in two dimensions and at the apex of the BBI disturbance.
 	Each signal brings some insights on what happens inside the circuits during a BBI pulse.
-	We will first analyze the dual-well results, then the triple-well ones, to finally conclude with a comparison of both.
+	We will first analyze the dual-well, then the triple-well results, to finally conclude with a comparison of both.
 	\input{simuResults.tex}
 %	\subsubsection{Negative dual-well simulation results}
 	\subsection{Simulation results: dual-well negative pulse}
-		Fig. \ref{sim_res_dw_neg} shows the simulation results for a negative pulse aplpied to a dual-well IC
+		Fig. \ref{sim_res_dw_neg} shows the simulation results for a negative pulse applied to a dual-well IC
 
 		Sub-fig. \ref{sim_res_dw_neg}a left represents the power delivery network (PDN) voltage distribution across the entire simulated IC, seen from above.
 		In other words, it is the supply voltage of the transistors.
@@ -191,7 +191,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 		Before analyzing further these results and explaining them, let us analyze the last case.
 
 	\subsection{Simulation results: triple-well positive pulse}
-		Quite interestingly, with a triple-well substrate and a positive voltage pulse, as displayed in Fig. \ref{sim_res_tw_pos}, we observe results that are very similar to the dual-well negative case (Fig. \ref{sim_res_dw_neg}), whether on the PDN voltage or on the epitaxial current.
+		Interestingly, using a triple-well substrate and a positive voltage pulse, as displayed in Fig. \ref{sim_res_tw_pos}, we observe very similar results to those of the dual-well negative case (Fig. \ref{sim_res_dw_neg}), whether on the PDN voltage or on the epitaxial current.
 		Indeed, the PDN voltage disturbance is almost identical to sub-fig. \ref{sim_res_dw_neg}a left, with an increase in voltage from 1.2 V to 2.8 V.
 		Then, the epitaxial and substrate current maps looks like a mirrored copy (in polarity) of sub-fig. \ref{sim_res_dw_neg}a left and \ref{sim_res_dw_neg}c.
 		Eventually, the current density graph is very close to the other results.
@@ -205,7 +205,7 @@ The resulting simulation flow is then divided in three consecutive steps:
 			\item A triple-well substrate and a negative voltage pulse;
 			\item A triple-well substrate and a positive voltage pulse.
 		\end{itemize}
-		Each scenario behave differently than the others for one main reason: the electric coupling between the probe (substrate) and the SCS (logic).
+		Each scenario behave differently from the others due to one main reason: the electric coupling between the probe (substrate) and the SCS (logic).
 		These differences in coupling are due to the substrate structure we encounter in dual-well and triple-well circuits.
 
 		As we have described before, the dual-well substrate embeds a P-N diode between the P-substrate and the N-well, and depending on the voltage pulse polarity, this diode is either blocking or conducting.
@@ -227,10 +227,10 @@ The resulting simulation flow is then divided in three consecutive steps:
 
 		\input{dw_tw_table.tex}
 		Eventually, the main outcomes these simulation results show are in Table \ref{dw_tw_table}, alongside a qualitative dangerousness appreciation of each scenario.
-		In that case, what we mean by dangerousness is how fast we have observed a complete circuit destruction according to the voltage pulse polarity and the substrate type.
+		In that case, what we mean by dangerousness is how quickly we have observed a complete circuit destruction according to the voltage pulse polarity and the substrate type.
 
 \subsection{Validating the models}
-	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate on a monolithic die.
+	With the aim of verifying the soundness of the previous conclusions, we set up experiments using an actual IC composed of both triple-well and dual-well substrate within a monolithic die.
 	These experiments consist in verifying if the difference in injected energy depending on the substrate type is actually significant or not, as predicted by the simulations.
 	
 	The target used is a STM32F439 microcontroller, alongside the platform presented in the first chapter.
@@ -249,10 +249,10 @@ The resulting simulation flow is then divided in three consecutive steps:
 		\item Pulse width of 20 ns;
 		\item IC substrate thickness of 50 \textmu m.
 	\end{itemize}
-	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC exposed to positive voltage pulses, therefore we decided to avoid them at all costs.
+	The voltage pulse used is of negative polarity as we have observed a very fast degradation of IC exposed to positive voltage pulses, therefore, we opted to avoid them entirely.
 	When analyzing the results, we can notice significant differences in the measured current depending on various regions, and the IC floorplan seems to draw itself on the current map.
 	The measured RMS current ranges from 10 mArms to 140 mArms, and as predicted by the simulation results, in the regions where the substrate is of dual-well type, the current is higher than on regions where the substrate is of triple-well type, such as the analog block or the flash control region.
 	
-	These observations confirm the soundness of the proposed models.
+	These observations confirm the accuracy of the proposed models.
 	However, as we have seen previously, these models do not consider the functional nature of the considered ICs: their logic behavior.
-	To circumvent this limitation, we decided to develop an addition to the initial simulation flow, hence the name "hybrid simulation flow".
+	To address this limitation, we chose to enhance the initial simulation flow by introducing what we call a "hybrid simulation flow".

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.2)  17 AUG 2024 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.2)  22 AUG 2024 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,6 +1384,10 @@ File: ./figures/dff_ivx_chain_3.pdf Graphic file (type pdf)
 <use ./figures/dff_ivx_chain_3.pdf>
 Package pdftex.def Info: ./figures/dff_ivx_chain_3.pdf  used on input line 7.
 (pdftex.def)             Requested size: 252.0pt x 70.18105pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./figures/dffidle.tex
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/anim0000-cropped.pdf): PDF in
@@ -1446,15 +1450,10 @@ File: ./figures/dff-pdf-tw-neg/anim0011.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures/dff-pdf-tw-neg/anim0011.pdf  used on input l
 ine 6.
 (pdftex.def)             Requested size: 252.0pt x 162.00168pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 )) (./conclusion.tex [13 <./figures/dff-pdf-dw-neg/anim0114.pdf> <./figures/dff
 -pdf-dw-neg/anim0011.pdf> <./figures/dff-pdf-tw-neg/anim0114.pdf> <./figures/df
-f-pdf-tw-neg/anim0011.pdf>]) (./0_article.bbl) [14
-
-] (./0_article.aux)
+f-pdf-tw-neg/anim0011.pdf>]) (./0_article.bbl)
+[14] (./0_article.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1467,7 +1466,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  8844 strings out of 476000
  164825 string characters out of 5792234
- 1951187 words of memory out of 5000000
+ 1950187 words of memory out of 5000000
  30705 multiletter control sequences out of 15000+600000
  607651 words of font info for 129 fonts, out of 8000000 for 9000
  63 hyphenation exceptions out of 8191
@@ -1487,7 +1486,7 @@ f-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on 0_article.pdf (14 pages, 18751046 bytes).
+Output written on 0_article.pdf (14 pages, 18750984 bytes).
 PDF statistics:
  3319 PDF objects out of 3580 (max. 8388607)
  1756 compressed objects within 18 object streams

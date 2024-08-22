@@ -136,8 +136,8 @@
 		Eventually, when looking at the S2G current waveform, we can remark the ringing reduction, while the amount of transferred energy remains approximately the same.
 
 	\subsection{Platform enhancement application}
-		To be able to illustrate further the actual interests of the proposed improvements, we did not only set up electrical measurements, but a complete differential fault attack (DFA).
-		Indeed, performing fault injection is mainly used to perform attacks, therefore it makes sense to verify the soundness of the improvements in this context.
+		To better illustrate the practical benefits of the proposed improvements, not only did we conduct electrical measurements, but also a differential dault attack (DFA).
+		Indeed, performing fault injection is mainly used to conduct attacks, therefore it makes sense to verify the soundness of the improvements in this context.
 		We chose to perform a single bit DFA on our IC target, as the fault criterion is hard to obtain, and therefore it can easily show the interest, or the lack of interest, of performing such improvements to the platform.
 		
 		The target we used embeds a dedicated cryptographic core, which we set up using an AES on 128 bits.
@@ -146,12 +146,12 @@
 		Our target was clocked at 40 MHz thanks to an external 8 MHz crystal, and externally powered with 3.3 V.
 
 		\subsubsection{Preliminary experiments}
-			Before setting up the attack, we had to set up preliminary experiments allowing us to find optimal locations on the IC backside where the attack would be performed.
+			Prior to performing the attack, we set up preliminary experiments allowing us to identify optimal locations on the IC backside where we could potentially perform the attack.
 			Indeed, many areas and experimental parameters do not allow observing single-bit faults.
 			
 			To do so, we created what we call Fault Analysis Mappings (FAM).
 			These experiments consist in creating maps of a specific region of the IC, in that case the AES co-processor, and analyzing the IC behavior while performing BBI for a set of various experimental parameters.
-			We split the observed behavior into seven cases:
+			We categorized the observed behavior into seven cases:
 			\begin{itemize}
 				\item Correct: the AES responds normally;
 				\item Monobit Monobyte fault: a unique bit faulted on a unique byte;
@@ -170,7 +170,7 @@
 				\item Displacement step: 40 mm for the BBI probe over the mapped area.
 			\end{itemize}
 			Depending on the IC behavior, the experiments can take up to 36 hours.
-			The parameters were chosen to minimize the maximum energy transferred into the IC to avoid damaging it as much as possible.
+			The parameters were selected to minimize the maximum energy transferred into the IC to minimize potential irreversible damage.
 			\input{./figures/aesGiraud.tex}
 			Fig. \ref{giraud_fam} presents the FAM results for both a typical (top) and the improved (bottom) platforms.
 			The mapped area encloses a little more than the actual AES location, to be sure to map its entirety.
@@ -179,9 +179,9 @@
 			What is interesting here is that we can spot numerous locations where the circuit crashed.
 			More specifically, they represent 70 \% of the mapped area.
 			This behavior is problematic in such an experiment as it cannot lead to any useful data for a DFA.
-			We first thought that the experimental parameters were at fault, so we reiterated the experiment using various different sets of parameters, only to observe a majority of crashed locations, while never observing any single bit fault.
-%			Despite trying various experimental parameters, we could not observe single bit faults using this setup.
-%			However, multibit multibyte faults were easily observed, which was to be expected as they are easy to perform without much effort.
+			Initially, we attributed the experimental parameters to be the issue.
+			Thus, we repeated the experiment with various different set of parameters.
+			However, despite observing a majority of crashed locations, we never observed any single bit fault.
 
 			Then, let us discuss Fig. \ref{giraud_fam} (bottom).
 			The first interesting thing to remark here is the total absence of IC crash.
@@ -200,7 +200,7 @@
 				\item Injection delay ranging from \textpm 10 ns around the penultimate AES round.
 			\end{itemize}
 			For each set of experimental parameters, we had to set some limits when trying to inject faults.
-			Indeed, it is required to create a finite and of reasonable length experiment.
+			Indeed, it is required to create a finite experiment and of reasonable duration.
 			The first limit consists in trying to retrieve a maximum of 100 single bit faults.
 			We have chosen this value as it is far more than what is suggested by Giraud's DFA \cite{giraudDfa} description.
 			However, if reaching this limit can be easy on some sets of location and parameters, on others, it is almost impossible.
