@@ -26,7 +26,7 @@
 	On the one hand, in the dual-well scenario, NSUB is connected to the epitaxial layer, while PSUB is connected to the N-well.
 	On the other hand, in the triple-well scenario, NSUB is connected to the P-well and PSUB to the N-well.
 
-	All of this gives us four scenarios	 to study.
+	All of this gives us four scenarios to study.
 	For clarity and because two of the four scenarios are less noteworthy, we will only talk about two of them:
 	\begin{itemize}
 		\item The triple-well substrate and the normally high inverter;
@@ -65,15 +65,15 @@
 
 \subsection{BBI effects on dynamic logic gates: DFF}
 	\input{./figures/dffchain.tex}
-	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common one: the D Flip-Flop.
+	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common and widely used one: the D Flip-Flop.
 %	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
 	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
-	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, outputting to a non-disturbed logic path.
-	The non-disturbed path is here to mimic the behavior of far away logic gates receiving disturbed data while having a correct power supply.
+	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, itself outputting to a non-disturbed logic path.
+	The non-disturbed path is here to mimic the behavior of far away logic gates receiving a disturbed signal while having a correct power supply.
 	
-	Similar to what we have done in the previous section, we will extract signals from the SCS simulation and inject them into this test circuit.
-	The simplified schematic of this circuit is shown in Fig. \ref{dffchain}.
-	The first ten inverters, the buffer and the DFF are disturbed, while the four last inverters are not disturbed.
+	Similar to what we have done in the previous section, we will extract signals from the SCS simulation and inject them into the test circuit.
+	The simplified schematic of such a circuit is shown in Fig. \ref{dffchain}.
+	The first ten inverters, the buffer and the DFF are disturbed, while the last four inverters are not disturbed.
 	The load $C_L$ mimics another set of logic gates which are loaded into the four inverters.
 	As we did with the inverters, we will only consider negative pulses, both for a dual-well and a triple-well substrate.
 	\input{./figures/dffidle.tex}
@@ -81,8 +81,8 @@
 	Fig. \ref{dffidle} presents the normal behavior of the modeled DFF path.
 	The flip-flop is governed by a 40 MHz clock, similar to what we have used on our target, and we perform three data input sampling operations with alternating logic levels (High \textrightarrow\ Low \textrightarrow\ High), to finally let it rest at the last logic level.
 	Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
-	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting.
-	First, we will analyze results where the injections are performed during the steady state of the DFF chain,
+	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting ones.
+	First, we will analyze the results where the injections are performed during the steady state of the DFF chain.
 	Then, we will analyze the DFF behavior during the write operations.
 %	During these simulations, we initialize the DFF with a low logic level, then a 
 	
@@ -120,8 +120,8 @@
 		The DFF input is clearly disturbed and the disturbance follows the BBI pulse, which is similar on the DFF output.
 		These disturbances then cause an error during the sampling of the high logic value, which reverberates on the net FOUT, which shows a short pulse instead of a plateau, around 50 ns.
 		
-%\subsection{BBI effects on dynamic logic gates: DFF in practice}
-%	\textcolor{orange}{The rest of this section is in the making. Some experiments are missing to illustrate the DFF results. We are waiting for the newly opened circuits.}
+\subsection{BBI effects on dynamic logic gates: DFF in practice}
+	\textcolor{orange}{The rest of this section is in the making. Some experiments are missing to illustrate the DFF results. We are waiting for the newly opened circuits.}
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
