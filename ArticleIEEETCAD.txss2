@@ -6,83 +6,67 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "ic_modeling_v2.tex",
+        "CurrentFile": "ic_model_valid.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 15,
+                "Col": 32,
                 "EditorGroup": 0,
                 "FileName": "0_article.tex",
-                "FirstLine": 18,
+                "FirstLine": 27,
                 "FoldedLines": "",
-                "Line": 56
+                "Line": 35
             },
             {
-                "Col": 123,
+                "Col": 116,
                 "EditorGroup": 0,
                 "FileName": "0_abstract.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 8
+                "Line": 11
             },
             {
-                "Col": 213,
+                "Col": 165,
                 "EditorGroup": 0,
                 "FileName": "1_intro.tex",
-                "FirstLine": 6,
-                "FoldedLines": "",
-                "Line": 22
-            },
-            {
-                "Col": 131,
-                "EditorGroup": 0,
-                "FileName": "good_practices.tex",
-                "FirstLine": 186,
-                "FoldedLines": "",
-                "Line": 212
-            },
-            {
-                "Col": 39,
-                "EditorGroup": 0,
-                "FileName": "ic_modeling_v2.tex",
-                "FirstLine": 39,
-                "FoldedLines": "",
-                "Line": 105
-            },
-            {
-                "Col": 120,
-                "EditorGroup": 0,
-                "FileName": "ic_model_valid.tex",
-                "FirstLine": 41,
+                "FirstLine": 53,
                 "FoldedLines": "",
                 "Line": 71
             },
             {
-                "Col": 27,
+                "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "figures/fig_stdcellmodel.tex",
-                "FirstLine": 0,
+                "FileName": "good_practices.tex",
+                "FirstLine": 4,
                 "FoldedLines": "",
-                "Line": 5
+                "Line": 4
             },
             {
-                "Col": 28,
+                "Col": 103,
                 "EditorGroup": 0,
-                "FileName": "figures/fig_substrate.tex",
-                "FirstLine": 0,
+                "FileName": "ic_modeling_v2.tex",
+                "FirstLine": 240,
                 "FoldedLines": "",
-                "Line": 5
+                "Line": 257
             },
             {
-                "Col": 27,
+                "Col": 44,
                 "EditorGroup": 0,
-                "FileName": "mos_passive.tex",
+                "FileName": "ic_model_valid.tex",
+                "FirstLine": 85,
+                "FoldedLines": "",
+                "Line": 111
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "conclusion.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 5
+                "Line": 0
             }
         ],
         "MasterFile": "",
-        "VerticalSplit": true
+        "VerticalSplit": false
     }
 }
