@@ -63,7 +63,7 @@
 	However, we have seen that it is possible, depending on the substrate type, to temporarily flip the value of a bit for the same amount of time than the pule width duration.
 	Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
 
-\subsection{BBI effects on dynamic logic gates: DFF}
+\subsection{BBI effects on dynamic logic gates: DFF \textcolor{orange}{To re-write}}
 	\input{./figures/dffchain.tex}
 	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common and widely used one: the D Flip-Flop.
 %	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
@@ -109,7 +109,7 @@
 	
 	\subsubsection{Triple-well substrate, negative pulse}
 		\input{./figures/dff-tw-neg.tex}
-		Fig. \ref{dffstatic-tw} shows the simulation results for a triple-well negative pulse for a steady state disturbed DFF.
+		Fig. \ref{dffstatic-tw} shows the simulati1 on results for a triple-well negative pulse for a steady state disturbed DFF.
 		In that case, the DFF input is disturbed, similarly to its output, by the BBI pulse.
 		This causes a voltage drop significant enough to create a parasitic low logical value at the net FOUT.
 		Concerning the clock, its maximum voltage is damped by the BBI pulse down 700 mV for one period.
