@@ -63,65 +63,69 @@
 	However, we have seen that it is possible, depending on the substrate type, to temporarily flip the value of a bit for the same amount of time than the pule width duration.
 	Eventually, thanks to these results and the previous ones regarding current density in the substrate in Fig. \ref{sim_res_dw_neg}, \ref{sim_res_dw_pos}, \ref{sim_res_tw_neg} and \ref{sim_res_tw_pos}, it seems that BBI effects are local.
 
-\subsection{BBI effects on dynamic logic gates: DFF \textcolor{orange}{To re-write}}
-	\input{./figures/dffchain.tex}
-	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common and widely used one: the D Flip-Flop.
-%	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
-	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
-	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, itself outputting to a non-disturbed logic path.
-	The non-disturbed path is here to mimic the behavior of far away logic gates receiving a disturbed signal while having a correct power supply.
-	
-	Similar to what we have done in the previous section, we will extract signals from the SCS simulation and inject them into the test circuit.
-	The simplified schematic of such a circuit is shown in Fig. \ref{dffchain}.
-	The first ten inverters, the buffer and the DFF are disturbed, while the last four inverters are not disturbed.
-	The load $C_L$ mimics another set of logic gates which are loaded into the four inverters.
-	As we did with the inverters, we will only consider negative pulses, both for a dual-well and a triple-well substrate.
-	\input{./figures/dffidle.tex}
-	Before diving into the simulation results, let us analyze what would be the normal behavior of the considered DFF.
-	Fig. \ref{dffidle} presents the normal behavior of the modeled DFF path.
-	The flip-flop is governed by a 40 MHz clock, similar to what we have used on our target, and we perform three data input sampling operations with alternating logic levels (High \textrightarrow\ Low \textrightarrow\ High), to finally let it rest at the last logic level.
-	Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
-	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting ones.
-	First, we will analyze the results where the injections are performed during the steady state of the DFF chain.
-	Then, we will analyze the DFF behavior during the write operations.
-%	During these simulations, we initialize the DFF with a low logic level, then a 
-	
-	\subsubsection{Dual-well substrate, negative pulse}
-		\input{./figures/dff-dw-neg.tex}
-		Fig. \ref{dffstatic-dw} shows the simulation results for a dual-well negative pulse for a steady state disturbed DFF.
-		Five signals are represented in this order, allowing us to get insights on the circuit behavior:
-		\begin{itemize}
-			\item The BBI voltage pulse for reference;
-			\item The DFF input signal (DFF IN), being the output of the first ten inverters;
-			\item The buffered DFF clock (CLK BUF), the clock fed to the DFF after the buffer;
-			\item The DFF output;
-			\item The four last inverters output;
-		\end{itemize}
-		The results show that the DFF input is not disturbed enough to trigger a logic value change.
-		However, the DFF output drops down to -1 V, similar to its own buffered clock.
-		This voltage drop, lasting for 25 ns, reverberates on the clean inverters output, resulting in a low logical value being output.
-		In addition to this, the disturbances on the clock shows the creation of two parasitic clock pulses, replacing a normal one during the injection.
-		
-		\input{./figures/dff-dw-neg-dyn.tex}
-		Then, Fig. \ref{dffdynamic-dw} shows the exact same scenario with a different injection time, performed during the first write operations.
-		These results show that the disturbances prevent the second write operation, supposed to write a high logic value in the DFF.
-		Therefore, this data will never be sampled by the DFF and therefore will never propagate to the output of the circuit.
-	
-	\subsubsection{Triple-well substrate, negative pulse}
-		\input{./figures/dff-tw-neg.tex}
-		Fig. \ref{dffstatic-tw} shows the simulation results for a triple-well negative pulse for a steady state disturbed DFF.
-		In that case, the DFF input is disturbed, similarly to its output, by the BBI pulse.
-		This causes a voltage drop significant enough to create a parasitic low logical value at the net FOUT.
-		Concerning the clock, its maximum voltage is damped by the BBI pulse down 700 mV for one period.
-		
-		\input{./figures/dff-tw-neg-dyn.tex}
-		Eventually, Fig. \ref{dffdynamic-tw} shows the results for a dynamic BBI in a triple-well under a negative pulse.
-		Similar to the steady state result, the clock voltage is damped down to 800 mV.
-		The DFF input is clearly disturbed and the disturbance follows the BBI pulse, which is similar on the DFF output.
-		These disturbances then cause an error during the sampling of the high logic value, which reverberates on the net FOUT, which shows a short pulse instead of a plateau, around 50 ns.
-		
-\subsection{BBI effects on dynamic logic gates: DFF in practice}
-	\textcolor{orange}{The rest of this section is in the making. Some experiments are missing to illustrate the DFF results. We are waiting for the newly opened circuits.}
+\subsection{BBI effects on fault probability using an actual IC}
+	Using our target, we performed temporal experiments aiming at analyzing the effects of BBI.
+	The experiments are fairly simple and consist in analyzing the fault susceptibility of the AES core while changing the injection delay, over the three last AES rounds.
+
+%\subsection{BBI effects on dynamic logic gates: DFF \textcolor{orange}{To re-write}}
+%	\input{./figures/dffchain.tex}
+%	Now that we have analyzed the behavior of static inverters, it is important to consider studying the behavior of sequential elements such as a very common and widely used one: the D Flip-Flop.
+%%	These devices are used in every IC as an elementary memory element to sample data manipulated by the combinatorial logic.
+%	To test the DFF behavior under BBI, we placed it in the middle of a logic path and buffered its clock.
+%	The goal of this simulation is to mix the behavior of a disturbed logic path outputting to a disturbed DFF, itself outputting to a non-disturbed logic path.
+%	The non-disturbed path is here to mimic the behavior of far away logic gates receiving a disturbed signal while having a correct power supply.
+%	
+%	Similar to what we have done in the previous section, we will extract signals from the SCS simulation and inject them into the test circuit.
+%	The simplified schematic of such a circuit is shown in Fig. \ref{dffchain}.
+%	The first ten inverters, the buffer and the DFF are disturbed, while the last four inverters are not disturbed.
+%	The load $C_L$ mimics another set of logic gates which are loaded into the four inverters.
+%	As we did with the inverters, we will only consider negative pulses, both for a dual-well and a triple-well substrate.
+%	\input{./figures/dffidle.tex}
+%	Before diving into the simulation results, let us analyze what would be the normal behavior of the considered DFF.
+%	Fig. \ref{dffidle} presents the normal behavior of the modeled DFF path.
+%	The flip-flop is governed by a 40 MHz clock, similar to what we have used on our target, and we perform three data input sampling operations with alternating logic levels (High \textrightarrow\ Low \textrightarrow\ High), to finally let it rest at the last logic level.
+%	Because a DFF is a dynamic device, there are many interesting moments to observe depending on when the voltage pulse is injected.
+%	Therefore, we cannot represent every noteworthy moment, so we have chosen the most interesting ones.
+%	First, we will analyze the results where the injections are performed during the steady state of the DFF chain.
+%	Then, we will analyze the DFF behavior during the write operations.
+%%	During these simulations, we initialize the DFF with a low logic level, then a 
+%	
+%	\subsubsection{Dual-well substrate, negative pulse}
+%		\input{./figures/dff-dw-neg.tex}
+%		Fig. \ref{dffstatic-dw} shows the simulation results for a dual-well negative pulse for a steady state disturbed DFF.
+%		Five signals are represented in this order, allowing us to get insights on the circuit behavior:
+%		\begin{itemize}
+%			\item The BBI voltage pulse for reference;
+%			\item The DFF input signal (DFF IN), being the output of the first ten inverters;
+%			\item The buffered DFF clock (CLK BUF), the clock fed to the DFF after the buffer;
+%			\item The DFF output;
+%			\item The four last inverters output;
+%		\end{itemize}
+%		The results show that the DFF input is not disturbed enough to trigger a logic value change.
+%		However, the DFF output drops down to -1 V, similar to its own buffered clock.
+%		This voltage drop, lasting for 25 ns, reverberates on the clean inverters output, resulting in a low logical value being output.
+%		In addition to this, the disturbances on the clock shows the creation of two parasitic clock pulses, replacing a normal one during the injection.
+%		
+%		\input{./figures/dff-dw-neg-dyn.tex}
+%		Then, Fig. \ref{dffdynamic-dw} shows the exact same scenario with a different injection time, performed during the first write operations.
+%		These results show that the disturbances prevent the second write operation, supposed to write a high logic value in the DFF.
+%		Therefore, this data will never be sampled by the DFF and therefore will never propagate to the output of the circuit.
+%	
+%	\subsubsection{Triple-well substrate, negative pulse}
+%		\input{./figures/dff-tw-neg.tex}
+%		Fig. \ref{dffstatic-tw} shows the simulation results for a triple-well negative pulse for a steady state disturbed DFF.
+%		In that case, the DFF input is disturbed, similarly to its output, by the BBI pulse.
+%		This causes a voltage drop significant enough to create a parasitic low logical value at the net FOUT.
+%		Concerning the clock, its maximum voltage is damped by the BBI pulse down 700 mV for one period.
+%		
+%		\input{./figures/dff-tw-neg-dyn.tex}
+%		Eventually, Fig. \ref{dffdynamic-tw} shows the results for a dynamic BBI in a triple-well under a negative pulse.
+%		Similar to the steady state result, the clock voltage is damped down to 800 mV.
+%		The DFF input is clearly disturbed and the disturbance follows the BBI pulse, which is similar on the DFF output.
+%		These disturbances then cause an error during the sampling of the high logic value, which reverberates on the net FOUT, which shows a short pulse instead of a plateau, around 50 ns.
+%		
+%\subsection{BBI effects on dynamic logic gates: DFF in practice}
+%	\textcolor{orange}{The rest of this section is in the making. Some experiments are missing to illustrate the DFF results. We are waiting for the newly opened circuits.}
 
 %	For this purpose, we modeled an inverter, a buffer and a DFF.
 %	The inverter and the buffer schematics, alongside their transistors sizes, are shown in Fig. \ref{ivxbufmos}.
